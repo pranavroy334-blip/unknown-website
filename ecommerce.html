@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-fixed-variant": "#5a00c6", "surface-container-low": "#0d1c2d", "inverse-surface": "#d4e4fa", "surface-dim": "#051424", "surface-tint": "#d2bbff", "surface-bright": "#2c3a4c", "on-primary": "#3f008e", "on-primary-container": "#ede0ff", "tertiary": "#c0c1ff", "inverse-on-surface": "#233143", "secondary-container": "#6f00be", "primary-fixed": "#eaddff", "on-tertiary": "#1000a9", "on-secondary-container": "#d6a9ff", "surface-variant": "#273647", "surface-container-high": "#1c2b3c", "secondary": "#ddb7ff", "primary": "#d2bbff", "on-background": "#d4e4fa", "on-error": "#690005", "secondary-fixed-dim": "#ddb7ff", "error": "#ffb4ab", "on-surface-variant": "#ccc3d8", "surface-container": "#122131", "tertiary-fixed-dim": "#c0c1ff", "surface-container-highest": "#273647", "tertiary-fixed": "#e1e0ff", "on-secondary": "#490080", "on-tertiary-fixed": "#07006c", "on-primary-fixed": "#25005a", "surface": "#051424", "outline": "#958da1", "on-tertiary-container": "#e5e3ff", "on-tertiary-fixed-variant": "#2f2ebe", "on-surface": "#d4e4fa", "secondary-fixed": "#f0dbff", "tertiary-container": "#5254df", "outline-variant": "#4a4455", "on-secondary-fixed": "#2c0051", "error-container": "#93000a", "primary-fixed-dim": "#d2bbff", "primary-container": "#7c3aed", "on-error-container": "#ffdad6", "on-secondary-fixed-variant": "#6900b3", "surface-container-lowest": "#010f1f", "background": "#051424", "inverse-primary": "#732ee4" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-mobile": "1rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "space-2xl": "4rem", "margin-mobile": "1.25rem", "gutter": "1.5rem", "space-md": "1rem", "space-xs": "0.25rem", "margin": "3rem" }, "fontFamily": { "headline-lg": [ "Space Grotesk" ], "label-code": [ "JetBrains Mono" ], "display": [ "Space Grotesk" ], "display-mobile": [ "Space Grotesk" ], "headline-lg-mobile": [ "Space Grotesk" ], "body-md": [ "Plus Jakarta Sans" ], "headline-sm": [ "Space Grotesk" ], "title-lg": [ "Plus Jakarta Sans" ], "body-sm": [ "Plus Jakarta Sans" ], "headline-md": [ "Space Grotesk" ], "body-lg": [ "Plus Jakarta Sans" ], "label-caps": [ "Space Grotesk" ], "title-md": [ "Plus Jakarta Sans" ] }, "fontSize": { "headline-lg": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-code": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" } ], "display": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "display-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-md": [ "15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-sm": [ "22px", { "lineHeight": "30px", "letterSpacing": "0em", "fontWeight": "600" } ], "title-lg": [ "18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-sm": [ "13px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-md": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-lg": [ "18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" } ], "label-caps": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "700" } ], "title-md": [ "16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- Sticky Header with Responsive Navigation -->
+<header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] border-b border-surface-container-high/60">
+<div class="h-20 max-w-[1280px] mx-auto px-6 lg:px-12 flex items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<a class="flex items-center gap-3" data-path="home" href="#">
+<img alt="UNKNOWN Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBxryhSDPQlsgWF-J2_jyTUZavj1eq-hpgH8F0U8PHyhspGwc7LkE6Mdir0IBpBBvsKyZM5S2q006UoAM0kxe9oHrx4KKxF4W4VcM0Zo3DXIpqFWUUYveli3ahwB8L7gTIlX4qMgoGQnSStTojDJBPpC6z8miM7Rd-HW_0TZ9WicrNiBeaJqzTuFC9ULVNfJ2FWSq6u_qZrZQ9j8AmMi6SrO8kKjoIcaxVp7WIEyewh"/>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-bold">UNKNOWN</span>
+<span class="hidden sm:inline-block font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">DISCOVER THE TOOLS. BUILD YOUR FUTURE.</span>
+</div>
+</a>
+</div>
+<!-- Desktop Navigation -->
+<nav class="hidden xl:flex items-center gap-1" data-active-classes="bg-primary-container text-on-primary-container font-title-md text-title-md rounded-full px-4 py-2">
+<a class="px-3 py-2 rounded-full font-title-md text-title-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="home" href="#popular-directory">Home</a>
+<a class="px-3 py-2 rounded-full font-title-md text-title-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all flex items-center gap-1.5" data-path="web-and-hosting" href="#">Web &amp; Hosting <span class="px-1.5 py-0.5 rounded text-[10px] font-label-code bg-surface-container-high text-on-surface-variant">Soon</span></a>
+<a class="px-3 py-2 rounded-full font-title-md text-title-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all flex items-center gap-1.5" data-path="business-software" href="#">Business Software <span class="px-1.5 py-0.5 rounded text-[10px] font-label-code bg-surface-container-high text-on-surface-variant">Soon</span></a>
+<a aria-current="page" class="transition-all bg-primary-container text-on-primary-container font-title-md text-title-md rounded-full px-4 py-2" data-path="ecommerce" href="#popular-directory">Ecommerce</a>
+<a class="px-3 py-2 rounded-full font-title-md text-title-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="guides" href="#operational-blueprint">Guides</a>
+<a class="px-3 py-2 rounded-full font-title-md text-title-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="about-us" href="#transparency-protocol">About &amp; Integrity</a>
+</nav>
+<div class="flex items-center gap-3">
+<a class="hidden sm:inline-flex items-center justify-center font-title-md text-title-md bg-primary-container text-on-primary-container px-5 py-2.5 rounded-full hover:shadow-[0_0_20px_rgba(124,58,237,0.45)] transition-all duration-300 min-h-[44px]" href="#popular-directory">
+Explore Digital Tools
+</a>
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
+</div>
+<button aria-label="Toggle Navigation Menu" class="xl:hidden p-2.5 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center" id="mobile-menu-btn" type="button">
+<span class="material-symbols-outlined" id="mobile-menu-icon">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Overlay Navigation Dropdown -->
+<div class="hidden xl:hidden border-t border-surface-container-high bg-surface-container-lowest/98 px-6 py-6 space-y-4 backdrop-blur-2xl transition-all" id="mobile-menu-overlay">
+<nav class="flex flex-col gap-2">
+<a class="flex items-center justify-between p-3 rounded-xl hover:bg-surface-container-high text-on-surface font-title-md min-h-[44px]" href="#popular-directory" onclick="toggleMobileMenu()"><span>Home Directory</span> <span class="material-symbols-outlined text-[18px] text-primary">arrow_forward</span></a>
+<a class="flex items-center justify-between p-3 rounded-xl bg-primary-container/20 text-primary font-title-md min-h-[44px]" href="#popular-directory" onclick="toggleMobileMenu()"><span>Ecommerce Hub</span> <span class="px-2 py-0.5 rounded text-[11px] font-label-code bg-primary-container text-on-primary-container">Active</span></a>
+<a class="flex items-center justify-between p-3 rounded-xl hover:bg-surface-container-high text-on-surface-variant font-title-md min-h-[44px]" href="#categories-section" onclick="toggleMobileMenu()"><span>Tool Categories</span> <span class="material-symbols-outlined text-[18px]">category</span></a>
+<a class="flex items-center justify-between p-3 rounded-xl hover:bg-surface-container-high text-on-surface-variant font-title-md min-h-[44px]" href="#comparison-matrix" onclick="toggleMobileMenu()"><span>Architecture Matrix</span> <span class="material-symbols-outlined text-[18px]">table_chart</span></a>
+<a class="flex items-center justify-between p-3 rounded-xl hover:bg-surface-container-high text-on-surface-variant font-title-md min-h-[44px]" href="#operational-blueprint" onclick="toggleMobileMenu()"><span>Starter Blueprint</span> <span class="material-symbols-outlined text-[18px]">menu_book</span></a>
+<a class="flex items-center justify-between p-3 rounded-xl hover:bg-surface-container-high text-on-surface-variant font-title-md min-h-[44px]" href="#transparency-protocol" onclick="toggleMobileMenu()"><span>Affiliate Standards</span> <span class="material-symbols-outlined text-[18px]">shield</span></a>
+</nav>
+<div class="pt-3 border-t border-surface-container-high">
+<a class="w-full flex items-center justify-center font-title-md bg-primary-container text-on-primary-container py-3 rounded-full shadow-md min-h-[44px]" href="#popular-directory" onclick="toggleMobileMenu()">Browse 8 Curated Tools</a>
+</div>
+</div>
+</header>
+<main class="w-full pt-20 bg-surface">
+<div class="flex flex-col w-full text-on-surface">
+<!-- Ambient Glow Canvas Elements -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[720px] h-[340px] bg-primary-container/15 blur-[130px] rounded-full pointer-events-none"></div>
+<div class="absolute top-[480px] -left-20 w-[420px] h-[420px] bg-tertiary-container/10 blur-[140px] rounded-full pointer-events-none"></div>
+<div class="absolute top-[1600px] -right-24 w-[500px] h-[500px] bg-primary-container/10 blur-[150px] rounded-full pointer-events-none"></div>
+<!-- MAIN HUB HERO SECTION -->
+<section class="relative max-w-[1280px] mx-auto px-6 lg:px-12 pt-12 pb-16">
+<!-- Monospace Telemetry Eyebrow & Honest Status Chips -->
+<div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+<div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-surface-container-high/80 backdrop-blur-md shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-code text-label-code text-primary uppercase tracking-widest">
+            COMMERCE PROTOCOLS // 03 — DIGITAL STOREFRONTS &amp; TRANSACTION ENGINES
+          </span>
+</div>
+<!-- Grounded Honest Badges -->
+<div class="flex flex-wrap items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container font-label-code text-label-code text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-primary">category</span>
+            8 Core Categories
+          </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container font-label-code text-label-code text-secondary">
+<span class="material-symbols-outlined text-[15px] text-secondary">menu_book</span>
+            Public Specifications &amp; Vendor Data
+          </span>
+<span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container font-label-code text-label-code text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-tertiary">architecture</span>
+            Objective Architecture Overview
+          </span>
+</div>
+</div>
+<!-- Main Headline & Narrative Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-10">
+<div class="lg:col-span-8 space-y-4">
+<h1 class="font-display text-display-mobile sm:text-display text-on-surface tracking-tight">
+            Build Your Online Store. <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-tertiary">
+              Grow Without Limits.
+            </span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            Discover vetted platforms, payment gateways, and operational infrastructure to launch, operate, and scale your ecommerce business with clarity based on published vendor specifications.
+          </p>
+</div>
+<!-- Spec Sidebar Strip (Updated to 2026 honest editorial indicators) -->
+<div class="lg:col-span-4 bg-surface-container/70 backdrop-blur-md rounded-xl p-5 shadow-sm space-y-3 border border-surface-container-high/60">
+<div class="flex items-center justify-between font-label-caps text-label-caps text-on-surface-variant">
+<span>INDEX SPECIFICATION</span>
+<span class="text-primary font-label-code text-label-code">REV. 2026</span>
+</div>
+<div class="space-y-2 pt-1 font-body-sm text-body-sm">
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>Curated Focus Index</span>
+<span class="font-label-code text-label-code text-on-surface">Curated Index for 2026</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>Data Methodology</span>
+<span class="font-label-code text-label-code text-on-surface">Public Feature Matrices</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>Commercial Disclosure</span>
+<span class="font-label-code text-label-code text-primary">Transparent Policy</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Live Search & Filtering Input Surface -->
+<div class="bg-surface-container/90 backdrop-blur-lg rounded-2xl p-4 sm:p-5 shadow-lg mb-8 border border-surface-container-high/60">
+<div class="flex flex-col md:flex-row items-center gap-3">
+<div class="relative flex-1 w-full">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant text-[22px]">search</span>
+<input aria-label="Search tools by name, description, or tag" class="w-full bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant/60 font-body-md text-body-md pl-12 pr-10 py-3.5 rounded-full focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all shadow-inner min-h-[48px]" id="tool-search-input" placeholder="Search ecommerce platforms, payment gateways, or plugins..." type="text"/>
+<button aria-label="Clear search input" class="hidden absolute right-3 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface flex items-center justify-center" id="search-clear-btn" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<div class="flex items-center gap-3 w-full md:w-auto">
+<a class="w-full md:w-auto inline-flex items-center justify-center gap-2 font-title-md text-title-md bg-gradient-to-r from-primary-container to-tertiary-container text-on-primary-container px-6 py-3.5 rounded-full shadow-md hover:shadow-[0_0_24px_rgba(124,58,237,0.5)] transition-all duration-300 min-h-[48px]" href="#popular-directory">
+<span>Explore E-commerce Tools</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="hidden xl:inline-flex items-center justify-center gap-2 font-title-md text-title-md bg-surface-container-high text-on-surface px-5 py-3.5 rounded-full hover:bg-surface-bright transition-all min-h-[48px]" href="#comparison-matrix">
+<span class="material-symbols-outlined text-[18px]">table_chart</span>
+<span>Compare Matrix</span>
+</a>
+</div>
+</div>
+<!-- Interactive Quick Tags Strip -->
+<div class="flex flex-wrap items-center gap-2 pt-4 mt-2">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Trending Vectors:</span>
+<button class="trending-tag-btn px-3 py-1.5 rounded-full bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container font-label-code text-label-code text-on-surface-variant transition-colors min-h-[32px]" data-tag="Shopify" type="button">#ShopifyAlternatives</button>
+<button class="trending-tag-btn px-3 py-1.5 rounded-full bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container font-label-code text-label-code text-on-surface-variant transition-colors min-h-[32px]" data-tag="Payments" type="button">#GlobalPayments</button>
+<button class="trending-tag-btn px-3 py-1.5 rounded-full bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container font-label-code text-label-code text-on-surface-variant transition-colors min-h-[32px]" data-tag="0% fee" type="button">#ZeroTransactionFees</button>
+<button class="trending-tag-btn px-3 py-1.5 rounded-full bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container font-label-code text-label-code text-on-surface-variant transition-colors min-h-[32px]" data-tag="Dropshipping" type="button">#DropshippingReady</button>
+</div>
+</div>
+<!-- Interactive Quick Category Filter Pills -->
+<div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none" id="category-pills">
+<button class="filter-pill active px-4 py-2 rounded-full bg-primary-container text-on-primary-container font-title-md text-title-md whitespace-nowrap shadow-sm min-h-[44px] transition-all" data-category="all" type="button">All Commerce Tools</button>
+<button class="filter-pill px-4 py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-title-md text-title-md whitespace-nowrap transition-colors min-h-[44px]" data-category="store-builders" type="button">Store Builders</button>
+<button class="filter-pill px-4 py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-title-md text-title-md whitespace-nowrap transition-colors min-h-[44px]" data-category="payment-gateways" type="button">Payment Gateways</button>
+<button class="filter-pill px-4 py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-title-md text-title-md whitespace-nowrap transition-colors min-h-[44px]" data-category="ecommerce-marketing" type="button">Ecommerce Marketing</button>
+<button class="filter-pill px-4 py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-title-md text-title-md whitespace-nowrap transition-colors min-h-[44px]" data-category="email-automation" type="button">Email &amp; Automation</button>
+<button class="filter-pill px-4 py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-title-md text-title-md whitespace-nowrap transition-colors min-h-[44px]" data-category="inventory-sync" type="button">Inventory Sync</button>
+<button class="filter-pill px-4 py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-title-md text-title-md whitespace-nowrap transition-colors min-h-[44px]" data-category="crm-support" type="button">CRM &amp; Support</button>
+<button class="filter-pill px-4 py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-title-md text-title-md whitespace-nowrap transition-colors min-h-[44px]" data-category="shipping-fulfillment" type="button">Shipping &amp; Fulfillment</button>
+</div>
+</section>
+<!-- SECTION 1: E-COMMERCE TOOL CATEGORIES GRID (8 Visual Cards) -->
+<section class="max-w-[1280px] mx-auto px-6 lg:px-12 py-16" id="categories-section">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+<div>
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">SECTION 01 // TAXONOMY</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">E-Commerce Architecture Categories</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Structured operational tiers designed to isolate friction at every stage of the checkout and customer lifetime sequence.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Category Card 1 -->
+<div class="group relative bg-surface-container/60 hover:bg-surface-container-high/90 backdrop-blur-md rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer border border-surface-container-high/40" onclick="applyCategoryFilter('store-builders')">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 text-primary flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]">storefront</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant px-2.5 py-1 rounded bg-surface-container-lowest">01 · Hosted &amp; OSS</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold group-hover:text-primary transition-colors">Online Store Builders</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              All-in-one hosted storefronts, headless commerce engines, and custom cart builders engineered for scale.
+            </p>
+</div>
+<div class="pt-6 flex items-center justify-between font-label-caps text-label-caps text-primary uppercase">
+<span>Filter Directory</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Category Card 2 -->
+<div class="group relative bg-surface-container/60 hover:bg-surface-container-high/90 backdrop-blur-md rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer border border-surface-container-high/40" onclick="applyCategoryFilter('payment-gateways')">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-tertiary-container/20 text-tertiary flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]">credit_card</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant px-2.5 py-1 rounded bg-surface-container-lowest">02 · Rails</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold group-hover:text-tertiary transition-colors">Payment Gateways</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Multi-currency checkout engines, merchant accounts, and local payment rails offering resilient authorization.
+            </p>
+</div>
+<div class="pt-6 flex items-center justify-between font-label-caps text-label-caps text-tertiary uppercase">
+<span>Filter Directory</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Category Card 3 -->
+<div class="group relative bg-surface-container/60 hover:bg-surface-container-high/90 backdrop-blur-md rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer border border-surface-container-high/40" onclick="applyCategoryFilter('ecommerce-marketing')">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/20 text-secondary flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]">campaign</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant px-2.5 py-1 rounded bg-surface-container-lowest">03 · Growth</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold group-hover:text-secondary transition-colors">E-commerce Marketing</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Omnichannel ad connectors, affiliate networks, and organic retention engines driving intent-rich traffic.
+            </p>
+</div>
+<div class="pt-6 flex items-center justify-between font-label-caps text-label-caps text-secondary uppercase">
+<span>Filter Directory</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Category Card 4 -->
+<div class="group relative bg-surface-container/60 hover:bg-surface-container-high/90 backdrop-blur-md rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer border border-surface-container-high/40" onclick="applyCategoryFilter('email-automation')">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 text-primary flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]">forward_to_inbox</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant px-2.5 py-1 rounded bg-surface-container-lowest">04 · Lifecycle</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold group-hover:text-primary transition-colors">Email &amp; Automation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Behavioral checkout abandonment triggers, predictive segmentation, and SMS lifecycle journeys.
+            </p>
+</div>
+<div class="pt-6 flex items-center justify-between font-label-caps text-label-caps text-primary uppercase">
+<span>Filter Directory</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Category Card 5 -->
+<div class="group relative bg-surface-container/60 hover:bg-surface-container-high/90 backdrop-blur-md rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer border border-surface-container-high/40" onclick="applyCategoryFilter('inventory-sync')">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-variant/40 text-on-surface flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]">inventory_2</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant px-2.5 py-1 rounded bg-surface-container-lowest">05 · Operations</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold group-hover:text-primary transition-colors">Inventory Management</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Multi-warehouse sync, SKU taxonomy architectures, and automated supplier reordering protocols.
+            </p>
+</div>
+<div class="pt-6 flex items-center justify-between font-label-caps text-label-caps text-primary uppercase">
+<span>Filter Directory</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Category Card 6 -->
+<div class="group relative bg-surface-container/60 hover:bg-surface-container-high/90 backdrop-blur-md rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer border border-surface-container-high/40" onclick="applyCategoryFilter('crm-support')">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-tertiary-container/20 text-tertiary flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]">support_agent</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant px-2.5 py-1 rounded bg-surface-container-lowest">06 · Support</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold group-hover:text-tertiary transition-colors">Customer Support &amp; CRM</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Omnichannel ticketing, integrated real-time order tracking, and high-retention client history desks.
+            </p>
+</div>
+<div class="pt-6 flex items-center justify-between font-label-caps text-label-caps text-tertiary uppercase">
+<span>Filter Directory</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Category Card 7 -->
+<div class="group relative bg-surface-container/60 hover:bg-surface-container-high/90 backdrop-blur-md rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer border border-surface-container-high/40" onclick="applyCategoryFilter('all')">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 text-primary flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]">insights</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant px-2.5 py-1 rounded bg-surface-container-lowest">07 · Analytics</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold group-hover:text-primary transition-colors">Analytics &amp; Optimization</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Heatmaps, checkout funnel drop-off telemetry, and statistical multivariate A/B experiment suites.
+            </p>
+</div>
+<div class="pt-6 flex items-center justify-between font-label-caps text-label-caps text-primary uppercase">
+<span>Filter Directory</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Category Card 8 -->
+<div class="group relative bg-surface-container/60 hover:bg-surface-container-high/90 backdrop-blur-md rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer border border-surface-container-high/40" onclick="applyCategoryFilter('shipping-fulfillment')">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/20 text-secondary flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]">local_shipping</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant px-2.5 py-1 rounded bg-surface-container-lowest">08 · Logistics</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold group-hover:text-secondary transition-colors">Shipping &amp; Order Logistics</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Automated carrier rate calculators, bulk shipping label generation, and global courier dispatch APIs.
+            </p>
+</div>
+<div class="pt-6 flex items-center justify-between font-label-caps text-label-caps text-secondary uppercase">
+<span>Filter Directory</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: POPULAR TOOLS DIRECTORY (8 Curated Cards with Authentic Links & Interactive Filtering) -->
+<section class="max-w-[1280px] mx-auto px-6 lg:px-12 py-16" id="popular-directory">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+<div>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container font-label-code text-label-code text-primary mb-2">
+<span>CURATED INDEX FOR 2026</span>
+<span>•</span>
+<span>PUBLIC SPECIFICATIONS &amp; VENDOR DATA</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Vetted Commerce Platforms &amp; Infrastructure</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Objective evaluation of active transaction foundations and hosting architectures based on public documentation.
+        </p>
+</div>
+<!-- Active Filter Status Indicator -->
+<div class="hidden items-center justify-between pb-4 text-body-sm text-on-surface-variant" id="filter-feedback-bar">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">filter_list</span>
+<span>Showing filtered tools (<span class="font-label-code text-primary font-bold" id="visible-tool-count">8</span> of 8)</span>
+</div>
+<button class="text-primary hover:underline text-body-sm" onclick="resetAllFilters()" type="button">Reset Filters</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="tools-grid">
+<!-- Tool 1: Shopify -->
+<div class="tool-card bg-surface-container/70 backdrop-blur-md rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between border border-surface-container-high/40" data-categories="store-builders ecommerce-marketing" data-name="Shopify" data-tags="#ShopifyAlternatives dropshipping turnkey store builder">
+<div class="space-y-4">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary font-headline-sm font-bold">
+                Sh
+              </div>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant font-label-code text-label-code">
+                Direct Link · Provider Website
+              </span>
+</div>
+<div>
+<div class="font-label-caps text-label-caps text-on-surface-variant uppercase">Hosted Commerce Engine</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Shopify</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<strong class="text-on-surface font-medium">Best suited for:</strong> Beginners to rapid-scaling brands seeking turnkey hosted stability and high checkout velocity.
+            </p>
+<ul class="space-y-2 pt-2 text-on-surface-variant font-body-sm text-body-sm">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>8,000+ App Store ecosystem</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>Proprietary 1-click Shop Pay checkout</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">info</span>
+<span class="font-label-code text-label-code">Published base rates: 2.9% + 30¢</span>
+</li>
+</ul>
+</div>
+<div class="pt-6 mt-4 space-y-2">
+<a class="w-full inline-flex items-center justify-center font-title-md text-title-md bg-primary-container text-on-primary-container py-2.5 rounded-full hover:shadow-lg transition-all min-h-[44px]" href="https://www.shopify.com/pricing" rel="noopener noreferrer" target="_blank">
+              Check Current Pricing ↗
+            </a>
+<a class="w-full inline-flex items-center justify-center font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface py-2 transition-colors min-h-[44px]" href="https://www.shopify.com" rel="noopener noreferrer" target="_blank">
+              Official Website ↗
+            </a>
+</div>
+</div>
+<!-- Tool 2: WooCommerce -->
+<div class="tool-card bg-surface-container/70 backdrop-blur-md rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between border border-surface-container-high/40" data-categories="store-builders" data-name="WooCommerce" data-tags="#ShopifyAlternatives open-source wordpress self-hosted">
+<div class="space-y-4">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-tertiary font-headline-sm font-bold">
+                Wc
+              </div>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant font-label-code text-label-code">
+                Open Source Core
+              </span>
+</div>
+<div>
+<div class="font-label-caps text-label-caps text-on-surface-variant uppercase">Open-Source WordPress Plugin</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-0.5">WooCommerce</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<strong class="text-on-surface font-medium">Best suited for:</strong> Content creators and technical operators needing 100% data ownership and zero vendor lock-in.
+            </p>
+<ul class="space-y-2 pt-2 text-on-surface-variant font-body-sm text-body-sm">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
+<span>Complete database &amp; checkout autonomy</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
+<span>Zero core platform licensing fee</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">info</span>
+<span class="font-label-code text-label-code">Requires user-managed server hosting</span>
+</li>
+</ul>
+</div>
+<div class="pt-6 mt-4 space-y-2">
+<a class="w-full inline-flex items-center justify-center font-title-md text-title-md bg-surface-container-high text-on-surface py-2.5 rounded-full hover:bg-surface-bright transition-all min-h-[44px]" href="https://woocommerce.com" rel="noopener noreferrer" target="_blank">
+              Official Website ↗
+            </a>
+<a class="w-full inline-flex items-center justify-center font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface py-2 transition-colors min-h-[44px]" href="https://woocommerce.com/document/installation/" rel="noopener noreferrer" target="_blank">
+              Documentation &amp; Git ↗
+            </a>
+</div>
+</div>
+<!-- Tool 3: BigCommerce -->
+<div class="tool-card bg-surface-container/70 backdrop-blur-md rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between border border-surface-container-high/40" data-categories="store-builders" data-name="BigCommerce" data-tags="#ShopifyAlternatives #ZeroTransactionFees enterprise b2b 0% fee">
+<div class="space-y-4">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-secondary font-headline-sm font-bold">
+                Bc
+              </div>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant font-label-code text-label-code">
+                External Link — Pending Partner Status
+              </span>
+</div>
+<div>
+<div class="font-label-caps text-label-caps text-on-surface-variant uppercase">Enterprise &amp; Mid-Market SaaS</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-0.5">BigCommerce</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<strong class="text-on-surface font-medium">Best suited for:</strong> High-volume multi-storefront setups demanding zero native transaction fees and advanced B2B tiers.
+            </p>
+<ul class="space-y-2 pt-2 text-on-surface-variant font-body-sm text-body-sm">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>0% native transaction fee penalty</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Native headless API architecture</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">info</span>
+<span class="font-label-code text-label-code">Annual sales thresholds per tier</span>
+</li>
+</ul>
+</div>
+<div class="pt-6 mt-4 space-y-2">
+<a class="w-full inline-flex items-center justify-center font-title-md text-title-md bg-surface-container-high text-on-surface py-2.5 rounded-full hover:bg-surface-bright transition-all min-h-[44px]" href="https://www.bigcommerce.com/pricing" rel="noopener noreferrer" target="_blank">
+              Check Current Pricing ↗
+            </a>
+<a class="w-full inline-flex items-center justify-center font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface py-2 transition-colors min-h-[44px]" href="https://www.bigcommerce.com" rel="noopener noreferrer" target="_blank">
+              Official Website ↗
+            </a>
+</div>
+</div>
+<!-- Tool 4: Wix -->
+<div class="tool-card bg-surface-container/70 backdrop-blur-md rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between border border-surface-container-high/40" data-categories="store-builders" data-name="Wix" data-tags="#ShopifyAlternatives visual editor drag and drop boutique">
+<div class="space-y-4">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary font-headline-sm font-bold">
+                Wx
+              </div>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant font-label-code text-label-code">
+                Visual Studio
+              </span>
+</div>
+<div>
+<div class="font-label-caps text-label-caps text-on-surface-variant uppercase">Drag-and-Drop Visual Builder</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Wix</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<strong class="text-on-surface font-medium">Best suited for:</strong> Small boutique shops, solo makers, and creators with under 500 SKUs wanting rapid visual layouts.
+            </p>
+<ul class="space-y-2 pt-2 text-on-surface-variant font-body-sm text-body-sm">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>Pixel-precise visual canvas editor</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>Integrated appointment &amp; booking tools</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">info</span>
+<span class="font-label-code text-label-code">Fixed layout structures once picked</span>
+</li>
+</ul>
+</div>
+<div class="pt-6 mt-4 space-y-2">
+<a class="w-full inline-flex items-center justify-center font-title-md text-title-md bg-surface-container-high text-on-surface py-2.5 rounded-full hover:bg-surface-bright transition-all min-h-[44px]" href="https://www.wix.com/upgrade/website" rel="noopener noreferrer" target="_blank">
+              Check Current Pricing ↗
+            </a>
+<a class="w-full inline-flex items-center justify-center font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface py-2 transition-colors min-h-[44px]" href="https://www.wix.com" rel="noopener noreferrer" target="_blank">
+              Official Website ↗
+            </a>
+</div>
+</div>
+<!-- Tool 5: Zoho Commerce -->
+<div class="tool-card bg-surface-container/70 backdrop-blur-md rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between border border-surface-container-high/40" data-categories="store-builders inventory-sync crm-support" data-name="Zoho Commerce" data-tags="zoho inventory books crm erp suite">
+<div class="space-y-4">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-on-surface font-headline-sm font-bold">
+                Zc
+              </div>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant font-label-code text-label-code">
+                Direct Link · Provider Website
+              </span>
+</div>
+<div>
+<div class="font-label-caps text-label-caps text-on-surface-variant uppercase">Integrated Business Suite</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Zoho Commerce</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<strong class="text-on-surface font-medium">Best suited for:</strong> Companies already operating within Zoho Books, Zoho Inventory, or Zoho CRM infrastructure.
+            </p>
+<ul class="space-y-2 pt-2 text-on-surface-variant font-body-sm text-body-sm">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>Native Zoho ecosystem ledger sync</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>Built-in warehouse order routing</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">info</span>
+<span class="font-label-code text-label-code">Specialized integration directory</span>
+</li>
+</ul>
+</div>
+<div class="pt-6 mt-4 space-y-2">
+<a class="w-full inline-flex items-center justify-center font-title-md text-title-md bg-surface-container-high text-on-surface py-2.5 rounded-full hover:bg-surface-bright transition-all min-h-[44px]" href="https://www.zoho.com/commerce/pricing.html" rel="noopener noreferrer" target="_blank">
+              Check Current Pricing ↗
+            </a>
+<a class="w-full inline-flex items-center justify-center font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface py-2 transition-colors min-h-[44px]" href="https://www.zoho.com/commerce" rel="noopener noreferrer" target="_blank">
+              Official Website ↗
+            </a>
+</div>
+</div>
+<!-- Tool 6: Stripe -->
+<div class="tool-card bg-surface-container/70 backdrop-blur-md rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between border border-surface-container-high/40" data-categories="payment-gateways" data-name="Stripe" data-tags="#GlobalPayments developer api payments radar checkout">
+<div class="space-y-4">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary font-headline-sm font-bold">
+                St
+              </div>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant font-label-code text-label-code">
+                Financial Rails
+              </span>
+</div>
+<div>
+<div class="font-label-caps text-label-caps text-on-surface-variant uppercase">Global Payment Infrastructure</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Stripe</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<strong class="text-on-surface font-medium">Best suited for:</strong> Modern developers and global businesses demanding flexible custom APIs and low checkout friction.
+            </p>
+<ul class="space-y-2 pt-2 text-on-surface-variant font-body-sm text-body-sm">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>Global currencies &amp; local payment methods</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>Stripe Radar machine-learning fraud defense</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">info</span>
+<span class="font-label-code text-label-code">Published US rate: 2.9% + 30¢</span>
+</li>
+</ul>
+</div>
+<div class="pt-6 mt-4 space-y-2">
+<a class="w-full inline-flex items-center justify-center font-title-md text-title-md bg-surface-container-high text-on-surface py-2.5 rounded-full hover:bg-surface-bright transition-all min-h-[44px]" href="https://stripe.com/pricing" rel="noopener noreferrer" target="_blank">
+              Check Current Pricing ↗
+            </a>
+<a class="w-full inline-flex items-center justify-center font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface py-2 transition-colors min-h-[44px]" href="https://stripe.com" rel="noopener noreferrer" target="_blank">
+              Official Website ↗
+            </a>
+</div>
+</div>
+<!-- Tool 7: Razorpay -->
+<div class="tool-card bg-surface-container/70 backdrop-blur-md rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between border border-surface-container-high/40" data-categories="payment-gateways" data-name="Razorpay" data-tags="#GlobalPayments upi rupay netbanking india recurring payments">
+<div class="space-y-4">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-tertiary font-headline-sm font-bold">
+                Rz
+              </div>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant font-label-code text-label-code">
+                UPI &amp; Regional Rails
+              </span>
+</div>
+<div>
+<div class="font-label-caps text-label-caps text-on-surface-variant uppercase">Payment &amp; Neo-Banking Gateway</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Razorpay</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<strong class="text-on-surface font-medium">Best suited for:</strong> Indian and South Asian markets, UPI-first mobile checkouts, and recurring mandate collections.
+            </p>
+<ul class="space-y-2 pt-2 text-on-surface-variant font-body-sm text-body-sm">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
+<span>Optimized UPI, RuPay, and Netbanking rails</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
+<span>Native Subscriptions &amp; Payment Links</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">info</span>
+<span class="font-label-code text-label-code">Standard ~2% domestic transaction fee</span>
+</li>
+</ul>
+</div>
+<div class="pt-6 mt-4 space-y-2">
+<a class="w-full inline-flex items-center justify-center font-title-md text-title-md bg-surface-container-high text-on-surface py-2.5 rounded-full hover:bg-surface-bright transition-all min-h-[44px]" href="https://razorpay.com/pricing" rel="noopener noreferrer" target="_blank">
+              Check Current Pricing ↗
+            </a>
+<a class="w-full inline-flex items-center justify-center font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface py-2 transition-colors min-h-[44px]" href="https://razorpay.com" rel="noopener noreferrer" target="_blank">
+              Official Website ↗
+            </a>
+</div>
+</div>
+<!-- Tool 8: Klaviyo -->
+<div class="tool-card bg-surface-container/70 backdrop-blur-md rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between border border-surface-container-high/40" data-categories="email-automation ecommerce-marketing" data-name="Klaviyo" data-tags="email sms marketing automation dtc shopify sync">
+<div class="space-y-4">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-secondary font-headline-sm font-bold">
+                Kl
+              </div>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant font-label-code text-label-code">
+                External Link — Pending Partner Status
+              </span>
+</div>
+<div>
+<div class="font-label-caps text-label-caps text-on-surface-variant uppercase">E-commerce Lifecycle Automation</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Klaviyo</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<strong class="text-on-surface font-medium">Best suited for:</strong> Direct-to-consumer (DTC) brands scaling customer repeat purchase rates via event-driven email &amp; SMS.
+            </p>
+<ul class="space-y-2 pt-2 text-on-surface-variant font-body-sm text-body-sm">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Deep native Shopify &amp; WooCommerce sync</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Segment builder &amp; customer flow triggers</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">info</span>
+<span class="font-label-code text-label-code">Tiered pricing scales by contact list count</span>
+</li>
+</ul>
+</div>
+<div class="pt-6 mt-4 space-y-2">
+<a class="w-full inline-flex items-center justify-center font-title-md text-title-md bg-surface-container-high text-on-surface py-2.5 rounded-full hover:bg-surface-bright transition-all min-h-[44px]" href="https://www.klaviyo.com/pricing" rel="noopener noreferrer" target="_blank">
+              Check Current Pricing ↗
+            </a>
+<a class="w-full inline-flex items-center justify-center font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface py-2 transition-colors min-h-[44px]" href="https://www.klaviyo.com" rel="noopener noreferrer" target="_blank">
+              Official Website ↗
+            </a>
+</div>
+</div>
+</div>
+<!-- Empty Filter State -->
+<div class="hidden bg-surface-container/60 rounded-2xl p-12 text-center my-6 border border-dashed border-surface-container-high" id="no-tools-found">
+<span class="material-symbols-outlined text-primary text-[48px] mb-3">search_off</span>
+<h4 class="font-headline-sm text-on-surface">No Tools Match Your Current Filter</h4>
+<p class="font-body-md text-on-surface-variant mt-2 max-w-md mx-auto">Try clearing your search term or switching to another category pill to browse available platforms.</p>
+<button class="mt-6 inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary-container text-on-primary-container font-title-md hover:shadow-lg transition-all min-h-[44px]" onclick="resetAllFilters()" type="button">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+<span>View All Tools</span>
+</button>
+</div>
+</section>
+<!-- SECTION 3: PLATFORM COMPARISON ARCHITECTURE BENCHMARK (With Touch Scroll Indicator for Mobile) -->
+<section class="max-w-[1280px] mx-auto px-6 lg:px-12 py-16" id="comparison-matrix">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
+<div>
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">SECTION 03 // MATRIX OVERVIEW</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">E-Commerce Platform Architecture Benchmark</h2>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-code text-label-code bg-surface-container px-3 py-1.5 rounded-full">
+<span class="material-symbols-outlined text-[16px] text-primary">menu_book</span>
+<span>Public Specifications &amp; Vendor Data</span>
+</div>
+</div>
+<!-- Touch Scroll Hint for Mobile/Android -->
+<div class="flex items-center gap-2 text-xs font-label-code text-primary sm:hidden mb-2 px-1">
+<span class="material-symbols-outlined text-[16px] animate-pulse">swipe</span>
+<span>Scroll horizontally to view full matrix specs</span>
+</div>
+<!-- Clean Comparison Data Matrix Container -->
+<div class="bg-surface-container/70 backdrop-blur-md rounded-2xl p-2 sm:p-6 shadow-xl border border-surface-container-high/40 overflow-hidden">
+<div class="overflow-x-auto scrollbar-thin">
+<table class="w-full text-left border-collapse min-w-[760px]">
+<thead>
+<tr class="bg-surface-container-high/60 text-on-surface-variant font-label-caps text-label-caps uppercase tracking-wider">
+<th class="p-4 rounded-l-xl">Platform</th>
+<th class="p-4">Best For</th>
+<th class="p-4">Setup Complexity</th>
+<th class="p-4">Pricing Model</th>
+<th class="p-4">Core Capabilities &amp; Architecture</th>
+<th class="p-4 rounded-r-xl text-right">Provider</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high/40 font-body-sm text-body-sm">
+<!-- Row: Shopify -->
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="p-4 font-headline-sm text-title-md text-on-surface font-bold">
+                Shopify
+                <span class="block font-label-code text-label-code text-on-surface-variant font-normal">Fully Hosted SaaS</span>
+</td>
+<td class="p-4 text-on-surface-variant">Turnkey stores &amp; fast-scaling DTC merchants</td>
+<td class="p-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-primary-container/20 text-primary font-label-code text-label-code">
+                  Low (Beginner-Friendly)
+                </span>
+</td>
+<td class="p-4">
+<div class="font-label-code text-label-code text-on-surface">Monthly Subscription</div>
+<div class="text-on-surface-variant font-label-code text-label-code">+ Card Processing Fee</div>
+</td>
+<td class="p-4 text-on-surface-variant max-w-xs">
+                Proprietary checkout, CDN hosting, POS sync, extensive app directory, integrated merchant tools.
+              </td>
+<td class="p-4 text-right">
+<a class="inline-flex items-center gap-1 font-title-md text-body-sm text-primary hover:underline min-h-[44px] px-2" href="https://www.shopify.com" rel="noopener noreferrer" target="_blank">
+<span>Visit</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</td>
+</tr>
+<!-- Row: WooCommerce -->
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="p-4 font-headline-sm text-title-md text-on-surface font-bold">
+                WooCommerce
+                <span class="block font-label-code text-label-code text-on-surface-variant font-normal">Self-Hosted WP Core</span>
+</td>
+<td class="p-4 text-on-surface-variant">Complete data control &amp; custom WP architectures</td>
+<td class="p-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-tertiary-container/20 text-tertiary font-label-code text-label-code">
+                  Moderate (Setup Required)
+                </span>
+</td>
+<td class="p-4">
+<div class="font-label-code text-label-code text-on-surface">Free Open Source</div>
+<div class="text-on-surface-variant font-label-code text-label-code">+ Server &amp; Plugin Costs</div>
+</td>
+<td class="p-4 text-on-surface-variant max-w-xs">
+                Self-hosted server required, infinite source-code flexibility, unrestricted database queries.
+              </td>
+<td class="p-4 text-right">
+<a class="inline-flex items-center gap-1 font-title-md text-body-sm text-primary hover:underline min-h-[44px] px-2" href="https://woocommerce.com" rel="noopener noreferrer" target="_blank">
+<span>Visit</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</td>
+</tr>
+<!-- Row: BigCommerce -->
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="p-4 font-headline-sm text-title-md text-on-surface font-bold">
+                BigCommerce
+                <span class="block font-label-code text-label-code text-on-surface-variant font-normal">Enterprise SaaS</span>
+</td>
+<td class="p-4 text-on-surface-variant">Mid-to-large catalogs, multi-store &amp; B2B setups</td>
+<td class="p-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-container/20 text-secondary font-label-code text-label-code">
+                  Moderate-High
+                </span>
+</td>
+<td class="p-4">
+<div class="font-label-code text-label-code text-on-surface">Tiered SaaS Subscription</div>
+<div class="text-on-surface-variant font-label-code text-label-code">0% Added Platform Fees</div>
+</td>
+<td class="p-4 text-on-surface-variant max-w-xs">
+                Robust native product configurations, headless REST/GraphQL endpoints, multi-currency routing.
+              </td>
+<td class="p-4 text-right">
+<a class="inline-flex items-center gap-1 font-title-md text-body-sm text-primary hover:underline min-h-[44px] px-2" href="https://www.bigcommerce.com" rel="noopener noreferrer" target="_blank">
+<span>Visit</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</td>
+</tr>
+<!-- Row: Wix -->
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="p-4 font-headline-sm text-title-md text-on-surface font-bold">
+                Wix
+                <span class="block font-label-code text-label-code text-on-surface-variant font-normal">Hosted Visual Editor</span>
+</td>
+<td class="p-4 text-on-surface-variant">Visual-first creators, simple boutique shops &amp; artists</td>
+<td class="p-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-primary-container/20 text-primary font-label-code text-label-code">
+                  Low (Visual Canvas)
+                </span>
+</td>
+<td class="p-4">
+<div class="font-label-code text-label-code text-on-surface">Monthly/Annual Tier</div>
+<div class="text-on-surface-variant font-label-code text-label-code">+ Standard Gateway Rates</div>
+</td>
+<td class="p-4 text-on-surface-variant max-w-xs">
+                Drag-and-drop designer, integrated calendar bookings, hosting &amp; SSL included.
+              </td>
+<td class="p-4 text-right">
+<a class="inline-flex items-center gap-1 font-title-md text-body-sm text-primary hover:underline min-h-[44px] px-2" href="https://www.wix.com" rel="noopener noreferrer" target="_blank">
+<span>Visit</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</td>
+</tr>
+<!-- Row: Zoho Commerce -->
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="p-4 font-headline-sm text-title-md text-on-surface font-bold">
+                Zoho Commerce
+                <span class="block font-label-code text-label-code text-on-surface-variant font-normal">Integrated Business Cloud</span>
+</td>
+<td class="p-4 text-on-surface-variant">SMEs leveraging the existing Zoho suite ecosystem</td>
+<td class="p-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-variant text-on-surface font-label-code text-label-code">
+                  Moderate
+                </span>
+</td>
+<td class="p-4">
+<div class="font-label-code text-label-code text-on-surface">Flat Monthly/Annual SaaS</div>
+<div class="text-on-surface-variant font-label-code text-label-code">Direct Third-Party Gateways</div>
+</td>
+<td class="p-4 text-on-surface-variant max-w-xs">
+                Direct hooks into Zoho Inventory, CRM, Books, automated accounting &amp; shipping integrations.
+              </td>
+<td class="p-4 text-right">
+<a class="inline-flex items-center gap-1 font-title-md text-body-sm text-primary hover:underline min-h-[44px] px-2" href="https://www.zoho.com/commerce" rel="noopener noreferrer" target="_blank">
+<span>Visit</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Explicit Legal / Telemetry Verification Note (Honest, grounded) -->
+<div class="mt-4 pt-4 flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm bg-surface-container-high/40 p-3 rounded-lg">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">info</span>
+<span>All pricing, tier allowances, and feature inclusions are subject to change by respective platforms. Check current specifications directly on official vendor pages. Updated 2026.</span>
+</div>
+</div>
+</section>
+<!-- SECTION 4: BEGINNER GUIDE — "STARTING AN ONLINE STORE? START HERE." -->
+<section class="max-w-[1280px] mx-auto px-6 lg:px-12 py-16" id="operational-blueprint">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+<div>
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">SECTION 04 // OPERATIONAL BLUEPRINT</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Starting an Online Store? Start Here.</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          A systematic launch blueprint helping you navigate platform decisions, minimize setup friction, and organize store operations.
+        </p>
+</div>
+<!-- 6-Step Sequential Cards Grid (1 col on small screens, 2 on tablet, 3 on desktop) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Step 01 -->
+<div class="relative bg-surface-container/70 backdrop-blur-md rounded-2xl p-6 shadow-sm flex flex-col justify-between border border-surface-container-high/40">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-display text-headline-lg text-primary/40 font-bold">01</span>
+<span class="font-label-code text-label-code text-primary px-2.5 py-1 rounded bg-primary-container/20">Milestone 1</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Choose Your Business Model</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Determine inventory reality before choosing software. Clarify physical warehousing, print-on-demand fulfillment, digital product downloads, or dropshipping supply chains.
+            </p>
+</div>
+<div class="mt-6 pt-4 font-label-code text-label-code text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">arrow_forward</span>
+<span>Typical Est. Startup: $0 - $5,000</span>
+</div>
+</div>
+<!-- Step 02 -->
+<div class="relative bg-surface-container/70 backdrop-blur-md rounded-2xl p-6 shadow-sm flex flex-col justify-between border border-surface-container-high/40">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-display text-headline-lg text-secondary/40 font-bold">02</span>
+<span class="font-label-code text-label-code text-secondary px-2.5 py-1 rounded bg-secondary-container/20">Milestone 2</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Select an E-commerce Platform</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Weigh turnkey hosted convenience (Shopify, BigCommerce) against self-hosted open-source control (WooCommerce). Align tech abilities with time allocation.
+            </p>
+</div>
+<div class="mt-6 pt-4 font-label-code text-label-code text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">arrow_forward</span>
+<span>Goal: Evaluate Free Trials First</span>
+</div>
+</div>
+<!-- Step 03 -->
+<div class="relative bg-surface-container/70 backdrop-blur-md rounded-2xl p-6 shadow-sm flex flex-col justify-between border border-surface-container-high/40">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-display text-headline-lg text-tertiary/40 font-bold">03</span>
+<span class="font-label-code text-label-code text-tertiary px-2.5 py-1 rounded bg-tertiary-container/20">Milestone 3</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Set Up Secure Payments</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Integrate redundant payment rails (Stripe, PayPal, UPI, or regional providers). Ensure mandatory SSL, PCI-DSS compliance checks, and clear checkout terms.
+            </p>
+</div>
+<div class="mt-6 pt-4 font-label-code text-label-code text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary">arrow_forward</span>
+<span>Focus: Checkout Security &amp; Trust</span>
+</div>
+</div>
+<!-- Step 04 -->
+<div class="relative bg-surface-container/70 backdrop-blur-md rounded-2xl p-6 shadow-sm flex flex-col justify-between border border-surface-container-high/40">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-display text-headline-lg text-primary/40 font-bold">04</span>
+<span class="font-label-code text-label-code text-primary px-2.5 py-1 rounded bg-primary-container/20">Milestone 4</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Organize Products &amp; Inventory</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Standardize your SKU schema, compose concise product descriptions with precise dimensions, configure tax categories, and upload high-fidelity product imagery.
+            </p>
+</div>
+<div class="mt-6 pt-4 font-label-code text-label-code text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">arrow_forward</span>
+<span>Standard: High-Resolution Assets</span>
+</div>
+</div>
+<!-- Step 05 -->
+<div class="relative bg-surface-container/70 backdrop-blur-md rounded-2xl p-6 shadow-sm flex flex-col justify-between border border-surface-container-high/40">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-display text-headline-lg text-secondary/40 font-bold">05</span>
+<span class="font-label-code text-label-code text-secondary px-2.5 py-1 rounded bg-secondary-container/20">Milestone 5</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Configure Shipping &amp; Logistics</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Define transparent shipping zones: real-time carrier rates vs. flat fee models. Draft straightforward return, refund, and package damage resolution protocols.
+            </p>
+</div>
+<div class="mt-6 pt-4 font-label-code text-label-code text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">arrow_forward</span>
+<span>Key: Clear Shipping Expectations</span>
+</div>
+</div>
+<!-- Step 06 -->
+<div class="relative bg-surface-container/70 backdrop-blur-md rounded-2xl p-6 shadow-sm flex flex-col justify-between border border-surface-container-high/40">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-display text-headline-lg text-tertiary/40 font-bold">06</span>
+<span class="font-label-code text-label-code text-tertiary px-2.5 py-1 rounded bg-tertiary-container/20">Milestone 6</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Start Marketing &amp; Automation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Install basic analytics and tracking before driving first traffic. Deploy automated cart abandonment workflows (Klaviyo) and engage your early customer base.
+            </p>
+</div>
+<div class="mt-6 pt-4 font-label-code text-label-code text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary">arrow_forward</span>
+<span>Milestone: First Store Transactions</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: TRUST AND TRANSPARENCY PROTOCOL (ETHICAL AFFILIATE DISCLOSURE) -->
+<section class="max-w-[1280px] mx-auto px-6 lg:px-12 py-16" id="transparency-protocol">
+<div class="relative bg-surface-container/80 backdrop-blur-xl rounded-2xl p-8 sm:p-10 shadow-2xl overflow-hidden border border-surface-container-high/50">
+<!-- Subtle Glow Accent Line -->
+<div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent"></div>
+<div class="flex flex-col lg:flex-row items-start gap-8">
+<div class="w-16 h-16 rounded-2xl bg-primary-container/20 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1;">shield</span>
+</div>
+<div class="space-y-4 flex-1">
+<div class="flex flex-wrap items-center gap-3">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">INTEGRITY ASSURANCE PROTOCOL</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high font-label-code text-label-code text-on-surface-variant">REV 2026.1</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">
+              Affiliate Transparency Protocol &amp; Editorial Standards
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              At UNKNOWN, our directory indexes tools based on documented software capabilities, public feature matrices, community reliability, and architectural suitability. Some external links across this platform are qualifying affiliate partner links or pending partner status. When you register or purchase a subscription through these links upon affiliate program approval, UNKNOWN may receive an affiliate commission at <strong class="text-on-surface">zero additional cost to you</strong>.
+            </p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+<div class="bg-surface-container-lowest/60 rounded-xl p-4 space-y-1">
+<div class="flex items-center gap-2 text-primary font-title-md text-title-md font-bold">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Honest Editorial Scope</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">We never accept compensation to invent artificial reviews or manipulate directory rankings.</p>
+</div>
+<div class="bg-surface-container-lowest/60 rounded-xl p-4 space-y-1">
+<div class="flex items-center gap-2 text-primary font-title-md text-title-md font-bold">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+<span>Zero Price Markups</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Using our referral links never adds fees or increases your subscription cost.</p>
+</div>
+<div class="bg-surface-container-lowest/60 rounded-xl p-4 space-y-1">
+<div class="flex items-center gap-2 text-primary font-title-md text-title-md font-bold">
+<span class="material-symbols-outlined text-[18px]">layers</span>
+<span>Public Architecture Focus</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Evaluations are compiled from published documentation, official APIs, and user manuals.</p>
+</div>
+</div>
+<div class="pt-2">
+<p class="font-body-sm text-body-sm text-on-surface-variant/80">
+                Have questions regarding our architectural reviews or want to suggest updates based on recent vendor releases? Contact our editorial team at <span class="font-label-code text-label-code text-primary">editorial@unknown.tech</span>.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- FOOTER WITH HONEST YEAR & WORKING ANCHORS -->
+<footer class="w-full bg-surface-container-lowest border-t border-surface-container-high/40">
+<div class="max-w-[1280px] mx-auto px-6 lg:px-12 pt-space-2xl pb-space-lg">
+<div class="p-space-lg rounded-xl bg-surface-container mb-space-2xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] border border-surface-container-high/40">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-0.5 text-[20px]">shield</span>
+<div class="space-y-1">
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-wider">Affiliate Transparency Statement</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Affiliate Disclosure: Some links on UNKNOWN may be affiliate links. We may earn a commission when you purchase through these links upon program approval, at no additional cost to you. Our recommendations prioritise real utility, architecture suitability, and published technical capabilities.
+          </p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl mb-space-2xl">
+<div class="lg:col-span-2 space-y-space-md">
+<div class="flex items-center gap-3">
+<img alt="UNKNOWN Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBxryhSDPQlsgWF-J2_jyTUZavj1eq-hpgH8F0U8PHyhspGwc7LkE6Mdir0IBpBBvsKyZM5S2q006UoAM0kxe9oHrx4KKxF4W4VcM0Zo3DXIpqFWUUYveli3ahwB8L7gTIlX4qMgoGQnSStTojDJBPpC6z8miM7Rd-HW_0TZ9WicrNiBeaJqzTuFC9ULVNfJ2FWSq6u_qZrZQ9j8AmMi6SrO8kKjoIcaxVp7WIEyewh"/>
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-bold">UNKNOWN</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
+          Discover the Tools. Build Your Future. Curated computational index and clear architecture directory for builders, agencies, and online ventures.
+        </p>
+<div class="flex items-center gap-3 pt-space-xs">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high font-label-code text-label-code text-primary">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>Index Updated 2026
+        </span>
+</div>
+</div>
+<div class="space-y-space-sm">
+<div class="font-label-caps text-label-caps text-on-surface uppercase tracking-wider">Navigation</div>
+<ul class="space-y-2.5">
+<li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-1 block" data-path="home" href="#popular-directory">Home</a></li>
+<li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-1 flex items-center justify-between" data-path="web-and-hosting" href="#"><span>Web &amp; Hosting</span> <span class="text-[10px] font-label-code px-1.5 py-0.5 rounded bg-surface-container-high">Coming Soon</span></a></li>
+<li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-1 flex items-center justify-between" data-path="business-software" href="#"><span>Business Software</span> <span class="text-[10px] font-label-code px-1.5 py-0.5 rounded bg-surface-container-high">Coming Soon</span></a></li>
+<li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-1 block" data-path="ecommerce" href="#popular-directory">Ecommerce Directory</a></li>
+<li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-1 block" data-path="guides" href="#operational-blueprint">Guides</a></li>
+<li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-1 block" data-path="about-us" href="#transparency-protocol">About &amp; Integrity</a></li>
+</ul>
+</div>
+<div class="space-y-space-sm">
+<div class="font-label-caps text-label-caps text-on-surface uppercase tracking-wider">Resources &amp; Community</div>
+<ul class="space-y-2.5">
+<li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-1 block" href="https://instagram.com" rel="noopener noreferrer" target="_blank">Instagram ↗</a></li>
+<li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-1 block" href="https://reddit.com" rel="noopener noreferrer" target="_blank">Reddit ↗</a></li>
+<li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-1 block" href="https://discord.com" rel="noopener noreferrer" target="_blank">Discord ↗</a></li>
+<li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-1 block" data-path="guides" href="#operational-blueprint">Beginners Guide</a></li>
+<li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-1 block" data-path="home" href="#popular-directory">Tool Directory</a></li>
+</ul>
+</div>
+<div class="space-y-space-sm">
+<div class="font-label-caps text-label-caps text-on-surface uppercase tracking-wider">Legal</div>
+<ul class="space-y-2.5">
+<li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-1 block" href="#transparency-protocol">Privacy Policy [Editorial Section]</a></li>
+<li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-1 block" href="#transparency-protocol">Terms and Conditions [Editorial Section]</a></li>
+<li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-1 block" href="#transparency-protocol">Affiliate Disclosure</a></li>
+<li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-1 block" data-path="about-us" href="#transparency-protocol">Contact Editorial Desk</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-on-surface-variant border-t border-surface-container-high/40">
+<p>© 2026 UNKNOWN. All rights reserved. Precision Software Architecture.</p>
+<div class="flex items-center gap-2 font-label-code text-label-code text-primary">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>Curated Architectural Index · 2026</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- VANILLA JS FOR SEARCH, FILTERING, & MOBILE RESPONSIVENESS -->
+<script>
+  let activeCategory = 'all';
+  let activeSearchTerm = '';
+
+  const searchInput = document.getElementById('tool-search-input');
+  const searchClearBtn = document.getElementById('search-clear-btn');
+  const toolCards = document.querySelectorAll('.tool-card');
+  const filterPills = document.querySelectorAll('.filter-pill');
+  const noToolsFoundEl = document.getElementById('no-tools-found');
+  const filterFeedbackBar = document.getElementById('filter-feedback-bar');
+  const visibleCountEl = document.getElementById('visible-tool-count');
+
+  function applyFilterAndSearch() {
+    let visibleCount = 0;
+    const term = activeSearchTerm.trim().toLowerCase();
+
+    toolCards.forEach(card => {
+      const name = (card.getAttribute('data-name') || '').toLowerCase();
+      const tags = (card.getAttribute('data-tags') || '').toLowerCase();
+      const categories = (card.getAttribute('data-categories') || '').toLowerCase();
+      const textContent = card.innerText.toLowerCase();
+
+      const matchesCategory = (activeCategory === 'all') || categories.includes(activeCategory);
+      const matchesSearch = !term || name.includes(term) || tags.includes(term) || textContent.includes(term);
+
+      if (matchesCategory && matchesSearch) {
+        card.classList.remove('hidden');
+        visibleCount++;
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+
+    if (visibleCountEl) visibleCountEl.textContent = visibleCount;
+
+    if (visibleCount === 0) {
+      noToolsFoundEl.classList.remove('hidden');
+    } else {
+      noToolsFoundEl.classList.add('hidden');
+    }
+
+    if (activeCategory !== 'all' || term.length > 0) {
+      filterFeedbackBar.classList.remove('hidden');
+      filterFeedbackBar.classList.add('flex');
+    } else {
+      filterFeedbackBar.classList.add('hidden');
+      filterFeedbackBar.classList.remove('flex');
+    }
+
+    if (term.length > 0) {
+      searchClearBtn.classList.remove('hidden');
+      searchClearBtn.classList.add('flex');
+    } else {
+      searchClearBtn.classList.add('hidden');
+      searchClearBtn.classList.remove('flex');
+    }
+  }
+
+  function applyCategoryFilter(cat) {
+    activeCategory = cat;
+    filterPills.forEach(pill => {
+      if (pill.getAttribute('data-category') === cat) {
+        pill.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        pill.classList.add('bg-primary-container', 'text-on-primary-container', 'shadow-sm');
+      } else {
+        pill.classList.add('bg-surface-container', 'text-on-surface-variant');
+        pill.classList.remove('bg-primary-container', 'text-on-primary-container', 'shadow-sm');
+      }
+    });
+    applyFilterAndSearch();
+  }
+
+  filterPills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      const cat = pill.getAttribute('data-category') || 'all';
+      applyCategoryFilter(cat);
+    });
+  });
+
+  searchInput.addEventListener('input', (e) => {
+    activeSearchTerm = e.target.value;
+    applyFilterAndSearch();
+  });
+
+  searchClearBtn.addEventListener('click', () => {
+    searchInput.value = '';
+    activeSearchTerm = '';
+    applyFilterAndSearch();
+    searchInput.focus();
+  });
+
+  document.querySelectorAll('.trending-tag-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const tag = btn.getAttribute('data-tag') || '';
+      searchInput.value = tag;
+      activeSearchTerm = tag;
+      applyFilterAndSearch();
+      const target = document.getElementById('popular-directory');
+      if (target) target.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  function resetAllFilters() {
+    searchInput.value = '';
+    activeSearchTerm = '';
+    applyCategoryFilter('all');
+  }
+
+  // Mobile Menu Toggle
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+  const mobileMenuIcon = document.getElementById('mobile-menu-icon');
+
+  function toggleMobileMenu() {
+    const isClosed = mobileMenuOverlay.classList.contains('hidden');
+    if (isClosed) {
+      mobileMenuOverlay.classList.remove('hidden');
+      mobileMenuIcon.textContent = 'close';
+    } else {
+      mobileMenuOverlay.classList.add('hidden');
+      mobileMenuIcon.textContent = 'menu';
+    }
+  }
+
+  if (mobileMenuBtn) {
+    mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+  }
+</script>
+</body></html>

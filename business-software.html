@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-fixed-variant": "#5a00c6", "surface-container-low": "#0d1c2d", "inverse-surface": "#d4e4fa", "surface-dim": "#051424", "surface-tint": "#d2bbff", "surface-bright": "#2c3a4c", "on-primary": "#3f008e", "on-primary-container": "#ede0ff", "tertiary": "#c0c1ff", "inverse-on-surface": "#233143", "secondary-container": "#6f00be", "primary-fixed": "#eaddff", "on-tertiary": "#1000a9", "on-secondary-container": "#d6a9ff", "surface-variant": "#273647", "surface-container-high": "#1c2b3c", "secondary": "#ddb7ff", "primary": "#d2bbff", "on-background": "#d4e4fa", "on-error": "#690005", "secondary-fixed-dim": "#ddb7ff", "error": "#ffb4ab", "on-surface-variant": "#ccc3d8", "surface-container": "#122131", "tertiary-fixed-dim": "#c0c1ff", "surface-container-highest": "#273647", "tertiary-fixed": "#e1e0ff", "on-secondary": "#490080", "on-tertiary-fixed": "#07006c", "on-primary-fixed": "#25005a", "surface": "#051424", "outline": "#958da1", "on-tertiary-container": "#e5e3ff", "on-tertiary-fixed-variant": "#2f2ebe", "on-surface": "#d4e4fa", "secondary-fixed": "#f0dbff", "tertiary-container": "#5254df", "outline-variant": "#4a4455", "on-secondary-fixed": "#2c0051", "error-container": "#93000a", "primary-fixed-dim": "#d2bbff", "primary-container": "#7c3aed", "on-error-container": "#ffdad6", "on-secondary-fixed-variant": "#6900b3", "surface-container-lowest": "#010f1f", "background": "#051424", "inverse-primary": "#732ee4" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-mobile": "1rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "space-2xl": "4rem", "margin-mobile": "1.25rem", "gutter": "1.5rem", "space-md": "1rem", "space-xs": "0.25rem", "margin": "3rem" }, "fontFamily": { "headline-lg": [ "Space Grotesk" ], "label-code": [ "JetBrains Mono" ], "display": [ "Space Grotesk" ], "display-mobile": [ "Space Grotesk" ], "headline-lg-mobile": [ "Space Grotesk" ], "body-md": [ "Plus Jakarta Sans" ], "headline-sm": [ "Space Grotesk" ], "title-lg": [ "Plus Jakarta Sans" ], "body-sm": [ "Plus Jakarta Sans" ], "headline-md": [ "Space Grotesk" ], "body-lg": [ "Plus Jakarta Sans" ], "label-caps": [ "Space Grotesk" ], "title-md": [ "Plus Jakarta Sans" ] }, "fontSize": { "headline-lg": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-code": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" } ], "display": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "display-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-md": [ "15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-sm": [ "22px", { "lineHeight": "30px", "letterSpacing": "0em", "fontWeight": "600" } ], "title-lg": [ "18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-sm": [ "13px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-md": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-lg": [ "18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" } ], "label-caps": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "700" } ], "title-md": [ "16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1280px] mx-auto px-6 lg:px-12 flex items-center justify-between gap-4"><div class="flex items-center gap-3"><a class="flex items-center gap-3" data-path="home" href="#"><img alt="UNKNOWN Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBxryhSDPQlsgWF-J2_jyTUZavj1eq-hpgH8F0U8PHyhspGwc7LkE6Mdir0IBpBBvsKyZM5S2q006UoAM0kxe9oHrx4KKxF4W4VcM0Zo3DXIpqFWUUYveli3ahwB8L7gTIlX4qMgoGQnSStTojDJBPpC6z8miM7Rd-HW_0TZ9WicrNiBeaJqzTuFC9ULVNfJ2FWSq6u_qZrZQ9j8AmMi6SrO8kKjoIcaxVp7WIEyewh"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-bold">UNKNOWN</span><span class="hidden sm:inline-block font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Discover the Tools. Build Your Future.</span></div></a></div><nav class="hidden xl:flex items-center gap-1" data-active-classes="bg-primary-container text-on-primary-container font-title-md text-title-md rounded-full px-4 py-2"><a class="px-3 py-2 rounded-full font-title-md text-title-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="home" href="#">Home</a><a class="px-3 py-2 rounded-full font-title-md text-title-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="web-&amp;-hosting" href="#">Web &amp; Hosting</a><a class="px-3 py-2 rounded-full font-title-md text-title-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="business-software" href="#">Business Software</a><a class="px-3 py-2 rounded-full font-title-md text-title-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="ecommerce" href="#">Ecommerce</a><a class="px-3 py-2 rounded-full font-title-md text-title-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="guides" href="#">Guides</a><a class="px-3 py-2 rounded-full font-title-md text-title-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="about-us" href="#">About Us</a></nav><div class="flex items-center gap-3"><a class="hidden sm:inline-flex items-center justify-center font-title-md text-title-md bg-primary-container text-on-primary-container px-5 py-2.5 rounded-full hover:shadow-[0_0_20px_rgba(124,58,237,0.45)] transition-all duration-300" data-path="home" href="#">Explore Digital Tools</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><button aria-label="Toggle Navigation Menu" class="xl:hidden p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined">menu</span></button></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Nav State Injector Script for App Shell -->
+<script>
+    (function activateNav() {
+      const links = document.querySelectorAll('header nav a');
+      links.forEach(link => {
+        if (link.getAttribute('data-path') === 'business-software') {
+          link.className = 'bg-primary-container text-on-primary-container font-title-md text-title-md rounded-full px-4 py-2 transition-all shadow-[0_0_20px_rgba(124,58,237,0.45)]';
+        } else {
+          link.className = 'px-3 py-2 rounded-full font-title-md text-title-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all';
+        }
+      });
+    })();
+  </script>
+<!-- Ambient Glow Canvas -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[720px] h-[360px] bg-primary-container/15 rounded-full blur-[140px] pointer-events-none"></div>
+<div class="absolute top-96 -right-48 w-[480px] h-[480px] bg-tertiary-container/10 rounded-full blur-[130px] pointer-events-none"></div>
+<!-- Category Header & Overview Hero Block -->
+<section class="relative max-w-[1280px] mx-auto px-6 lg:px-12 pt-12 pb-16">
+<!-- Breadcrumb / Vector Badge -->
+<div class="flex flex-wrap items-center gap-3 mb-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-code text-label-code">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+          OPERATIONAL VECTOR // 02 — BUSINESS SOFTWARE &amp; AUTOMATION
+        </div>
+<span class="font-label-code text-label-code text-on-surface-variant/60">REV. 2025.04-STABLE</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+<div class="lg:col-span-8 space-y-4">
+<h1 class="font-display text-display text-on-surface tracking-tight">
+            Work Smarter.<br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-tertiary">Grow Faster.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            Discover vetted software that simplifies everyday business operations, streamlines automated pipelines, and eliminates repetitive busywork for solo founders and high-velocity engineering teams.
+          </p>
+</div>
+<!-- Telemetry Spec Snapshot Widget -->
+<div class="lg:col-span-4 bg-surface-container-low rounded-xl p-5 shadow-xl relative overflow-hidden">
+<div class="flex items-center justify-between pb-3">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">INDEX AUDIT STATUS</span>
+<span class="font-label-code text-label-code text-primary bg-primary-container/20 px-2 py-0.5 rounded-full">ACTIVE RUN</span>
+</div>
+<div class="grid grid-cols-3 gap-2 text-center pt-2">
+<div class="bg-surface-container p-2.5 rounded-lg">
+<span class="block font-headline-sm text-headline-sm text-on-surface">48</span>
+<span class="font-label-code text-[10px] text-on-surface-variant uppercase">Vetted Tools</span>
+</div>
+<div class="bg-surface-container p-2.5 rounded-lg">
+<span class="block font-headline-sm text-headline-sm text-primary">0%</span>
+<span class="font-label-code text-[10px] text-on-surface-variant uppercase">Ad Bias</span>
+</div>
+<div class="bg-surface-container p-2.5 rounded-lg">
+<span class="block font-headline-sm text-headline-sm text-tertiary">100%</span>
+<span class="font-label-code text-[10px] text-on-surface-variant uppercase">API Ready</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Category Filter Bar -->
+<div class="mt-10 flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
+<button class="px-4 py-2 rounded-full font-title-md text-title-md bg-primary-container text-on-primary-container whitespace-nowrap shadow-[0_0_15px_rgba(124,58,237,0.35)]">All Business Software</button>
+<button class="px-4 py-2 rounded-full font-title-md text-title-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors whitespace-nowrap">AI Tools &amp; LLMs</button>
+<button class="px-4 py-2 rounded-full font-title-md text-title-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors whitespace-nowrap">CRM &amp; Pipeline</button>
+<button class="px-4 py-2 rounded-full font-title-md text-title-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors whitespace-nowrap">Email Marketing</button>
+<button class="px-4 py-2 rounded-full font-title-md text-title-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors whitespace-nowrap">Workflow Automation</button>
+<button class="px-4 py-2 rounded-full font-title-md text-title-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors whitespace-nowrap">Productivity &amp; Docs</button>
+<button class="px-4 py-2 rounded-full font-title-md text-title-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors whitespace-nowrap">SEO &amp; Search Intelligence</button>
+</div>
+</section>
+<!-- Operational Telemetry Bar & Filter Console -->
+<section class="max-w-[1280px] mx-auto px-6 lg:px-12 mb-16">
+<div class="bg-surface-container rounded-xl p-6 lg:p-8 shadow-xl">
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-6">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">layers</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">SaaS Operations Stack // Vetted Toolchains</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Benchmark matrix curated for solo entrepreneurs, bootstrapped studios, and automated agency stacks.</p>
+</div>
+<!-- Search & Filter Controls -->
+<div class="flex flex-wrap items-center gap-3">
+<div class="relative flex-1 min-w-[240px]">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full pl-10 pr-4 py-2.5 rounded-full bg-surface-container-lowest text-on-surface font-body-sm text-body-sm placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-primary/40" placeholder="Filter stack by protocol or name..." type="text"/>
+</div>
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-3 py-1 rounded-full bg-surface-container-high font-label-code text-label-code text-on-surface hover:text-primary cursor-pointer transition-colors">#AI Agents</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high font-label-code text-label-code text-on-surface hover:text-primary cursor-pointer transition-colors">#Automations</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high font-label-code text-label-code text-on-surface hover:text-primary cursor-pointer transition-colors">#Free Tiers</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high font-label-code text-label-code text-on-surface hover:text-primary cursor-pointer transition-colors">#Lead Gen</span>
+</div>
+</div>
+</div>
+<!-- Telemetry Status Pills -->
+<div class="mt-6 pt-5 grid grid-cols-1 sm:grid-cols-3 gap-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div>
+<div class="font-title-md text-title-md text-on-surface">Zero Sponsored Bias</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Unbiased benchmarking with strict telemetry tests.</div>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]">hub</span>
+</div>
+<div>
+<div class="font-title-md text-title-md text-on-surface">API &amp; Webhook Ready</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Validated REST, GraphQL, and event endpoints.</div>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">lock_clock</span>
+</div>
+<div>
+<div class="font-title-md text-title-md text-on-surface">SOC2 / GDPR Verified</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Compliant data boundaries and enterprise safety.</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 1: AI Tools & LLM Workflows (Deep Bento Matrix) -->
+<section class="max-w-[1280px] mx-auto px-6 lg:px-12 mb-24">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+<div>
+<div class="font-label-caps text-label-caps uppercase text-primary tracking-widest mb-2">CATEGORY CLUSTER // 01</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">AI Tools &amp; LLM Workflows</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">Advanced context processors, enterprise reasoning engines, and automated synthetic workflows.</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-code text-label-code text-on-surface-variant">BENCHMARK: TOKENS / SEC &amp; ACCURACY</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Claude 3.5 Sonnet / Anthropic Architecture Card -->
+<div class="group bg-surface-container rounded-xl p-6 shadow-lg flex flex-col justify-between hover:bg-surface-container-high transition-all duration-300">
+<div>
+<div class="flex items-start justify-between mb-5">
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">psychology</span>
+</div>
+<div class="flex flex-col items-end gap-1">
+<span class="px-2.5 py-0.5 rounded-full bg-primary/10 text-primary font-label-code text-[11px]">Partner Link · Disclosure Applied</span>
+<span class="font-label-code text-[11px] text-tertiary">Ease Score: 9.8 / 10</span>
+</div>
+</div>
+<div class="flex items-baseline justify-between mb-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Claude 3.5 Sonnet</h3>
+<span class="font-label-code text-label-code text-primary font-semibold">$20/mo or API usage</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6 leading-relaxed">
+              Best-in-class multi-step code synthesis and nuance-rich logic. Massive 200k context window makes it supreme for auditing legal docs, multi-file codebases, and brand guideline adherence.
+            </p>
+<div class="space-y-2 mb-6 bg-surface-container-low p-3.5 rounded-lg font-label-code text-label-code">
+<div class="flex justify-between text-on-surface-variant">
+<span>Context Window</span>
+<span class="text-on-surface font-medium">200,000 Tokens</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Integration Depth</span>
+<span class="text-on-surface font-medium">Native Workbench + Bedrock API</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Specialization</span>
+<span class="text-on-surface font-medium">System Prompts &amp; Complex Logic</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<a class="inline-flex items-center gap-1.5 font-title-md text-title-md text-primary group-hover:translate-x-1 transition-transform" href="#">
+              Inspect Workflows <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="font-label-code text-[10px] text-on-surface-variant/60">UPDATED Q2 2025</span>
+</div>
+</div>
+<!-- ChatGPT Enterprise / OpenAI Ecosystem -->
+<div class="group bg-surface-container rounded-xl p-6 shadow-lg flex flex-col justify-between hover:bg-surface-container-high transition-all duration-300">
+<div>
+<div class="flex items-start justify-between mb-5">
+<div class="w-12 h-12 rounded-xl bg-tertiary-container/20 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[28px]">smart_toy</span>
+</div>
+<div class="flex flex-col items-end gap-1">
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary/10 text-tertiary font-label-code text-[11px]">Partner Link · Disclosure Applied</span>
+<span class="font-label-code text-[11px] text-primary">Ease Score: 9.4 / 10</span>
+</div>
+</div>
+<div class="flex items-baseline justify-between mb-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">ChatGPT Plus / API</h3>
+<span class="font-label-code text-label-code text-tertiary font-semibold">$20/user or Pay-Go</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6 leading-relaxed">
+              Standard-bearer for custom GPT team agents, voice mode integrations, and automated code interpreters. Direct integration with Zapier, Slack, and Google Workspace plugins.
+            </p>
+<div class="space-y-2 mb-6 bg-surface-container-low p-3.5 rounded-lg font-label-code text-label-code">
+<div class="flex justify-between text-on-surface-variant">
+<span>Reasoning Core</span>
+<span class="text-on-surface font-medium">GPT-4o + o1 High-Reasoning</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Custom Agents</span>
+<span class="text-on-surface font-medium">Zero-Code Web &amp; API Hooks</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Enterprise Privacy</span>
+<span class="text-on-surface font-medium">SOC2 Type II, Zero Training Opt-Out</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<a class="inline-flex items-center gap-1.5 font-title-md text-title-md text-tertiary group-hover:translate-x-1 transition-transform" href="#">
+              Inspect Workflows <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="font-label-code text-[10px] text-on-surface-variant/60">POPULAR CHOICE</span>
+</div>
+</div>
+<!-- Perplexity Pro / Enterprise Research -->
+<div class="group bg-surface-container rounded-xl p-6 shadow-lg flex flex-col justify-between hover:bg-surface-container-high transition-all duration-300">
+<div>
+<div class="flex items-start justify-between mb-5">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[28px]">travel_explore</span>
+</div>
+<div class="flex flex-col items-end gap-1">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary/10 text-secondary font-label-code text-[11px]">Partner Link · Disclosure Applied</span>
+<span class="font-label-code text-[11px] text-secondary">Ease Score: 9.9 / 10</span>
+</div>
+</div>
+<div class="flex items-baseline justify-between mb-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Perplexity Pro</h3>
+<span class="font-label-code text-label-code text-secondary font-semibold">$20/mo / Enterprise</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6 leading-relaxed">
+              Real-time internet citations and synthesised competitor intelligence. Replaces 80% of legacy market research grunt work with referenced, non-hallucinated analytical dossiers.
+            </p>
+<div class="space-y-2 mb-6 bg-surface-container-low p-3.5 rounded-lg font-label-code text-label-code">
+<div class="flex justify-between text-on-surface-variant">
+<span>Model Switching</span>
+<span class="text-on-surface font-medium">Claude 3.5, Sonar &amp; GPT-4o</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Output Accuracy</span>
+<span class="text-on-surface font-medium">Direct Academic &amp; News Citations</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Collection Spaces</span>
+<span class="text-on-surface font-medium">Shareable Team Knowledge Hubs</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<a class="inline-flex items-center gap-1.5 font-title-md text-title-md text-secondary group-hover:translate-x-1 transition-transform" href="#">
+              Inspect Workflows <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="font-label-code text-[10px] text-on-surface-variant/60">RESEARCH ESSENTIAL</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Visual Divider & Section Spacer -->
+<div class="max-w-[1280px] mx-auto px-6 lg:px-12 my-12">
+<div class="h-px w-full bg-gradient-to-r from-transparent via-primary/20 to-transparent"></div>
+</div>
+<!-- Section 2: CRM & Customer Relationship Management -->
+<section class="max-w-[1280px] mx-auto px-6 lg:px-12 mb-24">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+<div>
+<div class="font-label-caps text-label-caps uppercase text-secondary tracking-widest mb-2">CATEGORY CLUSTER // 02</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">CRM &amp; Revenue Pipeline</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">Centralize prospect interactions, track pipeline velocity, and enrich client records with zero friction.</p>
+</div>
+<a class="inline-flex items-center gap-2 font-title-md text-title-md text-secondary hover:text-on-surface transition-colors" href="#">
+          Compare CRM Architecture <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</a>
+</div>
+<!-- Comparative Breakdown Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+<!-- HubSpot CRM -->
+<div class="bg-surface-container rounded-xl p-6 shadow-lg flex flex-col justify-between">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">HubSpot CRM</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-primary font-label-code text-[11px]">Scale &amp; Inbound</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">The definitive standard for inbound content engines and multi-department teams needing unified marketing &amp; sales.</p>
+<div class="space-y-2.5 pt-2">
+<div class="flex justify-between font-label-code text-body-sm py-1.5 border-b border-surface-variant/40">
+<span class="text-on-surface-variant">Free Contact Limit</span>
+<span class="text-on-surface font-semibold">1,000,000 (Free Tier)</span>
+</div>
+<div class="flex justify-between font-label-code text-body-sm py-1.5 border-b border-surface-variant/40">
+<span class="text-on-surface-variant">Webhook Flexibility</span>
+<span class="text-on-surface">Operations Hub ($20/mo)</span>
+</div>
+<div class="flex justify-between font-label-code text-body-sm py-1.5 border-b border-surface-variant/40">
+<span class="text-on-surface-variant">Mobile Usability</span>
+<span class="text-on-surface">Native iOS/Android (4.7★)</span>
+</div>
+<div class="flex justify-between font-label-code text-body-sm py-1.5 border-b border-surface-variant/40">
+<span class="text-on-surface-variant">Starting Price</span>
+<span class="text-primary font-bold">$0 / $15/seat/mo</span>
+</div>
+</div>
+<div class="p-3 bg-surface-container-low rounded-lg text-body-sm text-on-surface-variant space-y-1">
+<div class="text-primary font-semibold flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">check_circle</span> Pro: Zero setup cost for massive databases.</div>
+<div class="text-error font-semibold flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">error</span> Watchout: Steep renewal price cliff at Pro tier.</div>
+</div>
+</div>
+<div class="pt-6">
+<button class="w-full py-2.5 rounded-full bg-surface-container-high hover:bg-primary hover:text-on-primary font-title-md text-title-md text-on-surface transition-all">Evaluate HubSpot</button>
+</div>
+</div>
+<!-- Attio -->
+<div class="bg-surface-container rounded-xl p-6 shadow-lg flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 right-0 px-3 py-1 bg-primary text-on-primary font-label-code text-[10px] rounded-bl-lg">TOP STARTUP CHOICE</div>
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Attio CRM</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-tertiary font-label-code text-[11px]">Next-Gen Data CRM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">A modern, fully dynamic object-based CRM tailored for tech-enabled companies with real-time email syncing.</p>
+<div class="space-y-2.5 pt-2">
+<div class="flex justify-between font-label-code text-body-sm py-1.5 border-b border-surface-variant/40">
+<span class="text-on-surface-variant">Contact Sync</span>
+<span class="text-on-surface font-semibold">Continuous Real-Time</span>
+</div>
+<div class="flex justify-between font-label-code text-body-sm py-1.5 border-b border-surface-variant/40">
+<span class="text-on-surface-variant">Custom Objects</span>
+<span class="text-on-surface">Fully Configurable</span>
+</div>
+<div class="flex justify-between font-label-code text-body-sm py-1.5 border-b border-surface-variant/40">
+<span class="text-on-surface-variant">API Architecture</span>
+<span class="text-on-surface">First-Class REST &amp; Webhooks</span>
+</div>
+<div class="flex justify-between font-label-code text-body-sm py-1.5 border-b border-surface-variant/40">
+<span class="text-on-surface-variant">Starting Price</span>
+<span class="text-tertiary font-bold">$0 / $29/seat/mo</span>
+</div>
+</div>
+<div class="p-3 bg-surface-container-low rounded-lg text-body-sm text-on-surface-variant space-y-1">
+<div class="text-primary font-semibold flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">check_circle</span> Pro: Lightning-fast Notion-like database views.</div>
+<div class="text-error font-semibold flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">error</span> Watchout: Requires clear data hygiene upfront.</div>
+</div>
+</div>
+<div class="pt-6">
+<button class="w-full py-2.5 rounded-full bg-primary-container text-on-primary-container font-title-md text-title-md hover:shadow-[0_0_15px_rgba(124,58,237,0.4)] transition-all">Evaluate Attio</button>
+</div>
+</div>
+<!-- Pipedrive -->
+<div class="bg-surface-container rounded-xl p-6 shadow-lg flex flex-col justify-between">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Pipedrive</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-secondary font-label-code text-[11px]">Deal Velocity</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Engineered purely around closing stages. Superb visual pipelines for sales reps who live and die by call tasks.</p>
+<div class="space-y-2.5 pt-2">
+<div class="flex justify-between font-label-code text-body-sm py-1.5 border-b border-surface-variant/40">
+<span class="text-on-surface-variant">Activity Automation</span>
+<span class="text-on-surface font-semibold">Native Auto-Scheduling</span>
+</div>
+<div class="flex justify-between font-label-code text-body-sm py-1.5 border-b border-surface-variant/40">
+<span class="text-on-surface-variant">Integrations Hub</span>
+<span class="text-on-surface">400+ Marketplace Apps</span>
+</div>
+<div class="flex justify-between font-label-code text-body-sm py-1.5 border-b border-surface-variant/40">
+<span class="text-on-surface-variant">Mobile CRM</span>
+<span class="text-on-surface">Integrated Call Logging</span>
+</div>
+<div class="flex justify-between font-label-code text-body-sm py-1.5 border-b border-surface-variant/40">
+<span class="text-on-surface-variant">Starting Price</span>
+<span class="text-secondary font-bold">$14/seat/mo (Billed Ann.)</span>
+</div>
+</div>
+<div class="p-3 bg-surface-container-low rounded-lg text-body-sm text-on-surface-variant space-y-1">
+<div class="text-primary font-semibold flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">check_circle</span> Pro: Zero learning curve for sales reps.</div>
+<div class="text-error font-semibold flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">error</span> Watchout: Separate add-on fee for web visitor tracking.</div>
+</div>
+</div>
+<div class="pt-6">
+<button class="w-full py-2.5 rounded-full bg-surface-container-high hover:bg-primary hover:text-on-primary font-title-md text-title-md text-on-surface transition-all">Evaluate Pipedrive</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Email Marketing & Lifecycle Automation -->
+<section class="max-w-[1280px] mx-auto px-6 lg:px-12 mb-24">
+<div class="mb-8">
+<div class="font-label-caps text-label-caps uppercase text-primary tracking-widest mb-2">CATEGORY CLUSTER // 03</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Email Marketing &amp; Lifecycle Automation</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">High-reputation mail routing, visual branching builders, and transactional notification gateways.</p>
+</div>
+<!-- Telemetry Spec Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Kit / ConvertKit -->
+<div class="bg-surface-container rounded-xl p-6 flex flex-col justify-between shadow-lg">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="font-headline-sm text-headline-sm text-on-surface">Kit (ConvertKit)</div>
+<span class="font-label-code text-[11px] bg-primary/10 text-primary px-2 py-0.5 rounded-full">Creators &amp; Digital</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Built ground-up for newsletters, digital product downloads, and automated paid subscriber broadcasts.</p>
+<!-- Mini Data Visualizer: Deliverability Rating -->
+<div class="bg-surface-container-low p-4 rounded-xl mb-6 space-y-3">
+<div class="flex justify-between items-center text-body-sm">
+<span class="text-on-surface-variant">Deliverability Score</span>
+<span class="text-primary font-label-code font-bold">99.4% (Tier 1)</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-full w-[99%]"></div>
+</div>
+<div class="flex justify-between text-on-surface-variant font-label-code text-[11px]">
+<span>Free Plan: 10,000 Subs</span>
+<span>Visual Flow Builder</span>
+</div>
+</div>
+<div class="space-y-2 font-label-code text-body-sm mb-4">
+<div class="flex justify-between py-1 border-b border-surface-variant/30 text-on-surface-variant">
+<span>Free Tier Limit</span>
+<span class="text-on-surface">Up to 10k Subs (Free Features)</span>
+</div>
+<div class="flex justify-between py-1 border-b border-surface-variant/30 text-on-surface-variant">
+<span>Visual Automation</span>
+<span class="text-on-surface">Branching logic included</span>
+</div>
+<div class="flex justify-between py-1 border-b border-surface-variant/30 text-on-surface-variant">
+<span>Creator Commerce</span>
+<span class="text-on-surface">Built-in checkout</span>
+</div>
+</div>
+</div>
+<a class="mt-4 inline-flex items-center justify-center w-full py-2.5 rounded-full bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container font-title-md text-title-md transition-colors" href="#">
+            Audit Kit Specs
+          </a>
+</div>
+<!-- Klaviyo -->
+<div class="bg-surface-container rounded-xl p-6 flex flex-col justify-between shadow-lg">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="font-headline-sm text-headline-sm text-on-surface">Klaviyo</div>
+<span class="font-label-code text-[11px] bg-tertiary/10 text-tertiary px-2 py-0.5 rounded-full">Ecommerce Scale</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">The gold standard for Shopify/WooCommerce stores wanting behavioral abandoned cart and retention triggers.</p>
+<div class="bg-surface-container-low p-4 rounded-xl mb-6 space-y-3">
+<div class="flex justify-between items-center text-body-sm">
+<span class="text-on-surface-variant">Predictive Lifetime Value</span>
+<span class="text-tertiary font-label-code font-bold">Built-in AI</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-tertiary h-full w-[95%]"></div>
+</div>
+<div class="flex justify-between text-on-surface-variant font-label-code text-[11px]">
+<span>SMS + Email Orchestration</span>
+<span>Real-Time Cart Sync</span>
+</div>
+</div>
+<div class="space-y-2 font-label-code text-body-sm mb-4">
+<div class="flex justify-between py-1 border-b border-surface-variant/30 text-on-surface-variant">
+<span>Free Plan Limit</span>
+<span class="text-on-surface">250 Contacts (500 Sends)</span>
+</div>
+<div class="flex justify-between py-1 border-b border-surface-variant/30 text-on-surface-variant">
+<span>Cart Tracking</span>
+<span class="text-on-surface">Deep Shopify webhooks</span>
+</div>
+<div class="flex justify-between py-1 border-b border-surface-variant/30 text-on-surface-variant">
+<span>Starting Cost</span>
+<span class="text-on-surface">$20/mo (Scales on size)</span>
+</div>
+</div>
+</div>
+<a class="mt-4 inline-flex items-center justify-center w-full py-2.5 rounded-full bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container font-title-md text-title-md transition-colors" href="#">
+            Audit Klaviyo Specs
+          </a>
+</div>
+<!-- Brevo (Formerly Sendinblue) -->
+<div class="bg-surface-container rounded-xl p-6 flex flex-col justify-between shadow-lg">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="font-headline-sm text-headline-sm text-on-surface">Brevo</div>
+<span class="font-label-code text-[11px] bg-secondary/10 text-secondary px-2 py-0.5 rounded-full">Budget &amp; Hybrid</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Exceptional balance of transactional SMTP relay, SMS messages, and regular newsletter broadcasting on a pay-per-send model.</p>
+<div class="bg-surface-container-low p-4 rounded-xl mb-6 space-y-3">
+<div class="flex justify-between items-center text-body-sm">
+<span class="text-on-surface-variant">Transactional SMTP</span>
+<span class="text-secondary font-label-code font-bold">Sub-200ms API</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary h-full w-[92%]"></div>
+</div>
+<div class="flex justify-between text-on-surface-variant font-label-code text-[11px]">
+<span>Unlimited Contact Storage</span>
+<span>Pay Per Email Sent</span>
+</div>
+</div>
+<div class="space-y-2 font-label-code text-body-sm mb-4">
+<div class="flex justify-between py-1 border-b border-surface-variant/30 text-on-surface-variant">
+<span>Free Plan Limit</span>
+<span class="text-on-surface">300 Emails / Day (Forever)</span>
+</div>
+<div class="flex justify-between py-1 border-b border-surface-variant/30 text-on-surface-variant">
+<span>Contact Database</span>
+<span class="text-on-surface">Unlimited contacts stored</span>
+</div>
+<div class="flex justify-between py-1 border-b border-surface-variant/30 text-on-surface-variant">
+<span>Starting Cost</span>
+<span class="text-on-surface">$25/mo for 20k emails</span>
+</div>
+</div>
+</div>
+<a class="mt-4 inline-flex items-center justify-center w-full py-2.5 rounded-full bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container font-title-md text-title-md transition-colors" href="#">
+            Audit Brevo Specs
+          </a>
+</div>
+</div>
+</section>
+<!-- Section 4: Workflow Automation & No-Code Bridges -->
+<section class="max-w-[1280px] mx-auto px-6 lg:px-12 mb-24">
+<div class="bg-surface-container-low rounded-2xl p-8 lg:p-12 shadow-2xl">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 mb-8">
+<div>
+<div class="font-label-caps text-label-caps uppercase text-primary tracking-widest mb-1">ENGINEERING THE PIPELINE // 04</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Workflow Automation: Make vs Zapier vs n8n</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">A cold, transparent metric shootout across the three primary digital glue systems powering modern business backends.</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-code text-label-code">
+              OPERATIONS BENCHMARK 2025
+            </span>
+</div>
+</div>
+<!-- Comparative Matrix Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container-high/60 text-on-surface">
+<th class="p-4 rounded-l-lg font-headline-sm text-body-md">Automation Engine</th>
+<th class="p-4 font-headline-sm text-body-md">Cost Per 10k Ops</th>
+<th class="p-4 font-headline-sm text-body-md">Visual Ergonomics</th>
+<th class="p-4 font-headline-sm text-body-md">Webhook Latency</th>
+<th class="p-4 font-headline-sm text-body-md">Self-Host Option</th>
+<th class="p-4 rounded-r-lg font-headline-sm text-body-md text-right">Verdict</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-variant/30">
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="p-4 flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary font-bold">M</div>
+<div>
+<span class="font-title-md text-title-md text-on-surface block">Make (Integromat)</span>
+<span class="font-label-code text-[10px] text-on-surface-variant">Cloud Node Canvas</span>
+</div>
+</td>
+<td class="p-4 font-label-code text-primary font-semibold">~$9.00 / mo</td>
+<td class="p-4 text-on-surface-variant">Circular canvas with infinite branching &amp; data parsing arrays</td>
+<td class="p-4 font-label-code text-on-surface">&lt; 120ms execution</td>
+<td class="p-4 text-on-surface-variant">Cloud Only (Enterprise on-prem)</td>
+<td class="p-4 text-right">
+<span class="px-3 py-1 rounded-full bg-primary/10 text-primary font-label-code text-[11px] font-bold">Best Value / Complex</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="p-4 flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-secondary-container/20 flex items-center justify-center text-secondary font-bold">Z</div>
+<div>
+<span class="font-title-md text-title-md text-on-surface block">Zapier</span>
+<span class="font-label-code text-[10px] text-on-surface-variant">Linear App Connector</span>
+</div>
+</td>
+<td class="p-4 font-label-code text-secondary font-semibold">~$80.00 / mo</td>
+<td class="p-4 text-on-surface-variant">Linear step-by-step ladder. Simplest for non-technical teams</td>
+<td class="p-4 font-label-code text-on-surface">Instant webhooks (Paid tiers)</td>
+<td class="p-4 text-on-surface-variant">No (Pure SaaS)</td>
+<td class="p-4 text-right">
+<span class="px-3 py-1 rounded-full bg-secondary/10 text-secondary font-label-code text-[11px] font-bold">Broadest App Library</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="p-4 flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-tertiary-container/20 flex items-center justify-center text-tertiary font-bold">N</div>
+<div>
+<span class="font-title-md text-title-md text-on-surface block">n8n</span>
+<span class="font-label-code text-[10px] text-on-surface-variant">Fair-Code Workflow Engine</span>
+</div>
+</td>
+<td class="p-4 font-label-code text-tertiary font-semibold">$0 (Self-Host) / €20 Cloud</td>
+<td class="p-4 text-on-surface-variant">Full JavaScript / Python custom nodes in visual drag-and-drop</td>
+<td class="p-4 font-label-code text-on-surface">&lt; 15ms (Dedicated VPS)</td>
+<td class="p-4 text-primary font-semibold">Yes (Docker / K8s Native)</td>
+<td class="p-4 text-right">
+<span class="px-3 py-1 rounded-full bg-tertiary/10 text-tertiary font-label-code text-[11px] font-bold">Ultimate Tech Freedom</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- Section 5: Team Productivity, Knowledge Bases & Project Velocity -->
+<section class="max-w-[1280px] mx-auto px-6 lg:px-12 mb-24">
+<div class="mb-8">
+<div class="font-label-caps text-label-caps uppercase text-secondary tracking-widest mb-2">OPERATIONAL CADENCE // 05</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Team Productivity &amp; Sprint Velocity</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">Eliminate status-update meetings. Modern async toolchains designed for builder autonomy.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Notion Card -->
+<div class="bg-surface-container rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all">
+<div class="flex items-center justify-between mb-4">
+<span class="font-headline-sm text-headline-sm text-on-surface">Notion</span>
+<span class="font-label-code text-[11px] text-primary bg-primary/10 px-2 py-0.5 rounded-full">$0 Startup Credits</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Central company intranet, client project portals, SOP wikis, and lightweight relational project databases in one workspace.</p>
+<div class="space-y-2 mb-6 bg-surface-container-low p-3.5 rounded-lg font-label-code text-label-code">
+<div class="flex justify-between text-on-surface-variant"><span>Wiki &amp; Docs</span><span class="text-on-surface">Unmatched Flexibility</span></div>
+<div class="flex justify-between text-on-surface-variant"><span>AI Add-on</span><span class="text-on-surface">$10/member/mo</span></div>
+<div class="flex justify-between text-on-surface-variant"><span>Startup Deal</span><span class="text-primary font-bold">Up to 6 Months Free</span></div>
+</div>
+<a class="inline-flex items-center gap-1 font-title-md text-title-md text-primary hover:underline" href="#">Explore Notion Workspace →</a>
+</div>
+<!-- Linear Card -->
+<div class="bg-surface-container rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all">
+<div class="flex items-center justify-between mb-4">
+<span class="font-headline-sm text-headline-sm text-on-surface">Linear</span>
+<span class="font-label-code text-[11px] text-tertiary bg-tertiary/10 px-2 py-0.5 rounded-full">Engineering Velocity</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Lightning-fast sprint execution and issue tracking without Jira bloat. Sub-50ms UI response speeds keep builders in deep flow.</p>
+<div class="space-y-2 mb-6 bg-surface-container-low p-3.5 rounded-lg font-label-code text-label-code">
+<div class="flex justify-between text-on-surface-variant"><span>Keyboard Shortcuts</span><span class="text-on-surface">100% Full Navigation</span></div>
+<div class="flex justify-between text-on-surface-variant"><span>GitHub Sync</span><span class="text-on-surface">Bi-directional Auto-PRs</span></div>
+<div class="flex justify-between text-on-surface-variant"><span>Starting Tier</span><span class="text-tertiary font-bold">Free up to 250 Issues</span></div>
+</div>
+<a class="inline-flex items-center gap-1 font-title-md text-title-md text-tertiary hover:underline" href="#">Explore Linear Issue Tracker →</a>
+</div>
+<!-- Slack & Loom Sync Card -->
+<div class="bg-surface-container rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all">
+<div class="flex items-center justify-between mb-4">
+<span class="font-headline-sm text-headline-sm text-on-surface">Slack + Loom</span>
+<span class="font-label-code text-[11px] text-secondary bg-secondary/10 px-2 py-0.5 rounded-full">Async Collaboration</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">The definitive pairing for remote-first communication. Short contextual video walkthroughs replace 30-minute sync meetings.</p>
+<div class="space-y-2 mb-6 bg-surface-container-low p-3.5 rounded-lg font-label-code text-label-code">
+<div class="flex justify-between text-on-surface-variant"><span>Context Switching</span><span class="text-on-surface">Reduced by 45%</span></div>
+<div class="flex justify-between text-on-surface-variant"><span>Loom AI Summaries</span><span class="text-on-surface">Auto-generate Action Steps</span></div>
+<div class="flex justify-between text-on-surface-variant"><span>Free Capabilities</span><span class="text-secondary font-bold">25 Looms / 90d Slack Log</span></div>
+</div>
+<a class="inline-flex items-center gap-1 font-title-md text-title-md text-secondary hover:underline" href="#">Explore Async Stack →</a>
+</div>
+</div>
+</section>
+<!-- Section 6: SEO, Search Intelligence & Content Discovery -->
+<section class="max-w-[1280px] mx-auto px-6 lg:px-12 mb-24">
+<div class="mb-8">
+<div class="font-label-caps text-label-caps uppercase text-primary tracking-widest mb-2">DISCOVERY ALGORITHMS // 06</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">SEO &amp; Search Intelligence</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">Precision search telemetry, SERP tracking, and reverse-engineering organic acquisition channels.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Ahrefs vs Semrush Benchmark Panel -->
+<div class="bg-surface-container rounded-xl p-6 shadow-lg flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-headline-sm text-headline-sm text-on-surface">Ahrefs // Semrush</span>
+<span class="px-2.5 py-1 rounded bg-primary/10 text-primary font-label-code text-[11px]">Industry Enterprise Standards</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Comprehensive backlink indexing and keyword intent volume models. Essential for serious media publishers and agency client audits.</p>
+<div class="space-y-3 font-label-code text-body-sm bg-surface-container-low p-4 rounded-xl">
+<div class="flex justify-between"><span class="text-on-surface-variant">Crawler Freshness</span><span class="text-on-surface font-semibold">Real-time Web Graph Indexing</span></div>
+<div class="flex justify-between"><span class="text-on-surface-variant">Content Gap Modeling</span><span class="text-on-surface">Full competitor matrix export</span></div>
+<div class="flex justify-between"><span class="text-on-surface-variant">Starting Price</span><span class="text-primary font-bold">From $99 / $129 / mo</span></div>
+</div>
+</div>
+<div class="pt-6">
+<button class="w-full py-2.5 rounded-full bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container font-title-md text-title-md transition-colors">Compare Deep Crawler Telemetry</button>
+</div>
+</div>
+<!-- SE Ranking Alternative Panel -->
+<div class="bg-surface-container rounded-xl p-6 shadow-lg flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-headline-sm text-headline-sm text-on-surface">SE Ranking</span>
+<span class="px-2.5 py-1 rounded bg-secondary/10 text-secondary font-label-code text-[11px]">Best Bootstrapped Value</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Delivers 90% of the daily rank-tracking and site audit functionality of legacy tools at approximately 40% of the cost.</p>
+<div class="space-y-3 font-label-code text-body-sm bg-surface-container-low p-4 rounded-xl">
+<div class="flex justify-between"><span class="text-on-surface-variant">Rank Tracking Precision</span><span class="text-on-surface font-semibold">100% Geo-Targeted SERPs</span></div>
+<div class="flex justify-between"><span class="text-on-surface-variant">Technical Site Audit</span><span class="text-on-surface">Core Web Vitals &amp; Broken Links</span></div>
+<div class="flex justify-between"><span class="text-on-surface-variant">Starting Price</span><span class="text-secondary font-bold">From $44 / mo</span></div>
+</div>
+</div>
+<div class="pt-6">
+<button class="w-full py-2.5 rounded-full bg-surface-container-high hover:bg-secondary text-on-surface hover:text-on-secondary font-title-md text-title-md transition-colors">Evaluate SE Ranking</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Educational Framework: The Lean Startup Stack Matrix -->
+<section class="max-w-[1280px] mx-auto px-6 lg:px-12 mb-24">
+<div class="bg-surface-container rounded-2xl p-8 lg:p-12 shadow-2xl relative overflow-hidden">
+<div class="absolute -right-20 -bottom-20 w-80 h-80 bg-primary/10 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="max-w-2xl mb-10">
+<div class="font-label-caps text-label-caps uppercase text-primary tracking-widest mb-1">STRATEGIC CAPITAL ALLOCATION</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">The Lean Startup Software Stack Matrix</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Don't burn capital on enterprise subscriptions during Phase 0. Compare the zero-overhead stack against the scaled production tier.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
+<!-- Stack A: $0/mo Free Tier -->
+<div class="bg-surface-container-low rounded-xl p-6 shadow-md border-l-4 border-tertiary">
+<div class="flex items-center justify-between pb-3 border-b border-surface-variant/40 mb-4">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Phase 0: The $0/mo Free Tier Stack</h3>
+<span class="font-label-code text-label-code text-tertiary font-bold">$0.00 / Month Total</span>
+</div>
+<ul class="space-y-3 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-center justify-between">
+<span>Knowledge &amp; Tasks:</span>
+<span class="font-label-code text-on-surface">Notion (Free Personal Plan)</span>
+</li>
+<li class="flex items-center justify-between">
+<span>Contact Database:</span>
+<span class="font-label-code text-on-surface">HubSpot CRM (Free 1M Contacts)</span>
+</li>
+<li class="flex items-center justify-between">
+<span>Newsletter &amp; Leads:</span>
+<span class="font-label-code text-on-surface">Kit / ConvertKit (Free Tier)</span>
+</li>
+<li class="flex items-center justify-between">
+<span>Automations:</span>
+<span class="font-label-code text-on-surface">Make (1,000 Ops/Mo Free)</span>
+</li>
+<li class="flex items-center justify-between">
+<span>Sprint Tracking:</span>
+<span class="font-label-code text-on-surface">Linear (Free Tier)</span>
+</li>
+</ul>
+</div>
+<!-- Stack B: Scaled Operations Stack -->
+<div class="bg-surface-container-low rounded-xl p-6 shadow-md border-l-4 border-primary">
+<div class="flex items-center justify-between pb-3 border-b border-surface-variant/40 mb-4">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Phase 1: Scaled Operations Stack</h3>
+<span class="font-label-code text-label-code text-primary font-bold">~$150.00 / Month Total</span>
+</div>
+<ul class="space-y-3 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-center justify-between">
+<span>Knowledge &amp; AI:</span>
+<span class="font-label-code text-on-surface">Notion Plus ($10) + Claude Pro ($20)</span>
+</li>
+<li class="flex items-center justify-between">
+<span>High-Speed CRM:</span>
+<span class="font-label-code text-on-surface">Attio ($29/seat)</span>
+</li>
+<li class="flex items-center justify-between">
+<span>Email Infrastructure:</span>
+<span class="font-label-code text-on-surface">Kit Creator / Brevo Relay ($25)</span>
+</li>
+<li class="flex items-center justify-between">
+<span>Complex Automation:</span>
+<span class="font-label-code text-on-surface">Make Pro ($16 for 10k Ops)</span>
+</li>
+<li class="flex items-center justify-between">
+<span>Search Telemetry:</span>
+<span class="font-label-code text-on-surface">SE Ranking Essential ($44)</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- 3 Common SaaS Spending Traps -->
+<div class="bg-surface-container-high rounded-xl p-6">
+<div class="font-headline-sm text-headline-sm text-on-surface mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-error text-[22px]">warning</span>
+            3 Common SaaS Spending Traps to Avoid
+          </div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 font-body-sm text-body-sm text-on-surface-variant">
+<div class="p-3 bg-surface-container rounded-lg">
+<span class="block font-title-md text-title-md text-on-surface mb-1">1. Premature Annual Commitments</span>
+              Locking into an annual contract for a 20% discount before achieving verified product-market fit or workflow retention.
+            </div>
+<div class="p-3 bg-surface-container rounded-lg">
+<span class="block font-title-md text-title-md text-on-surface mb-1">2. Seat Count Auto-Expansion</span>
+              Inviting contractors as full $30/mo workspace seats instead of using guest permissions or shared view links.
+            </div>
+<div class="p-3 bg-surface-container rounded-lg">
+<span class="block font-title-md text-title-md text-on-surface mb-1">3. Redundant AI Subscriptions</span>
+              Paying $20/mo each for ChatGPT, Claude, and Perplexity when an API router or pooled team seat satisfies real prompt volume.
+            </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Mandatory Styled Affiliate Transparency Notice Card -->
+<section class="max-w-[1280px] mx-auto px-6 lg:px-12 mb-20">
+<div class="bg-surface-container rounded-xl p-6 lg:p-8 shadow-md">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[22px]">security</span>
+</div>
+<div class="space-y-2">
+<div class="flex flex-wrap items-center gap-3">
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-wider">AFFILIATE TRANSPARENCY PROTOCOL</span>
+<span class="font-label-code text-[11px] text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded-full">ETHICAL BENCHMARK STANDARD</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Affiliate Disclosure: Some links on UNKNOWN may be affiliate links. We may earn a commission when you purchase through these links, at no additional cost to you. Our recommendations prioritize usefulness, suitability, and real value. Every software tool on this hub is subjected to independent uptime, API stability, and real-world workflow stress-testing before inclusion.
+            </p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div></main><footer class="w-full bg-surface-container-lowest"><div class="max-w-[1280px] mx-auto px-6 lg:px-12 pt-space-2xl pb-space-lg"><div class="p-space-lg rounded-xl bg-surface-container mb-space-2xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-start gap-3"><span class="material-symbols-outlined text-primary mt-0.5 text-[20px]">verified_user</span><div class="space-y-1"><span class="font-label-caps text-label-caps uppercase text-primary tracking-wider">Affiliate Transparency Statement</span><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Affiliate Disclosure: Some links on UNKNOWN may be affiliate links. We may earn a commission when you purchase through these links, at no additional cost to you. Our recommendations prioritise usefulness, suitability, and real value.</p></div></div></div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl mb-space-2xl"><div class="lg:col-span-2 space-y-space-md"><div class="flex items-center gap-3"><img alt="UNKNOWN Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBxryhSDPQlsgWF-J2_jyTUZavj1eq-hpgH8F0U8PHyhspGwc7LkE6Mdir0IBpBBvsKyZM5S2q006UoAM0kxe9oHrx4KKxF4W4VcM0Zo3DXIpqFWUUYveli3ahwB8L7gTIlX4qMgoGQnSStTojDJBPpC6z8miM7Rd-HW_0TZ9WicrNiBeaJqzTuFC9ULVNfJ2FWSq6u_qZrZQ9j8AmMi6SrO8kKjoIcaxVp7WIEyewh"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-bold">UNKNOWN</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Discover the Tools. Build Your Future. Elite computational catalog and precision architecture directory for builders, agencies, and online ventures.</p><div class="flex items-center gap-3 pt-space-xs"><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high font-label-code text-label-code text-primary"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>Telemetry Active</span></div></div><div class="space-y-space-sm"><div class="font-label-caps text-label-caps text-on-surface uppercase tracking-wider">Navigation</div><ul class="space-y-2.5"><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Home</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="web-&amp;-hosting" href="#">Web &amp; Hosting</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="business-software" href="#">Business Software</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="ecommerce" href="#">Ecommerce</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="guides" href="#">Guides</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-us" href="#">About Us</a></li></ul></div><div class="space-y-space-sm"><div class="font-label-caps text-label-caps text-on-surface uppercase tracking-wider">Resources &amp; Community</div><ul class="space-y-2.5"><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Instagram</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Reddit</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Discord</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="guides" href="#">Beginners Guide</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Tool Directory</a></li></ul></div><div class="space-y-space-sm"><div class="font-label-caps text-label-caps text-on-surface uppercase tracking-wider">Legal</div><ul class="space-y-2.5"><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Privacy Policy</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Terms and Conditions</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Affiliate Disclosure</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-us" href="#">Contact Us</a></li></ul></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-on-surface-variant"><p>© 2025 UNKNOWN. All rights reserved. Precision Software Architecture.</p><div class="flex items-center gap-2 font-label-code text-label-code text-primary"><span class="w-2 h-2 rounded-full bg-primary"></span>Systems Operational &amp; Secure</div></div></div></footer></body></html>

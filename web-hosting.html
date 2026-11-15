@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-fixed-variant": "#2f2ebe", "secondary-container": "#6f00be", "surface-container-high": "#1c2b3c", "secondary-fixed-dim": "#ddb7ff", "secondary-fixed": "#f0dbff", "on-tertiary-container": "#e5e3ff", "surface": "#051424", "surface-tint": "#d2bbff", "secondary": "#ddb7ff", "on-primary-fixed-variant": "#5a00c6", "on-surface": "#d4e4fa", "surface-bright": "#2c3a4c", "on-primary-container": "#ede0ff", "on-secondary-fixed": "#2c0051", "surface-container-low": "#0d1c2d", "on-secondary-container": "#d6a9ff", "outline": "#958da1", "tertiary-fixed": "#e1e0ff", "surface-container-highest": "#273647", "error": "#ffb4ab", "outline-variant": "#4a4455", "surface-variant": "#273647", "background": "#051424", "on-surface-variant": "#ccc3d8", "tertiary": "#c0c1ff", "primary-container": "#7c3aed", "inverse-on-surface": "#233143", "primary-fixed-dim": "#d2bbff", "on-secondary-fixed-variant": "#6900b3", "on-primary-fixed": "#25005a", "on-primary": "#3f008e", "on-secondary": "#490080", "tertiary-fixed-dim": "#c0c1ff", "on-error-container": "#ffdad6", "surface-container-lowest": "#010f1f", "inverse-surface": "#d4e4fa", "on-tertiary": "#1000a9", "primary": "#d2bbff", "inverse-primary": "#732ee4", "tertiary-container": "#5254df", "on-error": "#690005", "primary-fixed": "#eaddff", "surface-container": "#122131", "error-container": "#93000a", "on-background": "#d4e4fa", "on-tertiary-fixed": "#07006c", "surface-dim": "#051424" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "gutter": "1.5rem", "space-2xl": "4rem", "margin-mobile": "1.25rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter-mobile": "1rem", "space-lg": "1.5rem", "margin": "3rem", "space-xl": "2.5rem" }, "fontFamily": { "headline-lg": [ "Space Grotesk" ], "title-lg": [ "Plus Jakarta Sans" ], "title-md": [ "Plus Jakarta Sans" ], "headline-md": [ "Space Grotesk" ], "headline-sm": [ "Space Grotesk" ], "label-caps": [ "Space Grotesk" ], "display": [ "Space Grotesk" ], "headline-lg-mobile": [ "Space Grotesk" ], "label-code": [ "JetBrains Mono" ], "display-mobile": [ "Space Grotesk" ], "body-lg": [ "Plus Jakarta Sans" ], "body-sm": [ "Plus Jakarta Sans" ], "body-md": [ "Plus Jakarta Sans" ] }, "fontSize": { "headline-lg": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "title-lg": [ "18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "title-md": [ "16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" } ], "headline-md": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-sm": [ "22px", { "lineHeight": "30px", "letterSpacing": "0em", "fontWeight": "600" } ], "label-caps": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "700" } ], "display": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-code": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" } ], "display-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-lg": [ "18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-sm": [ "13px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-md": [ "15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1280px] mx-auto px-6 lg:px-12 flex items-center justify-between gap-4"><div class="flex items-center gap-3"><a class="flex items-center gap-3" data-path="home" href="#"><img alt="UNKNOWN Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBxryhSDPQlsgWF-J2_jyTUZavj1eq-hpgH8F0U8PHyhspGwc7LkE6Mdir0IBpBBvsKyZM5S2q006UoAM0kxe9oHrx4KKxF4W4VcM0Zo3DXIpqFWUUYveli3ahwB8L7gTIlX4qMgoGQnSStTojDJBPpC6z8miM7Rd-HW_0TZ9WicrNiBeaJqzTuFC9ULVNfJ2FWSq6u_qZrZQ9j8AmMi6SrO8kKjoIcaxVp7WIEyewh"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-bold">UNKNOWN</span><span class="hidden sm:inline-block font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Discover the Tools. Build Your Future.</span></div></a></div><nav class="hidden xl:flex items-center gap-1.5" data-active-classes="bg-primary-container/30 text-secondary border border-primary/30 rounded-full px-4 py-2 font-title-md text-title-md shadow-[0_0_15px_rgba(124,58,237,0.25)]"><a class="px-3.5 py-2 rounded-full font-title-md text-title-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="home" href="#">Home</a><a class="px-4 py-2 rounded-full font-title-md text-title-md bg-primary-container/30 text-secondary border-0 shadow-[0_0_15px_rgba(124,58,237,0.25)] transition-all font-bold" data-path="web-hosting" href="#">Web &amp; Hosting</a><a class="px-3.5 py-2 rounded-full font-title-md text-title-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="business-software" href="#">Business Software</a><a class="px-3.5 py-2 rounded-full font-title-md text-title-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="ecommerce" href="#">Ecommerce</a><span class="px-3 py-1.5 rounded-full font-label-code text-label-code text-outline flex items-center gap-1.5" title="Guides Coming Soon"><span class="w-1.5 h-1.5 rounded-full bg-outline"></span>Guides <span class="text-[11px] text-outline-variant font-label-caps uppercase">(Soon)</span></span><span class="px-3 py-1.5 rounded-full font-label-code text-label-code text-outline flex items-center gap-1.5" title="About Us Coming Soon"><span class="w-1.5 h-1.5 rounded-full bg-outline"></span>About <span class="text-[11px] text-outline-variant font-label-caps uppercase">(Soon)</span></span></nav><div class="flex items-center gap-3"><a class="hidden sm:inline-flex items-center justify-center font-title-md text-title-md bg-primary-container text-on-primary-container px-5 py-2.5 rounded-full hover:shadow-[0_0_20px_rgba(124,58,237,0.45)] transition-all duration-300" data-path="home" href="#">Explore Digital Tools</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><button aria-label="Toggle Navigation Menu" class="xl:hidden p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined">menu</span></button></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Background Ambient Glows -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[720px] h-[340px] bg-primary-container/15 rounded-full blur-[140px] pointer-events-none"></div>
+<div class="absolute top-96 -left-20 w-[420px] h-[420px] bg-tertiary-container/10 rounded-full blur-[130px] pointer-events-none"></div>
+<div class="absolute top-96 -right-20 w-[420px] h-[420px] bg-secondary-container/15 rounded-full blur-[130px] pointer-events-none"></div>
+<!-- =====================================================================
+         HERO SECTION: INFRASTRUCTURE PROTOCOLS
+         ===================================================================== -->
+<section class="relative z-10 max-w-[1280px] mx-auto px-6 lg:px-12 pt-space-xl pb-space-2xl">
+<!-- Monospace Eyebrow Badge & Telemetry Bar -->
+<div class="flex flex-wrap items-center justify-between gap-3 mb-space-lg">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container-high border-0 shadow-sm text-secondary font-label-code text-label-code">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span>INFRASTRUCTURE PROTOCOLS // 01 — WEB HOSTING, DOMAINS &amp; PLATFORMS</span>
+</div>
+<div class="hidden sm:inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-code text-label-code"><span class="material-symbols-outlined text-primary text-[14px]">terminal</span><span>PUBLIC SPECIFICATIONS INDEX · 2026 REVISION</span></div>
+</div>
+<!-- Main Headline & Subtitle -->
+<div class="max-w-4xl space-y-space-md mb-space-xl">
+<h1 class="font-display text-display text-on-surface tracking-tight">
+          Build Your Website. <br class="hidden sm:inline"/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-tertiary">
+            Establish Your Digital Presence.
+          </span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl leading-relaxed">
+          Discover the hosting, domain, and website-building tools you need to create, launch, and manage your online presence with clarity based on published vendor specifications.
+        </p>
+</div>
+<!-- Audit Metric Pill Deck -->
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-space-xl">
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[20px]">layers</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface">9</div>
+<div class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider">Core Categories</div>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface">100%</div>
+<div class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider">Public Vendor Specs</div>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-tertiary text-[20px]">account_tree</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface">Neutral</div>
+<div class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider">Architecture Overview</div>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex items-center gap-3"><div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-primary text-[20px]">schedule</span></div><div><div class="font-headline-sm text-headline-sm text-on-surface">2026</div><div class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider">Specifications Review</div></div></div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-4 mb-space-2xl">
+<a class="inline-flex items-center gap-2 font-title-md text-title-md bg-gradient-to-r from-primary-container to-tertiary-container text-on-primary-container px-6 py-3 rounded-full shadow-[0_0_24px_rgba(124,58,237,0.35)] hover:shadow-[0_0_32px_rgba(124,58,237,0.5)] transition-all duration-300" href="#popular-tools-index">
+<span>Explore Web &amp; Hosting Tools</span>
+<span class="material-symbols-outlined text-[18px]">south</span>
+</a>
+<a class="inline-flex items-center gap-2 font-title-md text-title-md bg-surface-container-high hover:bg-surface-bright text-on-surface px-6 py-3 rounded-full transition-all duration-300" href="#beginner-roadmap">
+<span>Learn How to Start</span>
+<span class="material-symbols-outlined text-[18px]">alt_route</span>
+</a>
+</div>
+<!-- Interactive Search & Filter Controls -->
+<div class="p-space-lg rounded-2xl bg-surface-container shadow-xl">
+<div class="flex flex-col lg:flex-row gap-4 items-stretch lg:items-center justify-between mb-space-md">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline text-[22px]">search</span>
+<input class="w-full bg-surface-container-lowest text-on-surface placeholder:text-outline pl-12 pr-10 py-3.5 rounded-full font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary transition-all" id="live-tool-search" placeholder="Search hosting providers, domain registrars, builders (e.g. LiteSpeed, Cloudflare, WordPress, DNS)..." type="text"/>
+<button aria-label="Clear Search" class="hidden absolute right-3.5 top-1/2 -translate-y-1/2 text-outline hover:text-on-surface" id="clear-search-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider">Matches:</span>
+<span class="px-2.5 py-1 rounded-full bg-primary/20 text-secondary font-label-code text-label-code" id="tool-match-count">10 Indexed</span>
+</div>
+</div>
+<!-- Trending Search Tags -->
+<div class="flex flex-wrap items-center gap-2 pt-1 mb-space-md">
+<span class="font-label-caps text-label-caps uppercase text-outline tracking-wider">Telemetry tags:</span>
+<button class="tag-shortcut px-2.5 py-1 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-primary font-label-code text-label-code transition-colors" data-tag="WordPressHosting" type="button">#WordPressHosting</button>
+<button class="tag-shortcut px-2.5 py-1 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-primary font-label-code text-label-code transition-colors" data-tag="CloudVPS" type="button">#CloudVPS</button>
+<button class="tag-shortcut px-2.5 py-1 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-primary font-label-code text-label-code transition-colors" data-tag="DomainPrivacy" type="button">#DomainPrivacy</button>
+<button class="tag-shortcut px-2.5 py-1 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-primary font-label-code text-label-code transition-colors" data-tag="FreeSSL" type="button">#FreeSSL</button>
+<button class="tag-shortcut px-2.5 py-1 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-primary font-label-code text-label-code transition-colors" data-tag="NoCodeBuilders" type="button">#NoCodeBuilders</button>
+</div>
+<!-- Real-Time Filter Pills -->
+<div class="flex flex-wrap items-center gap-2 pt-2" id="filter-pills-container">
+<button class="filter-pill active px-4 py-2 rounded-full font-title-md text-title-md bg-primary text-on-primary shadow-sm transition-all" data-category="all" type="button">
+            All Web &amp; Hosting
+          </button>
+<button class="filter-pill px-4 py-2 rounded-full font-title-md text-title-md bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-all" data-category="shared-cloud" type="button">
+            Shared &amp; Cloud Hosting
+          </button>
+<button class="filter-pill px-4 py-2 rounded-full font-title-md text-title-md bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-all" data-category="domain-registrars" type="button">
+            Domain Registrars
+          </button>
+<button class="filter-pill px-4 py-2 rounded-full font-title-md text-title-md bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-all" data-category="website-builders" type="button">
+            Website Builders
+          </button>
+<button class="filter-pill px-4 py-2 rounded-full font-title-md text-title-md bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-all" data-category="managed-wordpress" type="button">
+            Managed WordPress
+          </button>
+<button class="filter-pill px-4 py-2 rounded-full font-title-md text-title-md bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-all" data-category="security-dns" type="button">
+            Security &amp; DNS
+          </button>
+</div>
+</div>
+</section>
+<!-- Visual Architecture Divider Strip -->
+<div class="w-full max-w-[1280px] mx-auto px-6 lg:px-12 my-space-md">
+<div class="h-px bg-surface-container-high"></div>
+</div>
+<!-- =====================================================================
+         SECTION 01: TAXONOMY (MAIN TOOL CATEGORIES GRID - 9 CARDS)
+         ===================================================================== -->
+<section class="max-w-[1280px] mx-auto px-6 lg:px-12 py-space-2xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-space-xl">
+<div class="space-y-2">
+<div class="inline-flex items-center gap-2 font-label-code text-label-code text-primary uppercase">
+<span>SECTION 01 // TAXONOMY</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Web &amp; Hosting Architecture Categories</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+            Structured infrastructure layers designed to support your website from domain registration to high-uptime global edge delivery.
+          </p>
+</div>
+<div class="shrink-0">
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-code text-label-code">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+            9 Modular Layers
+          </span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="group p-space-lg rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all duration-300 shadow-sm flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high group-hover:bg-primary-container/30 flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-primary text-[24px]">dns</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant/70">CAT_01</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Web Hosting</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Shared, cPanel, and entry-level server infrastructure engineered for launching new online ventures, personal portfolios, and small blogs.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md border-t-0 flex items-center justify-between">
+<a class="inline-flex items-center gap-1 text-primary hover:text-secondary font-title-md text-title-md transition-colors" href="#popular-tools-index">
+<span>Explore Tools</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="font-label-code text-label-code text-outline">Shared • NVMe</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group p-space-lg rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all duration-300 shadow-sm flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high group-hover:bg-primary-container/30 flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-secondary text-[24px]">alternate_email</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant/70">CAT_02</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors">Domain Registration</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              ICANN-accredited registrars, top-level domain (TLD) catalog management, automated renewals, and baseline WHOIS identity privacy protection.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md border-t-0 flex items-center justify-between">
+<a class="inline-flex items-center gap-1 text-secondary hover:text-primary font-title-md text-title-md transition-colors" href="#popular-tools-index">
+<span>Explore Tools</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="font-label-code text-label-code text-outline">ICANN • DNSSEC</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group p-space-lg rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all duration-300 shadow-sm flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high group-hover:bg-primary-container/30 flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-tertiary text-[24px]">view_quilt</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant/70">CAT_03</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-tertiary transition-colors">Website Builders</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Visual drag-and-drop editors and hosted website platforms requiring zero coding knowledge, with integrated hosting, CMS, and responsive themes.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md border-t-0 flex items-center justify-between">
+<a class="inline-flex items-center gap-1 text-tertiary hover:text-primary font-title-md text-title-md transition-colors" href="#popular-tools-index">
+<span>Explore Tools</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="font-label-code text-label-code text-outline">No-Code • WYSIWYG</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group p-space-lg rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all duration-300 shadow-sm flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high group-hover:bg-primary-container/30 flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-primary text-[24px]">code</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant/70">CAT_04</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">WordPress Hosting</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Optimized PHP execution stacks, automated core &amp; plugin updates, WP-CLI access, and dedicated staging environments for WordPress publishers.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md border-t-0 flex items-center justify-between">
+<a class="inline-flex items-center gap-1 text-primary hover:text-secondary font-title-md text-title-md transition-colors" href="#popular-tools-index">
+<span>Explore Tools</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="font-label-code text-label-code text-outline">PHP 8.3 • Staging</span>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="group p-space-lg rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all duration-300 shadow-sm flex flex-col justify-between">
+<div class="space-y-3"><div class="flex items-center justify-between"><div class="w-12 h-12 rounded-xl bg-surface-container-high group-hover:bg-primary-container/30 flex items-center justify-center transition-colors"><span class="material-symbols-outlined text-secondary text-[24px]">cloud</span></div><span class="font-label-code text-label-code text-on-surface-variant/70">CAT_05</span></div><h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors">Cloud Hosting</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Scalable virtual compute instances (VPS) and managed cloud orchestration across multi-node infrastructure, offering on-demand provisioning and resource tiering.</p></div>
+<div class="pt-space-md mt-space-md border-t-0 flex items-center justify-between">
+<a class="inline-flex items-center gap-1 text-secondary hover:text-primary font-title-md text-title-md transition-colors" href="#popular-tools-index">
+<span>Explore Tools</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="font-label-code text-label-code text-outline">AWS • DO • GCP</span>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="group p-space-lg rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all duration-300 shadow-sm flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high group-hover:bg-primary-container/30 flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-tertiary text-[24px]">mail</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant/70">CAT_06</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-tertiary transition-colors">Business Email Hosting</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Custom domain mailbox hosting equipped with DKIM, SPF, and DMARC authentication protocols, spam filters, and IMAP/POP3 synchronizations.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md border-t-0 flex items-center justify-between">
+<a class="inline-flex items-center gap-1 text-tertiary hover:text-primary font-title-md text-title-md transition-colors" href="#popular-tools-index">
+<span>Explore Tools</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="font-label-code text-label-code text-outline">DKIM • SPF • MX</span>
+</div>
+</div>
+<!-- Card 7 -->
+<div class="group p-space-lg rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all duration-300 shadow-sm flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high group-hover:bg-primary-container/30 flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-primary text-[24px]">lock</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant/70">CAT_07</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Website Security &amp; SSL</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Origin server encryption, automated TLS/SSL renewals, Web Application Firewalls (WAF), real-time malicious bot shielding, and DDoS defense.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md border-t-0 flex items-center justify-between">
+<a class="inline-flex items-center gap-1 text-primary hover:text-secondary font-title-md text-title-md transition-colors" href="#popular-tools-index">
+<span>Explore Tools</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="font-label-code text-label-code text-outline">TLS 1.3 • WAF</span>
+</div>
+</div>
+<!-- Card 8 -->
+<div class="group p-space-lg rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all duration-300 shadow-sm flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high group-hover:bg-primary-container/30 flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-secondary text-[24px]">speed</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant/70">CAT_08</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors">Speed &amp; Performance</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Edge CDN static asset caching, Anycast global server routing, high-throughput SSD/NVMe disk arrays, and advanced HTTP/3 protocol support.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md border-t-0 flex items-center justify-between">
+<a class="inline-flex items-center gap-1 text-secondary hover:text-primary font-title-md text-title-md transition-colors" href="#popular-tools-index">
+<span>Explore Tools</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="font-label-code text-label-code text-outline">HTTP/3 • CDN Edge</span>
+</div>
+</div>
+<!-- Card 9 -->
+<div class="group p-space-lg rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all duration-300 shadow-sm flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high group-hover:bg-primary-container/30 flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-tertiary text-[24px]">settings_backup_restore</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant/70">CAT_09</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-tertiary transition-colors">Backup &amp; Maintenance</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Automated off-site cloud snapshots, incremental file replication, 1-click disaster recovery restoration, and scheduled uptime monitoring.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md border-t-0 flex items-center justify-between">
+<a class="inline-flex items-center gap-1 text-tertiary hover:text-primary font-title-md text-title-md transition-colors" href="#popular-tools-index">
+<span>Explore Tools</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="font-label-code text-label-code text-outline">Daily RPO • 1-Click</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Visual Divider Strip -->
+<div class="w-full max-w-[1280px] mx-auto px-6 lg:px-12 my-space-md">
+<div class="h-px bg-surface-container-high"></div>
+</div>
+<!-- =====================================================================
+         SECTION 02: POPULAR TOOLS DIRECTORY (10 VETTED PLATFORMS)
+         ===================================================================== -->
+<section class="max-w-[1280px] mx-auto px-6 lg:px-12 py-space-2xl scroll-mt-24" id="popular-tools-index">
+<div class="space-y-2 mb-space-xl">
+<div class="inline-flex items-center gap-2 font-label-code text-label-code text-secondary uppercase">
+<span>CURATED INDEX FOR 2026 // PUBLIC SPECIFICATIONS &amp; VENDOR DATA</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Vetted Web &amp; Hosting Platforms</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl leading-relaxed">Objective evaluation of active hosting engines, registrars, and cloud architecture based on published documentation. Specifications and features are subject to chosen tier and subscription plan.</p>
+</div>
+<!-- Grid of 10 Tool Cards (Dynamically filtered via JavaScript) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="tools-grid-container">
+<!-- 1. Hostinger -->
+<article class="tool-card p-space-lg rounded-2xl bg-surface-container shadow-md flex flex-col justify-between transition-all duration-300" data-category="shared-cloud" data-keywords="LiteSpeed Cache Free SSL 1-Click WordPress Weekly Backups Shared Cloud Hosting WordPressHosting" data-name="Hostinger">
+<div>
+<div class="flex items-start justify-between gap-3 mb-space-sm">
+<div>
+<span class="px-2.5 py-1 rounded-full bg-primary/15 text-secondary font-label-code text-label-code inline-block mb-2">
+                  Shared &amp; Cloud Hosting
+                </span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Hostinger</h3>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps">
+                LiteSpeed Core
+              </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">LiteSpeed-powered web hosting equipped with custom hPanel management and automated onboarding. Realized speeds and resource limits depend on the selected tier and caching setup.</p>
+<div class="p-3 rounded-lg bg-surface-container-low mb-space-md">
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-wider block mb-1">Best suited for</span>
+<p class="font-body-sm text-body-sm text-on-surface">Beginners and budget-conscious creators needing reliable introductory hosting.</p>
+</div>
+<div class="space-y-2 mb-space-lg">
+<span class="font-label-caps text-label-caps uppercase text-outline tracking-wider block">Key Specifications</span>
+<div class="grid grid-cols-2 gap-2 font-label-code text-label-code text-on-surface">
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-[14px]">check_circle</span> LiteSpeed Cache</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-[14px]">check_circle</span> Free SSL Certificate</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-[14px]">check_circle</span> 1-Click WordPress</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-[14px]">check_circle</span> Weekly Backups</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md border-t-0 flex flex-wrap items-center justify-between gap-3">
+<a class="inline-flex items-center gap-2 font-title-md text-title-md bg-primary-container text-on-primary-container px-4 py-2 rounded-full hover:shadow-[0_0_18px_rgba(124,58,237,0.35)] transition-all" href="https://www.hostinger.com" rel="noopener noreferrer" target="_blank">
+<span>Check Current Pricing</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+<span class="font-label-code text-label-code text-outline">[Direct Link · Official Website]</span>
+</div>
+</article>
+<!-- 2. Bluehost -->
+<article class="tool-card p-space-lg rounded-2xl bg-surface-container shadow-md flex flex-col justify-between transition-all duration-300" data-category="managed-wordpress" data-keywords="WordPress Hosting Automated WP install Free Domain CDN Staging WordPressHosting" data-name="Bluehost">
+<div>
+<div class="flex items-start justify-between gap-3 mb-space-sm">
+<div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container/30 text-secondary font-label-code text-label-code inline-block mb-2">
+                  WordPress Hosting
+                </span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Bluehost</h3>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps">
+                WP Recommended
+              </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
+              Long-standing hosting provider with direct WordPress.org recommended integration, guided site-creation wizard, and automated WP setup.
+            </p>
+<div class="p-3 rounded-lg bg-surface-container-low mb-space-md">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-wider block mb-1">Best suited for</span>
+<p class="font-body-sm text-body-sm text-on-surface">Beginners launching their first self-hosted WordPress blog or small business website.</p>
+</div>
+<div class="space-y-2 mb-space-lg">
+<span class="font-label-caps text-label-caps uppercase text-outline tracking-wider block">Key Specifications</span>
+<div class="grid grid-cols-2 gap-2 font-label-code text-label-code text-on-surface">
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[14px]">check_circle</span> Automated WP Install</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[14px]">check_circle</span> Free Domain (Year 1)</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[14px]">check_circle</span> Free CDN Included</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[14px]">check_circle</span> 1-Click Staging Tool</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md border-t-0 flex flex-wrap items-center justify-between gap-3">
+<a class="inline-flex items-center gap-2 font-title-md text-title-md bg-surface-container-high hover:bg-surface-bright text-on-surface px-4 py-2 rounded-full transition-all" href="https://www.bluehost.com" rel="noopener noreferrer" target="_blank">
+<span>Check Current Pricing</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+<span class="font-label-code text-label-code text-outline">[Direct Link · Official Website]</span>
+</div>
+</article>
+<!-- 3. SiteGround -->
+<article class="tool-card p-space-lg rounded-2xl bg-surface-container shadow-md flex flex-col justify-between transition-all duration-300" data-category="managed-wordpress" data-keywords="Google Cloud Platform Custom PHP optimization Daily automatic backups Free SSL WordPressHosting" data-name="SiteGround">
+<div>
+<div class="flex items-start justify-between gap-3 mb-space-sm">
+<div>
+<span class="px-2.5 py-1 rounded-full bg-primary/15 text-primary font-label-code text-label-code inline-block mb-2">
+                  Premium Managed WordPress
+                </span>
+<h3 class="font-headline-md text-headline-md text-on-surface">SiteGround</h3>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps">
+                Google Cloud Backed
+              </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
+              Google Cloud-backed managed hosting platform engineered with proprietary SuperCacher technology and developer-friendly staging.
+            </p>
+<div class="p-3 rounded-lg bg-surface-container-low mb-space-md">
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-wider block mb-1">Best suited for</span>
+<p class="font-body-sm text-body-sm text-on-surface">Growing websites and client agencies prioritizing high reliability, speed, and premium technical support.</p>
+</div>
+<div class="space-y-2 mb-space-lg">
+<span class="font-label-caps text-label-caps uppercase text-outline tracking-wider block">Key Specifications</span>
+<div class="grid grid-cols-2 gap-2 font-label-code text-label-code text-on-surface">
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-[14px]">check_circle</span> Google Cloud Infrastructure</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-[14px]">check_circle</span> Custom PHP Optimization</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-[14px]">check_circle</span> Daily Automatic Backups</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-[14px]">check_circle</span> Free Wildcard SSL</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md border-t-0 flex flex-wrap items-center justify-between gap-3">
+<a class="inline-flex items-center gap-2 font-title-md text-title-md bg-surface-container-high hover:bg-surface-bright text-on-surface px-4 py-2 rounded-full transition-all" href="https://www.siteground.com" rel="noopener noreferrer" target="_blank">
+<span>Check Current Pricing</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+<span class="font-label-code text-label-code text-outline">[Direct Link · Official Website]</span>
+</div>
+</article>
+<!-- 4. Cloudways -->
+<article class="tool-card p-space-lg rounded-2xl bg-surface-container shadow-md flex flex-col justify-between transition-all duration-300" data-category="shared-cloud" data-keywords="Managed Cloud VPS DigitalOcean AWS Google Cloud CloudVPS Redis cache Dedicated firewalls" data-name="Cloudways">
+<div>
+<div class="flex items-start justify-between gap-3 mb-space-sm">
+<div>
+<span class="px-2.5 py-1 rounded-full bg-secondary/15 text-secondary font-label-code text-label-code inline-block mb-2">
+                  Managed Cloud VPS
+                </span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Cloudways</h3>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps">
+                Multi-Cloud VPS
+              </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
+              Managed cloud orchestration platform enabling users to deploy servers on DigitalOcean, AWS, or Google Cloud without Linux command-line management.
+            </p>
+<div class="p-3 rounded-lg bg-surface-container-low mb-space-md">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-wider block mb-1">Best suited for</span>
+<p class="font-body-sm text-body-sm text-on-surface">Growing agencies, ecommerce stores, and fast-growing websites requiring dedicated cloud resources.</p>
+</div>
+<div class="space-y-2 mb-space-lg">
+<span class="font-label-caps text-label-caps uppercase text-outline tracking-wider block">Key Specifications</span>
+<div class="grid grid-cols-2 gap-2 font-label-code text-label-code text-on-surface">
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[14px]">check_circle</span> 3 Cloud Providers</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[14px]">check_circle</span> Dedicated Firewalls</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[14px]">check_circle</span> Real-Time Server Stats</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[14px]">check_circle</span> Redis &amp; Varnish Cache</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md border-t-0 flex flex-wrap items-center justify-between gap-3">
+<a class="inline-flex items-center gap-2 font-title-md text-title-md bg-surface-container-high hover:bg-surface-bright text-on-surface px-4 py-2 rounded-full transition-all" href="https://www.cloudways.com" rel="noopener noreferrer" target="_blank">
+<span>Check Current Pricing</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+<span class="font-label-code text-label-code text-outline">[Direct Link · Official Website]</span>
+</div>
+</article>
+<!-- 5. Namecheap -->
+<article class="tool-card p-space-lg rounded-2xl bg-surface-container shadow-md flex flex-col justify-between transition-all duration-300" data-category="domain-registrars" data-keywords="Domain Registrar DNS ICANN WhoisGuard Free privacy DomainPrivacy Two-factor authentication" data-name="Namecheap">
+<div>
+<div class="flex items-start justify-between gap-3 mb-space-sm">
+<div>
+<span class="px-2.5 py-1 rounded-full bg-tertiary-container/30 text-tertiary font-label-code text-label-code inline-block mb-2">
+                  Domain Registrar &amp; DNS
+                </span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Namecheap</h3>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps">
+                ICANN Accredited
+              </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
+              ICANN-accredited domain registrar known for transparent renewal pricing, free lifetime privacy protection, and affordable DNS management.
+            </p>
+<div class="p-3 rounded-lg bg-surface-container-low mb-space-md">
+<span class="font-label-caps text-label-caps uppercase text-tertiary tracking-wider block mb-1">Best suited for</span>
+<p class="font-body-sm text-body-sm text-on-surface">Registering and managing domain portfolios without high markup renewals.</p>
+</div>
+<div class="space-y-2 mb-space-lg">
+<span class="font-label-caps text-label-caps uppercase text-outline tracking-wider block">Key Specifications</span>
+<div class="grid grid-cols-2 gap-2 font-label-code text-label-code text-on-surface">
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-tertiary text-[14px]">check_circle</span> Free WhoisGuard for Life</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-tertiary text-[14px]">check_circle</span> Dynamic DNS Support</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-tertiary text-[14px]">check_circle</span> Two-Factor Auth (2FA)</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-tertiary text-[14px]">check_circle</span> Assisted Domain Transfer</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md border-t-0 flex flex-wrap items-center justify-between gap-3">
+<a class="inline-flex items-center gap-2 font-title-md text-title-md bg-surface-container-high hover:bg-surface-bright text-on-surface px-4 py-2 rounded-full transition-all" href="https://www.namecheap.com" rel="noopener noreferrer" target="_blank">
+<span>Check Current Pricing</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+<span class="font-label-code text-label-code text-outline">[Direct Link · Official Website]</span>
+</div>
+</article>
+<!-- 6. GoDaddy -->
+<article class="tool-card p-space-lg rounded-2xl bg-surface-container shadow-md flex flex-col justify-between transition-all duration-300" data-category="domain-registrars" data-keywords="Domain Registrar All-in-One Services TLD catalog Domain auctions Brokerage Business suite DomainPrivacy" data-name="GoDaddy">
+<div>
+<div class="flex items-start justify-between gap-3 mb-space-sm">
+<div>
+<span class="px-2.5 py-1 rounded-full bg-primary/15 text-primary font-label-code text-label-code inline-block mb-2">
+                  Domain Registrar &amp; All-in-One
+                </span>
+<h3 class="font-headline-md text-headline-md text-on-surface">GoDaddy</h3>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps">
+                Global Registrar
+              </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
+              The world's largest domain registrar offering domain aftermarket auctions, integrated site builder, and domain brokerage services.
+            </p>
+<div class="p-3 rounded-lg bg-surface-container-low mb-space-md">
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-wider block mb-1">Best suited for</span>
+<p class="font-body-sm text-body-sm text-on-surface">Small businesses seeking domain registration combined with telephone support and bundled business email.</p>
+</div>
+<div class="space-y-2 mb-space-lg">
+<span class="font-label-caps text-label-caps uppercase text-outline tracking-wider block">Key Specifications</span>
+<div class="grid grid-cols-2 gap-2 font-label-code text-label-code text-on-surface">
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-[14px]">check_circle</span> Extensive TLD Catalog</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-[14px]">check_circle</span> Domain Broker Services</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-[14px]">check_circle</span> Central DNS Console</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-[14px]">check_circle</span> Integrated Email Suite</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md border-t-0 flex flex-wrap items-center justify-between gap-3">
+<a class="inline-flex items-center gap-2 font-title-md text-title-md bg-surface-container-high hover:bg-surface-bright text-on-surface px-4 py-2 rounded-full transition-all" href="https://www.godaddy.com" rel="noopener noreferrer" target="_blank">
+<span>Check Current Pricing</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+<span class="font-label-code text-label-code text-outline">[Direct Link · Official Website]</span>
+</div>
+</article>
+<!-- 7. WordPress.com -->
+<article class="tool-card p-space-lg rounded-2xl bg-surface-container shadow-md flex flex-col justify-between transition-all duration-300" data-category="managed-wordpress" data-keywords="Managed WP SaaS Platform Automattic Global CDN Jetpack Automated backups WordPressHosting" data-name="WordPress.com">
+<div>
+<div class="flex items-start justify-between gap-3 mb-space-sm">
+<div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container/30 text-secondary font-label-code text-label-code inline-block mb-2">
+                  Managed WP &amp; SaaS Platform
+                </span>
+<h3 class="font-headline-md text-headline-md text-on-surface">WordPress.com</h3>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps">
+                Automattic Cloud
+              </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
+              Fully hosted managed WordPress service maintained by Automattic, handling hosting, core updates, and security at the application layer.
+            </p>
+<div class="p-3 rounded-lg bg-surface-container-low mb-space-md">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-wider block mb-1">Best suited for</span>
+<p class="font-body-sm text-body-sm text-on-surface">Creators and writers who want the WordPress CMS without managing server infrastructure, plugins, or manual updates.</p>
+</div>
+<div class="space-y-2 mb-space-lg">
+<span class="font-label-caps text-label-caps uppercase text-outline tracking-wider block">Key Specifications</span>
+<div class="grid grid-cols-2 gap-2 font-label-code text-label-code text-on-surface">
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[14px]">check_circle</span> Built-in Global CDN</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[14px]">check_circle</span> Jetpack Security Shield</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[14px]">check_circle</span> Automated Safe Backups</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[14px]">check_circle</span> Managed System Updates</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md border-t-0 flex flex-wrap items-center justify-between gap-3">
+<a class="inline-flex items-center gap-2 font-title-md text-title-md bg-surface-container-high hover:bg-surface-bright text-on-surface px-4 py-2 rounded-full transition-all" href="https://wordpress.com" rel="noopener noreferrer" target="_blank">
+<span>Check Current Pricing</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+<span class="font-label-code text-label-code text-outline">[Direct Link · Official Website]</span>
+</div>
+</article>
+<!-- 8. Wix -->
+<article class="tool-card p-space-lg rounded-2xl bg-surface-container shadow-md flex flex-col justify-between transition-all duration-300" data-category="website-builders" data-keywords="Visual Website Builder Drag and Drop NoCodeBuilders Templates Bookings CRM Cloud hosting" data-name="Wix">
+<div>
+<div class="flex items-start justify-between gap-3 mb-space-sm">
+<div>
+<span class="px-2.5 py-1 rounded-full bg-primary/15 text-primary font-label-code text-label-code inline-block mb-2">
+                  Visual Website Builder
+                </span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Wix</h3>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps">
+                Visual Canvas
+              </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
+              All-in-one hosted website building suite featuring an intuitive visual drag-and-drop editor, integrated hosting, and an extensive app market.
+            </p>
+<div class="p-3 rounded-lg bg-surface-container-low mb-space-md">
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-wider block mb-1">Best suited for</span>
+<p class="font-body-sm text-body-sm text-on-surface">Small business owners, portfolio creators, and local businesses wanting complete visual design freedom without code.</p>
+</div>
+<div class="space-y-2 mb-space-lg">
+<span class="font-label-caps text-label-caps uppercase text-outline tracking-wider block">Key Specifications</span>
+<div class="grid grid-cols-2 gap-2 font-label-code text-label-code text-on-surface">
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-[14px]">check_circle</span> Visual Canvas Editor</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-[14px]">check_circle</span> 900+ Designer Templates</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-[14px]">check_circle</span> Bookings &amp; Business CRM</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-[14px]">check_circle</span> Multi-Cloud Hosting</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md border-t-0 flex flex-wrap items-center justify-between gap-3">
+<a class="inline-flex items-center gap-2 font-title-md text-title-md bg-surface-container-high hover:bg-surface-bright text-on-surface px-4 py-2 rounded-full transition-all" href="https://www.wix.com" rel="noopener noreferrer" target="_blank">
+<span>Check Current Pricing</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+<span class="font-label-code text-label-code text-outline">[Direct Link · Official Website]</span>
+</div>
+</article>
+<!-- 9. Squarespace -->
+<article class="tool-card p-space-lg rounded-2xl bg-surface-container shadow-md flex flex-col justify-between transition-all duration-300" data-category="website-builders" data-keywords="Curated Design Website Builder Editorial templates NoCodeBuilders Ecommerce Scheduling FreeSSL" data-name="Squarespace">
+<div>
+<div class="flex items-start justify-between gap-3 mb-space-sm">
+<div>
+<span class="px-2.5 py-1 rounded-full bg-secondary/15 text-secondary font-label-code text-label-code inline-block mb-2">
+                  Curated Design Website Builder
+                </span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Squarespace</h3>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps">
+                Design Editorial
+              </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
+              Design-focused website platform featuring award-winning editorial templates, unified commerce capabilities, and built-in scheduling.
+            </p>
+<div class="p-3 rounded-lg bg-surface-container-low mb-space-md">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-wider block mb-1">Best suited for</span>
+<p class="font-body-sm text-body-sm text-on-surface">Photographers, creative agencies, restaurants, and boutiques seeking sophisticated aesthetics out of the box.</p>
+</div>
+<div class="space-y-2 mb-space-lg">
+<span class="font-label-caps text-label-caps uppercase text-outline tracking-wider block">Key Specifications</span>
+<div class="grid grid-cols-2 gap-2 font-label-code text-label-code text-on-surface">
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[14px]">check_circle</span> Curated Typography System</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[14px]">check_circle</span> Integrated Ecommerce</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[14px]">check_circle</span> Native Client Scheduling</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[14px]">check_circle</span> Built-in Email Campaigns</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md border-t-0 flex flex-wrap items-center justify-between gap-3">
+<a class="inline-flex items-center gap-2 font-title-md text-title-md bg-surface-container-high hover:bg-surface-bright text-on-surface px-4 py-2 rounded-full transition-all" href="https://www.squarespace.com" rel="noopener noreferrer" target="_blank">
+<span>Check Current Pricing</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+<span class="font-label-code text-label-code text-outline">[Direct Link · Official Website]</span>
+</div>
+</article>
+<!-- 10. Cloudflare -->
+<article class="tool-card p-space-lg rounded-2xl bg-surface-container shadow-md flex flex-col justify-between transition-all duration-300" data-category="security-dns" data-keywords="Security DNS CDN Anycast DDoS FreeSSL Reverse proxy WAF CloudVPS" data-name="Cloudflare">
+<div>
+<div class="flex items-start justify-between gap-3 mb-space-sm">
+<div>
+<span class="px-2.5 py-1 rounded-full bg-tertiary-container/30 text-tertiary font-label-code text-label-code inline-block mb-2">
+                  Security, DNS &amp; CDN
+                </span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Cloudflare</h3>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps">
+                Global Anycast Edge
+              </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
+              Global edge network providing fast authoritative DNS resolution, reverse proxy DDoS mitigation, and SSL certificate encryption.
+            </p>
+<div class="p-3 rounded-lg bg-surface-container-low mb-space-md">
+<span class="font-label-caps text-label-caps uppercase text-tertiary tracking-wider block mb-1">Best suited for</span>
+<p class="font-body-sm text-body-sm text-on-surface">Anyone wanting to accelerate website speed, reduce server load, and shield origin servers from web attacks.</p>
+</div>
+<div class="space-y-2 mb-space-lg">
+<span class="font-label-caps text-label-caps uppercase text-outline tracking-wider block">Key Specifications</span>
+<div class="grid grid-cols-2 gap-2 font-label-code text-label-code text-on-surface">
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-tertiary text-[14px]">check_circle</span> Unmetered DDoS Mitigation</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-tertiary text-[14px]">check_circle</span> Anycast DNS (&lt;15ms)</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-tertiary text-[14px]">check_circle</span> Universal Origin SSL</div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-tertiary text-[14px]">check_circle</span> Web Application Firewall</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md border-t-0 flex flex-wrap items-center justify-between gap-3">
+<a class="inline-flex items-center gap-2 font-title-md text-title-md bg-surface-container-high hover:bg-surface-bright text-on-surface px-4 py-2 rounded-full transition-all" href="https://www.cloudflare.com" rel="noopener noreferrer" target="_blank">
+<span>Check Current Pricing</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+<span class="font-label-code text-label-code text-outline">[External Link — Pending Partner Status]</span>
+</div>
+</article>
+</div>
+<!-- No Results State -->
+<div class="hidden p-space-2xl rounded-2xl bg-surface-container text-center space-y-3 mt-4" id="no-search-results">
+<span class="material-symbols-outlined text-outline text-[48px]">search_off</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">No infrastructure platforms match your search</h4>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mx-auto">Objective evaluation of active hosting engines, registrars, and cloud architecture based on published documentation. Specifications and features are subject to chosen tier and subscription plan.</p>
+<button class="mt-2 inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary-container text-on-primary-container font-title-md text-title-md" id="reset-filters-btn" type="button">
+          Reset All Filters
+        </button>
+</div>
+</section>
+<!-- Visual Architecture Divider Strip -->
+<div class="w-full max-w-[1280px] mx-auto px-6 lg:px-12 my-space-md">
+<div class="h-px bg-surface-container-high"></div>
+</div>
+<!-- =====================================================================
+         SECTION 03: BEGINNER COMPARISON MATRIX
+         ===================================================================== -->
+<section class="max-w-[1280px] mx-auto px-6 lg:px-12 py-space-2xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-space-xl">
+<div class="space-y-2">
+<div class="inline-flex items-center gap-2 font-label-code text-label-code text-primary uppercase">
+<span>SECTION 03 // ARCHITECTURE MATRIX</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Which Website Platform Should You Choose?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+            Side-by-side comparison matrix based on published architecture parameters and vendor documentation. Updated 2026.
+          </p>
+</div>
+<div class="flex items-center gap-2 text-outline font-label-code text-label-code">
+<span class="material-symbols-outlined text-[16px]">swipe</span>
+<span>Horizontal scroll on narrow viewports</span>
+</div>
+</div>
+<!-- Scrollable Comparison Table -->
+<div class="w-full overflow-x-auto rounded-2xl bg-surface-container shadow-xl">
+<table class="w-full text-left border-collapse min-w-[760px]">
+<thead>
+<tr class="bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps uppercase tracking-wider">
+<th class="py-4 px-6">Platform</th>
+<th class="py-4 px-6">Best For</th>
+<th class="py-4 px-6">Ease of Use</th>
+<th class="py-4 px-6">Hosting Type</th>
+<th class="py-4 px-6">Pricing</th>
+<th class="py-4 px-6 text-right">Official Website</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface font-body-sm text-body-sm">
+<!-- Row 1: Hostinger -->
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="py-4 px-6 font-title-md text-title-md text-on-surface font-bold">Hostinger</td>
+<td class="py-4 px-6 text-on-surface-variant">Budget-conscious beginners &amp; growing blogs</td>
+<td class="py-4 px-6">
+<span class="inline-flex items-center gap-1.5 text-primary font-label-code text-label-code">
+<span class="w-2 h-2 rounded-full bg-primary"></span> High (Guided hPanel)
+                </span>
+</td>
+<td class="py-4 px-6 font-label-code text-label-code text-on-surface">Shared / Cloud LiteSpeed</td>
+<td class="py-4 px-6 text-on-surface-variant font-label-code text-label-code">Check official website</td>
+<td class="py-4 px-6 text-right">
+<a class="inline-flex items-center gap-1 text-primary hover:text-secondary font-title-md text-title-md" href="https://www.hostinger.com" rel="noopener noreferrer" target="_blank">
+<span>Visit Hostinger</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</td>
+</tr>
+<!-- Row 2: Bluehost -->
+<tr class="bg-surface-container-low/50 hover:bg-surface-container-high/40 transition-colors">
+<td class="py-4 px-6 font-title-md text-title-md text-on-surface font-bold">Bluehost</td>
+<td class="py-4 px-6 text-on-surface-variant">First-time WordPress site creators</td>
+<td class="py-4 px-6">
+<span class="inline-flex items-center gap-1.5 text-primary font-label-code text-label-code">
+<span class="w-2 h-2 rounded-full bg-primary"></span> High (Guided WP Wizard)
+                </span>
+</td>
+<td class="py-4 px-6 font-label-code text-label-code text-on-surface">Shared / Managed WP</td>
+<td class="py-4 px-6 text-on-surface-variant font-label-code text-label-code">Check official website</td>
+<td class="py-4 px-6 text-right">
+<a class="inline-flex items-center gap-1 text-primary hover:text-secondary font-title-md text-title-md" href="https://www.bluehost.com" rel="noopener noreferrer" target="_blank">
+<span>Visit Bluehost</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</td>
+</tr>
+<!-- Row 3: SiteGround -->
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="py-4 px-6 font-title-md text-title-md text-on-surface font-bold">SiteGround</td>
+<td class="py-4 px-6 text-on-surface-variant">High-traffic sites &amp; agency client projects</td>
+<td class="py-4 px-6">
+<span class="inline-flex items-center gap-1.5 text-primary font-label-code text-label-code">
+<span class="w-2 h-2 rounded-full bg-primary"></span> High (Custom Site Tools)
+                </span>
+</td>
+<td class="py-4 px-6 font-label-code text-label-code text-on-surface">Managed Google Cloud</td>
+<td class="py-4 px-6 text-on-surface-variant font-label-code text-label-code">Check official website</td>
+<td class="py-4 px-6 text-right">
+<a class="inline-flex items-center gap-1 text-primary hover:text-secondary font-title-md text-title-md" href="https://www.siteground.com" rel="noopener noreferrer" target="_blank">
+<span>Visit SiteGround</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</td>
+</tr>
+<!-- Row 4: Cloudways -->
+<tr class="bg-surface-container-low/50 hover:bg-surface-container-high/40 transition-colors">
+<td class="py-4 px-6 font-title-md text-title-md text-on-surface font-bold">Cloudways</td>
+<td class="py-4 px-6 text-on-surface-variant">Scalable SaaS, apps &amp; WooCommerce stores</td>
+<td class="py-4 px-6">
+<span class="inline-flex items-center gap-1.5 text-secondary font-label-code text-label-code">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Moderate (Technical Cloud)
+                </span>
+</td>
+<td class="py-4 px-6 font-label-code text-label-code text-on-surface">Dedicated Managed Cloud</td>
+<td class="py-4 px-6 text-on-surface-variant font-label-code text-label-code">Check official website</td>
+<td class="py-4 px-6 text-right">
+<a class="inline-flex items-center gap-1 text-primary hover:text-secondary font-title-md text-title-md" href="https://www.cloudways.com" rel="noopener noreferrer" target="_blank">
+<span>Visit Cloudways</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</td>
+</tr>
+<!-- Row 5: WordPress.com -->
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="py-4 px-6 font-title-md text-title-md text-on-surface font-bold">WordPress.com</td>
+<td class="py-4 px-6 text-on-surface-variant">Writers &amp; publishers wanting hands-off WP</td>
+<td class="py-4 px-6">
+<span class="inline-flex items-center gap-1.5 text-primary font-label-code text-label-code">
+<span class="w-2 h-2 rounded-full bg-primary"></span> High (Hosted CMS)
+                </span>
+</td>
+<td class="py-4 px-6 font-label-code text-label-code text-on-surface">Proprietary Managed SaaS</td>
+<td class="py-4 px-6 text-on-surface-variant font-label-code text-label-code">Check official website</td>
+<td class="py-4 px-6 text-right">
+<a class="inline-flex items-center gap-1 text-primary hover:text-secondary font-title-md text-title-md" href="https://wordpress.com" rel="noopener noreferrer" target="_blank">
+<span>Visit WP.com</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</td>
+</tr>
+<!-- Row 6: Wix -->
+<tr class="bg-surface-container-low/50 hover:bg-surface-container-high/40 transition-colors">
+<td class="py-4 px-6 font-title-md text-title-md text-on-surface font-bold">Wix</td>
+<td class="py-4 px-6 text-on-surface-variant">Boutiques, visual portfolios &amp; local services</td>
+<td class="py-4 px-6">
+<span class="inline-flex items-center gap-1.5 text-primary font-label-code text-label-code">
+<span class="w-2 h-2 rounded-full bg-primary"></span> High (Visual Drag &amp; Drop)
+                </span>
+</td>
+<td class="py-4 px-6 font-label-code text-label-code text-on-surface">Fully Hosted Cloud</td>
+<td class="py-4 px-6 text-on-surface-variant font-label-code text-label-code">Check official website</td>
+<td class="py-4 px-6 text-right">
+<a class="inline-flex items-center gap-1 text-primary hover:text-secondary font-title-md text-title-md" href="https://www.wix.com" rel="noopener noreferrer" target="_blank">
+<span>Visit Wix</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</td>
+</tr>
+<!-- Row 7: Squarespace -->
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="py-4 px-6 font-title-md text-title-md text-on-surface font-bold">Squarespace</td>
+<td class="py-4 px-6 text-on-surface-variant">Creatives, design studios &amp; restaurants</td>
+<td class="py-4 px-6">
+<span class="inline-flex items-center gap-1.5 text-primary font-label-code text-label-code">
+<span class="w-2 h-2 rounded-full bg-primary"></span> High (Structured Editor)
+                </span>
+</td>
+<td class="py-4 px-6 font-label-code text-label-code text-on-surface">Fully Hosted Cloud</td>
+<td class="py-4 px-6 text-on-surface-variant font-label-code text-label-code">Check official website</td>
+<td class="py-4 px-6 text-right">
+<a class="inline-flex items-center gap-1 text-primary hover:text-secondary font-title-md text-title-md" href="https://www.squarespace.com" rel="noopener noreferrer" target="_blank">
+<span>Visit Squarespace</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</td>
+</tr>
+<!-- Row 8: Cloudflare -->
+<tr class="bg-surface-container-low/50 hover:bg-surface-container-high/40 transition-colors">
+<td class="py-4 px-6 font-title-md text-title-md text-on-surface font-bold">Cloudflare</td>
+<td class="py-4 px-6 text-on-surface-variant">Any webmaster needing security &amp; DNS speed</td>
+<td class="py-4 px-6">
+<span class="inline-flex items-center gap-1.5 text-secondary font-label-code text-label-code">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Moderate (DNS Management)
+                </span>
+</td>
+<td class="py-4 px-6 font-label-code text-label-code text-on-surface">Global Edge Proxy / DNS</td>
+<td class="py-4 px-6 text-on-surface-variant font-label-code text-label-code">Free tier available</td>
+<td class="py-4 px-6 text-right">
+<a class="inline-flex items-center gap-1 text-primary hover:text-secondary font-title-md text-title-md" href="https://www.cloudflare.com" rel="noopener noreferrer" target="_blank">
+<span>Visit Cloudflare</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="p-space-md bg-surface-container-high/60 flex items-center gap-3">
+<span class="material-symbols-outlined text-outline text-[18px] shrink-0">info</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Pricing structures, promotional discounts, and renewal terms vary by billing cycle and country. Verify current details directly on vendor sites.
+          </p>
+</div>
+</div>
+</section>
+<!-- Visual Architecture Divider Strip -->
+<div class="w-full max-w-[1280px] mx-auto px-6 lg:px-12 my-space-md">
+<div class="h-px bg-surface-container-high"></div>
+</div>
+<!-- =====================================================================
+         SECTION 04: BEGINNER LEARNING GUIDE (ROADMAP 01 - 09)
+         ===================================================================== -->
+<section class="max-w-[1280px] mx-auto px-6 lg:px-12 py-space-2xl scroll-mt-24" id="beginner-roadmap">
+<div class="space-y-2 mb-space-xl">
+<div class="inline-flex items-center gap-2 font-label-code text-label-code text-secondary uppercase">
+<span>SECTION 04 // OPERATIONAL BLUEPRINT</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Create Your First Website: A Beginner's Roadmap</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl leading-relaxed">
+          A structured 9-step procedural guide helping you navigate hosting setup, domain mapping, and launch safeguards without confusion.
+        </p>
+</div>
+<!-- Roadmap Grid (3x3 on Desktop) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Step 01 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-display text-display text-primary/40">01</span>
+<span class="material-symbols-outlined text-primary text-[24px]">flag</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Choose Your Website Purpose</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Define whether you need a blog, portfolio, lead generation site, or ecommerce shop to choose the right tech stack.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md font-label-code text-label-code text-primary">PHASE 1: DISCOVERY</div>
+</div>
+<!-- Step 02 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low shadow-sm flex flex-col justify-between"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-secondary text-[20px]">signpost</span></div><h3 class="font-headline-sm text-headline-sm text-on-surface">What is a Domain Name?</h3></div><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">A domain name is your human-readable internet address (like example.com) that translates into numerical machine IP addresses through the global Domain Name System (DNS). Domain registration grants exclusive rental rights to use that name via accredited registrars.</p></div>
+<!-- Step 03 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low shadow-sm flex flex-col justify-between"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-tertiary text-[20px]">dataset</span></div><h3 class="font-headline-sm text-headline-sm text-on-surface">What is WordPress?</h3></div><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">WordPress is the open-source Content Management System powering approximately 43% of all websites whose content management systems are known (source: W3Techs Web Technology Surveys, 2024–2026 data), offering open-source architectural autonomy, self-hosting control over your files and database, and extensive modularity through thousands of community plugins and themes.</p></div>
+<!-- Step 04 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low shadow-sm flex flex-col justify-between"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-primary text-[20px]">view_column</span></div><h3 class="font-headline-sm text-headline-sm text-on-surface">Shared Hosting vs VPS vs Cloud Hosting</h3></div><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Shared hosts pool multiple sites on one server; VPS partitions dedicated virtual slices with isolated RAM and CPU; Cloud distributes across clustered hardware instances aimed at minimizing single points of failure across clustered nodes, though actual availability and failover depend on provider tier and architecture.</p></div>
+<!-- Step 05 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low shadow-sm flex flex-col justify-between"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-secondary text-[20px]">money_off</span></div><h3 class="font-headline-sm text-headline-sm text-on-surface">Free Hosting vs Paid Hosting</h3></div><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Unlike free hosting (which often injects intrusive ads, imposes severe bandwidth limits, and lacks dedicated support), paid hosting plans generally offer superior hardware and control. However, specific features such as uptime SLA commitments, high-speed NVMe/SSD storage, automated off-site backups, and bundled SSL certificates vary significantly by provider and selected subscription tier, rather than being universally guaranteed.</p></div>
+<!-- Step 06 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low shadow-sm flex flex-col justify-between"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-tertiary text-[20px]">shield</span></div><h3 class="font-headline-sm text-headline-sm text-on-surface">What is SSL / TLS?</h3></div><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">TLS (Transport Layer Security) is the modern cryptographic protocol used to establish encrypted, authenticated HTTPS connections between web browsers and servers. SSL (Secure Sockets Layer) is the deprecated legacy precursor whose name is still widely used in commercial hosting. Modern browsers actively flag unencrypted HTTP sites as insecure.</p></div>
+<!-- Step 07 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-display text-display text-primary/40">07</span>
+<span class="material-symbols-outlined text-primary text-[24px]">lock_clock</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Secure Your Website with SSL</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Ensure your HTTPS encryption certificate is active and configure strict HTTP-to-HTTPS redirect.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md font-label-code text-label-code text-primary">PHASE 4: INTEGRITY</div>
+</div>
+<!-- Step 08 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-display text-display text-secondary/40">08</span>
+<span class="material-symbols-outlined text-secondary text-[24px]">devices</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Test Your Website on Mobile</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Audit touch tap targets, viewport scaling, page load speed, and font legibility on Android &amp; iOS.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md font-label-code text-label-code text-secondary">PHASE 4: AUDIT</div>
+</div>
+<!-- Step 09 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-display text-display text-tertiary/40">09</span>
+<span class="material-symbols-outlined text-tertiary text-[24px]">rocket_launch</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Publish &amp; Maintain Your Website</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Connect automated weekly backups, test contact forms, and review scheduled software updates.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md font-label-code text-label-code text-tertiary">PHASE 5: LAUNCH &amp; OPS</div>
+</div>
+</div>
+</section>
+<!-- Visual Architecture Divider Strip -->
+<div class="w-full max-w-[1280px] mx-auto px-6 lg:px-12 my-space-md">
+<div class="h-px bg-surface-container-high"></div>
+</div>
+<!-- =====================================================================
+         SECTION 05: EDUCATIONAL CONTENT (7 CONCEPT BLOCKS)
+         ===================================================================== -->
+<section class="max-w-[1280px] mx-auto px-6 lg:px-12 py-space-2xl">
+<div class="space-y-2 mb-space-xl">
+<div class="inline-flex items-center gap-2 font-label-code text-label-code text-primary uppercase">
+<span>SECTION 05 // INFRASTRUCTURE CONCEPTS</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Understand Before You Buy</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl leading-relaxed">UNKNOWN compiles vendor specifications, public documentation, and architectural characteristics. UNKNOWN has not personally bench-tested, performance-tested, or independently laboratory-audited every provider listed. Some outbound links may become qualifying affiliate links upon partner program approval at zero additional cost to you. Recommendations prioritize architectural suitability, clarity, and documented utility.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+<!-- Concept 1 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low shadow-sm space-y-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[20px]">apartment</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">What is Web Hosting?</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">UNKNOWN compiles vendor specifications, public documentation, and architectural characteristics. UNKNOWN has not personally bench-tested, performance-tested, or independently laboratory-audited every provider listed. Some outbound links may become qualifying affiliate links upon partner program approval at zero additional cost to you. Recommendations prioritize architectural suitability, clarity, and documented utility.</p>
+</div>
+<!-- Concept 2 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low shadow-sm space-y-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[20px]">signpost</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">What is a Domain Name?</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">UNKNOWN compiles vendor specifications, public documentation, and architectural characteristics. UNKNOWN has not personally bench-tested, performance-tested, or independently laboratory-audited every provider listed. Some outbound links may become qualifying affiliate links upon partner program approval at zero additional cost to you. Recommendations prioritize architectural suitability, clarity, and documented utility.</p>
+</div>
+<!-- Concept 3 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low shadow-sm space-y-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-tertiary text-[20px]">dataset</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">What is WordPress?</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">UNKNOWN compiles vendor specifications, public documentation, and architectural characteristics. UNKNOWN has not personally bench-tested, performance-tested, or independently laboratory-audited every provider listed. Some outbound links may become qualifying affiliate links upon partner program approval at zero additional cost to you. Recommendations prioritize architectural suitability, clarity, and documented utility.</p>
+</div>
+<!-- Concept 4 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low shadow-sm space-y-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[20px]">view_column</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Shared Hosting vs VPS vs Cloud Hosting</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">UNKNOWN compiles vendor specifications, public documentation, and architectural characteristics. UNKNOWN has not personally bench-tested, performance-tested, or independently laboratory-audited every provider listed. Some outbound links may become qualifying affiliate links upon partner program approval at zero additional cost to you. Recommendations prioritize architectural suitability, clarity, and documented utility.</p>
+</div>
+<!-- Concept 5 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low shadow-sm space-y-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[20px]">money_off</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Free Hosting vs Paid Hosting</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">UNKNOWN compiles vendor specifications, public documentation, and architectural characteristics. UNKNOWN has not personally bench-tested, performance-tested, or independently laboratory-audited every provider listed. Some outbound links may become qualifying affiliate links upon partner program approval at zero additional cost to you. Recommendations prioritize architectural suitability, clarity, and documented utility.</p>
+</div>
+<!-- Concept 6 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low shadow-sm space-y-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-tertiary text-[20px]">shield</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">What is SSL?</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">UNKNOWN compiles vendor specifications, public documentation, and architectural characteristics. UNKNOWN has not personally bench-tested, performance-tested, or independently laboratory-audited every provider listed. Some outbound links may become qualifying affiliate links upon partner program approval at zero additional cost to you. Recommendations prioritize architectural suitability, clarity, and documented utility.</p>
+</div>
+<!-- Concept 7 (Full width on lg) -->
+<div class="lg:col-span-2 p-space-lg rounded-2xl bg-surface-container-low shadow-sm space-y-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[20px]">cloud_sync</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Why Website Backups Matter?</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">UNKNOWN compiles vendor specifications, public documentation, and architectural characteristics. UNKNOWN has not personally bench-tested, performance-tested, or independently laboratory-audited every provider listed. Some outbound links may become qualifying affiliate links upon partner program approval at zero additional cost to you. Recommendations prioritize architectural suitability, clarity, and documented utility.</p>
+</div>
+</div>
+</section>
+<!-- Visual Architecture Divider Strip -->
+<div class="w-full max-w-[1280px] mx-auto px-6 lg:px-12 my-space-md">
+<div class="h-px bg-surface-container-high"></div>
+</div>
+<!-- =====================================================================
+         SECTION 06: TRANSPARENCY & TRUST PROTOCOL MODULE
+         ===================================================================== -->
+<section class="max-w-[1280px] mx-auto px-6 lg:px-12 py-space-2xl">
+<div class="p-space-xl rounded-2xl bg-surface-container shadow-2xl relative overflow-hidden">
+<div class="absolute -right-16 -bottom-16 w-80 h-80 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 space-y-space-md">
+<!-- Shield Icon Badge -->
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container-high text-primary font-label-code text-label-code">
+<span class="material-symbols-outlined text-[18px]">gavel</span>
+<span>INTEGRITY ASSURANCE PROTOCOL · REV 2026.1</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">
+            Affiliate Transparency Protocol &amp; Editorial Standards
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-4xl leading-relaxed">
+            UNKNOWN helps users discover and compare digital tools. Product information in this index is compiled strictly from published vendor specifications, public documentation, and objective architectural characteristics. We do not claim to have personally tested every product or service. Some outbound links may be affiliate links. UNKNOWN may earn a referral commission when you purchase through these links upon program approval, at zero additional cost to you. Recommendations prioritize practical utility, architecture suitability, and value rather than commission incentives.
+          </p>
+<!-- 3 Commitment Highlights -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-space-sm">
+<div class="p-4 rounded-xl bg-surface-container-low flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">verified_user</span>
+<div>
+<span class="font-title-md text-title-md text-on-surface block mb-1">Honest Editorial Scope</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">No sponsored rank adjustments or pay-to-play placements.</p>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">price_check</span>
+<div>
+<span class="font-title-md text-title-md text-on-surface block mb-1">Zero Price Markups</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Outbound links never increase your subscription costs.</p>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary text-[20px] shrink-0 mt-0.5">menu_book</span>
+<div>
+<span class="font-title-md text-title-md text-on-surface block mb-1">Factual Documentation Focus</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Evaluated from official documentation, APIs, and public specs.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- =====================================================================
+     CLIENT-SIDE INTERACTIVE SCRIPT (INSTANT SEARCH & FILTER CONTROLS)
+     ===================================================================== -->
+<script>
+(function () {
+  function initUnknownDirectorySearch() {
+    const searchInput = document.getElementById('live-tool-search');
+    const clearSearchBtn = document.getElementById('clear-search-btn');
+    const filterPills = Array.from(document.querySelectorAll('.filter-pill'));
+    const toolCards = Array.from(document.querySelectorAll('.tool-card'));
+    const matchCountEl = document.getElementById('tool-match-count');
+    const noResultsEl = document.getElementById('no-search-results');
+    const resetFiltersBtn = document.getElementById('reset-filters-btn');
+    const tagShortcuts = Array.from(document.querySelectorAll('.tag-shortcut'));
+    if (!searchInput || !toolCards.length) return;
+
+    let currentCategory = 'all';
+    function applyFilters() {
+      const term = searchInput.value.toLocaleLowerCase().trim();
+      let visibleCount = 0;
+      toolCards.forEach(card => {
+        const name = (card.dataset.name || '').toLocaleLowerCase();
+        const category = card.dataset.category || '';
+        const keywords = (card.dataset.keywords || '').toLocaleLowerCase();
+        const text = (card.textContent || '').toLocaleLowerCase();
+        const matchCategory = currentCategory === 'all' || category === currentCategory;
+        const matchSearch = !term || name.includes(term) || keywords.includes(term) || text.includes(term);
+        const visible = matchCategory && matchSearch;
+        card.style.display = visible ? '' : 'none';
+        if (visible) visibleCount++;
+      });
+      if (matchCountEl) matchCountEl.textContent = visibleCount + ' Indexed';
+      if (noResultsEl) noResultsEl.style.display = visibleCount ? 'none' : '';
+      if (clearSearchBtn) clearSearchBtn.style.display = term ? '' : 'none';
+    }
+    searchInput.addEventListener('input', applyFilters);
+    searchInput.addEventListener('keyup', applyFilters);
+    if (clearSearchBtn) clearSearchBtn.addEventListener('click', function () {
+      searchInput.value = ''; applyFilters(); searchInput.focus();
+    });
+    filterPills.forEach(pill => pill.addEventListener('click', function () {
+      filterPills.forEach(p => {
+        p.classList.remove('bg-primary', 'text-on-primary', 'active');
+        p.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+      });
+      pill.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+      pill.classList.add('bg-primary', 'text-on-primary', 'active');
+      currentCategory = pill.dataset.category || 'all';
+      applyFilters();
+    }));
+    tagShortcuts.forEach(tag => tag.addEventListener('click', function () {
+      searchInput.value = tag.dataset.tag || ''; applyFilters();
+      searchInput.scrollIntoView({behavior:'smooth', block:'center'});
+    }));
+    if (resetFiltersBtn) resetFiltersBtn.addEventListener('click', function () {
+      searchInput.value = ''; currentCategory = 'all';
+      filterPills.forEach(p => {
+        const active = (p.dataset.category || 'all') === 'all';
+        p.classList.toggle('active', active);
+        p.classList.toggle('bg-primary', active);
+        p.classList.toggle('text-on-primary', active);
+        p.classList.toggle('bg-surface-container-high', !active);
+        p.classList.toggle('text-on-surface-variant', !active);
+      });
+      applyFilters();
+    });
+    applyFilters();
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initUnknownDirectorySearch, {once:true});
+  else initUnknownDirectorySearch();
+})();
+</script></main><footer class="w-full bg-surface-container-lowest"><div class="max-w-[1280px] mx-auto px-6 lg:px-12 pt-space-2xl pb-space-lg"><div class="p-space-lg rounded-xl bg-surface-container mb-space-2xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-start gap-3"><span class="material-symbols-outlined text-primary mt-0.5 text-[20px]">verified_user</span><div class="space-y-1"><span class="font-label-caps text-label-caps uppercase text-primary tracking-wider">Affiliate Transparency Statement</span><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Affiliate Disclosure: Some links on UNKNOWN may be affiliate links. We may earn a commission when you purchase through these links, at no additional cost to you. Our recommendations prioritise usefulness, suitability, and real value.</p></div></div></div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl mb-space-2xl"><div class="lg:col-span-2 space-y-space-md"><div class="flex items-center gap-3"><img alt="UNKNOWN Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBxryhSDPQlsgWF-J2_jyTUZavj1eq-hpgH8F0U8PHyhspGwc7LkE6Mdir0IBpBBvsKyZM5S2q006UoAM0kxe9oHrx4KKxF4W4VcM0Zo3DXIpqFWUUYveli3ahwB8L7gTIlX4qMgoGQnSStTojDJBPpC6z8miM7Rd-HW_0TZ9WicrNiBeaJqzTuFC9ULVNfJ2FWSq6u_qZrZQ9j8AmMi6SrO8kKjoIcaxVp7WIEyewh"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-bold">UNKNOWN</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Discover the Tools. Build Your Future. Precision architecture directory and computational catalog for builders, agencies, and online ventures.</p><div class="flex items-center gap-3 pt-space-xs"><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high font-label-code text-label-code text-primary"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>Telemetry Active</span></div></div><div class="space-y-space-sm"><div class="font-label-caps text-label-caps text-on-surface uppercase tracking-wider">Platform &amp; Categories</div><ul class="space-y-2.5"><li class="list-none"><a class="font-body-sm text-body-sm text-secondary hover:text-on-surface transition-colors font-medium" data-path="web-hosting" href="#">Web &amp; Hosting (Active)</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="business-software" href="#">Business Software</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="ecommerce" href="#">Ecommerce</a></li><li class="list-none"><span class="font-body-sm text-body-sm text-outline flex items-center gap-1.5">Beginner Guides <span class="font-label-caps text-[11px] text-outline-variant">(Coming Soon)</span></span></li></ul></div><div class="space-y-space-sm"><div class="font-label-caps text-label-caps text-on-surface uppercase tracking-wider">Company</div><ul class="space-y-2.5"><li class="list-none"><span class="font-body-sm text-body-sm text-outline flex items-center gap-1.5">About UNKNOWN <span class="font-label-caps text-[11px] text-outline-variant">(Coming Soon)</span></span></li><li class="list-none"><div class="space-y-1"><span class="font-body-sm text-body-sm text-on-surface-variant block font-medium">Editorial Contact:</span><span class="font-body-sm text-body-sm text-outline block leading-tight text-[12px]">Official editorial contact address pending domain configuration. Direct inquiries will open once communication routing is active.</span></div></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#popular-tools-index">Explore Digital Tools</a></li></ul></div><div class="space-y-space-sm"><div class="font-label-caps text-label-caps text-on-surface uppercase tracking-wider">Legal &amp; Trust</div><ul class="space-y-2.5"><li class="list-none"><span class="font-body-sm text-body-sm text-outline flex items-center gap-1.5">Privacy Policy <span class="font-label-caps text-[11px] text-outline-variant">(Draft — Pending Legal Completion)</span></span></li><li class="list-none"><span class="font-body-sm text-body-sm text-outline flex items-center gap-1.5">Terms &amp; Conditions <span class="font-label-caps text-[11px] text-outline-variant">(Draft — Pending Legal Completion)</span></span></li><li class="list-none"><span class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer" onclick="document.querySelector('section:nth-of-type(6)').scrollIntoView({behavior: 'smooth'})">Affiliate Disclosure Protocol</span></li></ul></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-on-surface-variant"><p>© 2026 UNKNOWN. All rights reserved. Precision Software Architecture.</p><div class="flex items-center gap-2 font-label-code text-label-code text-primary"><span class="w-2 h-2 rounded-full bg-primary"></span>Systems Operational &amp; Secure</div></div></div></footer></body></html>

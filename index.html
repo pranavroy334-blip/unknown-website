@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UNKNOWN — Discover Smarter Digital Tools. Build Better Businesses.</title>
+  <meta name="description" content="Discover website hosting, domains, business software, AI tools, and ecommerce platforms with UNKNOWN. Objective specifications to build your digital presence.">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            surface: {
+              DEFAULT: '#051424',
+              dim: '#030d18',
+              card: '#0a1a2e',
+              border: 'rgba(124, 58, 237, 0.18)',
+              borderSubtle: 'rgba(255, 255, 255, 0.08)'
+            },
+            brand: {
+              purple: '#7c3aed',
+              violet: '#a855f7',
+              glow: 'rgba(124, 58, 237, 0.35)'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #030d18;
+      color: #f1f5f9;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .glass-nav {
+      background: rgba(5, 20, 36, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(124, 58, 237, 0.15);
+    }
+    .category-card {
+      background: linear-gradient(180deg, rgba(10, 26, 46, 0.8) 0%, rgba(5, 20, 36, 0.95) 100%);
+      border: 1px solid rgba(124, 58, 237, 0.2);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .category-card:hover {
+      border-color: rgba(168, 85, 247, 0.5);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 36px -10px rgba(124, 58, 237, 0.25);
+    }
+    .brand-glow-btn {
+      background: linear-gradient(135deg, #7c3aed 0%, #6366f1 100%);
+      box-shadow: 0 0 20px rgba(124, 58, 237, 0.35);
+      transition: all 0.2s ease;
+    }
+    .brand-glow-btn:hover {
+      box-shadow: 0 0 28px rgba(168, 85, 247, 0.55);
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased selection:bg-purple-600 selection:text-white">
+
+  <!-- Shared Top Navigation Header -->
+  <header class="sticky top-0 z-50 glass-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Wordmark & Tagline -->
+        <a href="index.html" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-lg p-1" aria-label="UNKNOWN Homepage">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-purple-700 to-indigo-600 flex items-center justify-center font-mono font-bold text-white text-xl shadow-lg shadow-purple-900/30 group-hover:scale-105 transition-transform">
+            U
+          </div>
+          <div class="flex flex-col">
+            <span class="font-bold text-lg tracking-wider text-white flex items-center gap-1.5 font-mono">
+              UNKNOWN <span class="w-1.5 h-1.5 rounded-full bg-purple-500 animate-pulse"></span>
+            </span>
+            <span class="text-[11px] text-slate-400 font-mono hidden sm:inline tracking-tight">Discover the Tools. Build Your Future.</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <nav class="hidden md:flex items-center gap-1.5 bg-slate-900/60 p-1.5 rounded-full border border-purple-500/20 text-sm" aria-label="Primary Navigation">
+          <a href="index.html" class="px-4 py-2 rounded-full font-medium text-white bg-purple-600/30 border border-purple-500/40 shadow-sm" aria-current="page">Home</a>
+          <a href="web-hosting.html" class="px-4 py-2 rounded-full font-medium text-slate-300 hover:text-white hover:bg-slate-800/80 transition-colors">Web & Hosting</a>
+          <a href="business-software.html" class="px-4 py-2 rounded-full font-medium text-slate-300 hover:text-white hover:bg-slate-800/80 transition-colors">Business Software</a>
+          <a href="ecommerce.html" class="px-4 py-2 rounded-full font-medium text-slate-300 hover:text-white hover:bg-slate-800/80 transition-colors">E-Commerce</a>
+        </nav>
+
+        <!-- Header CTA and Mobile Menu Toggle -->
+        <div class="flex items-center gap-3">
+          <a href="#category-directory" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold text-white brand-glow-btn">
+            Explore Tools
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+
+          <!-- Mobile Hamburger Toggle Button -->
+          <button id="mobileMenuButton" type="button" class="md:hidden p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-purple-500" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation menu">
+            <svg id="hamburgerIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            <svg id="closeIcon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden md:hidden border-t border-purple-500/20 bg-slate-950/95 px-4 pt-3 pb-6 space-y-2 backdrop-blur-xl">
+      <a href="index.html" class="mobile-nav-link block px-4 py-3 rounded-lg text-base font-medium text-white bg-purple-600/30 border border-purple-500/40" aria-current="page">Home</a>
+      <a href="web-hosting.html" class="mobile-nav-link block px-4 py-3 rounded-lg text-base font-medium text-slate-300 hover:bg-slate-800/80 hover:text-white">Web & Hosting</a>
+      <a href="business-software.html" class="mobile-nav-link block px-4 py-3 rounded-lg text-base font-medium text-slate-300 hover:bg-slate-800/80 hover:text-white">Business Software</a>
+      <a href="ecommerce.html" class="mobile-nav-link block px-4 py-3 rounded-lg text-base font-medium text-slate-300 hover:bg-slate-800/80 hover:text-white">E-Commerce</a>
+      <div class="pt-2">
+        <a href="#category-directory" class="mobile-nav-link w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-sm font-semibold text-white brand-glow-btn">
+          Explore All Categories
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    
+    <!-- Hero Section -->
+    <section class="relative pt-16 pb-20 md:pt-24 md:pb-28 overflow-hidden">
+      <!-- Ambient Background Glows -->
+      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-purple-600/15 blur-[120px] rounded-full pointer-events-none -z-10"></div>
+      <div class="absolute top-1/3 right-10 w-72 h-72 bg-indigo-600/10 blur-[100px] rounded-full pointer-events-none -z-10"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <!-- Eyebrow Badge -->
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-purple-500/30 bg-purple-950/40 text-purple-300 text-xs font-mono mb-6 tracking-wide">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          <span>CURATED DIGITAL DISCOVERY DIRECTORY // 2026</span>
+        </div>
+
+        <!-- H1 Headline -->
+        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.15] max-w-4xl mx-auto">
+          Welcome to <span class="bg-gradient-to-r from-purple-400 via-violet-300 to-indigo-300 bg-clip-text text-transparent">UNKNOWN</span>.<br>
+          Discover Smarter Digital Tools.
+        </h1>
+
+        <!-- Subheading -->
+        <p class="mt-6 text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
+          Build better businesses. Explore website hosting, domains, business software, AI tools, and ecommerce platforms with clear, objective specifications.
+        </p>
+
+        <!-- Hero Actions -->
+        <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="#category-directory" class="w-full sm:w-auto px-8 py-3.5 rounded-xl font-semibold text-white brand-glow-btn flex items-center justify-center gap-2 text-base">
+            Explore Digital Tools
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <a href="#how-to-use" class="w-full sm:w-auto px-7 py-3.5 rounded-xl font-medium text-slate-300 hover:text-white bg-slate-900/80 hover:bg-slate-800 border border-slate-700/60 transition-colors flex items-center justify-center gap-2 text-base">
+            How It Works
+          </a>
+        </div>
+
+        <!-- Value Stats / Signals -->
+        <div class="mt-14 pt-8 border-t border-slate-800/80 max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 text-left">
+          <div class="p-3 bg-slate-900/40 rounded-xl border border-slate-800/50">
+            <div class="font-mono text-xs text-purple-400 font-semibold">3 CORE DIRECTORIES</div>
+            <div class="text-white text-sm font-medium mt-1">Hosting, SaaS & Commerce</div>
+          </div>
+          <div class="p-3 bg-slate-900/40 rounded-xl border border-slate-800/50">
+            <div class="font-mono text-xs text-purple-400 font-semibold">OBJECTIVE SPECS</div>
+            <div class="text-white text-sm font-medium mt-1">Direct vendor specifications</div>
+          </div>
+          <div class="p-3 bg-slate-900/40 rounded-xl border border-slate-800/50">
+            <div class="font-mono text-xs text-purple-400 font-semibold">ZERO FAKE RATINGS</div>
+            <div class="text-white text-sm font-medium mt-1">No paid star inflation</div>
+          </div>
+          <div class="p-3 bg-slate-900/40 rounded-xl border border-slate-800/50">
+            <div class="font-mono text-xs text-purple-400 font-semibold">HONEST DISCLOSURE</div>
+            <div class="text-white text-sm font-medium mt-1">Transparent referral notice</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main 3 Category Hub Cards Section -->
+    <section id="category-directory" class="py-16 md:py-24 bg-slate-950/60 border-t border-b border-purple-500/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-purple-500/20 bg-purple-900/20 text-purple-300 text-xs font-mono mb-3">
+            EXPLORE PLATFORMS BY CATEGORY
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+            Curated Category Hubs
+          </h2>
+          <p class="mt-3 text-slate-400 text-base sm:text-lg">
+            Choose a domain below to browse verified specifications, technical comparisons, and official vendor destinations.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Category Card 1: Web & Hosting -->
+          <div class="category-card rounded-2xl p-7 flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-purple-600/20 border border-purple-500/30 flex items-center justify-center text-purple-400 mb-6">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/></svg>
+              </div>
+              <div class="text-xs font-mono text-purple-400 uppercase tracking-wider font-semibold mb-1">Infrastructure Layer</div>
+              <h3 class="text-2xl font-bold text-white mb-3">Web & Hosting</h3>
+              <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                Discover hosting providers, domain services, website builders, WordPress solutions, business email, and website security.
+              </p>
+              <div class="space-y-2 mb-8 text-xs text-slate-400 font-mono">
+                <div class="flex items-center gap-2">
+                  <span class="text-purple-400">✓</span> Shared, VPS & Cloud Stacks
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-purple-400">✓</span> Domain Registrars & DNS
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-purple-400">✓</span> SSL / TLS & Edge CDN
+                </div>
+              </div>
+            </div>
+            <div>
+              <a href="web-hosting.html" class="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold text-white brand-glow-btn">
+                <span>Explore Web & Hosting</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Category Card 2: Business Software -->
+          <div class="category-card rounded-2xl p-7 flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-indigo-600/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400 mb-6">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/></svg>
+              </div>
+              <div class="text-xs font-mono text-indigo-400 uppercase tracking-wider font-semibold mb-1">Operational Vector</div>
+              <h3 class="text-2xl font-bold text-white mb-3">Business Software</h3>
+              <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                Discover AI tools, CRM platforms, email marketing, SEO software, automation, and productivity solutions.
+              </p>
+              <div class="space-y-2 mb-8 text-xs text-slate-400 font-mono">
+                <div class="flex items-center gap-2">
+                  <span class="text-indigo-400">✓</span> LLM & AI Assistants (Claude, GPT)
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-indigo-400">✓</span> CRM & Inbound Pipelines
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-indigo-400">✓</span> Workflow Automation (Make, Zapier, n8n)
+                </div>
+              </div>
+            </div>
+            <div>
+              <a href="business-software.html" class="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 shadow-lg shadow-indigo-950/40 transition-all">
+                <span>Explore Business Software</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Category Card 3: E-Commerce -->
+          <div class="category-card rounded-2xl p-7 flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-violet-600/20 border border-violet-500/30 flex items-center justify-center text-violet-400 mb-6">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+              </div>
+              <div class="text-xs font-mono text-violet-400 uppercase tracking-wider font-semibold mb-1">Commerce Engine</div>
+              <h3 class="text-2xl font-bold text-white mb-3">E-Commerce</h3>
+              <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                Discover ecommerce platforms, payment solutions, store management tools, marketing automation, and customer management software.
+              </p>
+              <div class="space-y-2 mb-8 text-xs text-slate-400 font-mono">
+                <div class="flex items-center gap-2">
+                  <span class="text-violet-400">✓</span> Store Builders (Shopify, WooCommerce)
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-violet-400">✓</span> Payment Gateways (Stripe, Razorpay)
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-violet-400">✓</span> Lifecycle Marketing (Klaviyo)
+                </div>
+              </div>
+            </div>
+            <div>
+              <a href="ecommerce.html" class="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 shadow-lg shadow-purple-950/40 transition-all">
+                <span>Explore E-Commerce</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: What UNKNOWN Helps Visitors Discover -->
+    <section class="py-16 md:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-5">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-purple-500/20 bg-purple-900/20 text-purple-300 text-xs font-mono mb-4">
+              EDITORIAL OBJECTIVES
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight leading-snug">
+              What UNKNOWN Helps You Discover
+            </h2>
+            <p class="mt-4 text-slate-300 leading-relaxed text-base">
+              Starting and scaling a digital venture requires navigating thousands of software options. UNKNOWN cuts through marketing jargon, unverified reviews, and fabricated claims to give you clear architectural facts.
+            </p>
+            <div class="mt-6 space-y-4">
+              <div class="flex items-start gap-3.5">
+                <div class="w-6 h-6 rounded-full bg-purple-600/30 border border-purple-500/40 flex items-center justify-center text-purple-400 shrink-0 mt-0.5">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <div>
+                  <h3 class="text-white font-semibold text-sm">Factual Vendor Specifications</h3>
+                  <p class="text-slate-400 text-xs mt-0.5">Specifications, tier allowances, and protocol support compiled directly from published provider documentation.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3.5">
+                <div class="w-6 h-6 rounded-full bg-purple-600/30 border border-purple-500/40 flex items-center justify-center text-purple-400 shrink-0 mt-0.5">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <div>
+                  <h3 class="text-white font-semibold text-sm">Side-by-Side Architectural Matrices</h3>
+                  <p class="text-slate-400 text-xs mt-0.5">Structured tables outlining best-suited scenarios, ease of use, hosting type, and configuration requirements.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3.5">
+                <div class="w-6 h-6 rounded-full bg-purple-600/30 border border-purple-500/40 flex items-center justify-center text-purple-400 shrink-0 mt-0.5">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <div>
+                  <h3 class="text-white font-semibold text-sm">Actionable Beginner Roadmaps</h3>
+                  <p class="text-slate-400 text-xs mt-0.5">Step-by-step procedural blueprints explaining domains, hosting, SSL/TLS, and checkout gateways in plain language.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 bg-slate-900/60 p-6 sm:p-8 rounded-2xl border border-purple-500/20 shadow-xl">
+            <div class="font-mono text-xs text-purple-400 mb-4 pb-2 border-b border-slate-800 flex justify-between items-center">
+              <span>EXPLORATION DIRECTORY MATRIX</span>
+              <span>INDEX: 2026.01</span>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800">
+                <div class="text-sm font-bold text-white mb-1">Web & Hosting Tools</div>
+                <p class="text-xs text-slate-400">Discover Hostinger, Bluehost, SiteGround, Cloudways, Namecheap, Cloudflare, WordPress and more.</p>
+                <a href="web-hosting.html" class="inline-flex items-center gap-1 text-xs text-purple-400 hover:text-purple-300 font-medium mt-3">
+                  Browse 10+ Platforms →
+                </a>
+              </div>
+              <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800">
+                <div class="text-sm font-bold text-white mb-1">AI & SaaS Workflows</div>
+                <p class="text-xs text-slate-400">Discover Claude, ChatGPT, Perplexity, HubSpot, Make, Zapier, n8n, Notion, Linear and more.</p>
+                <a href="business-software.html" class="inline-flex items-center gap-1 text-xs text-purple-400 hover:text-purple-300 font-medium mt-3">
+                  Browse 12+ Tools →
+                </a>
+              </div>
+              <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800">
+                <div class="text-sm font-bold text-white mb-1">E-Commerce Infrastructure</div>
+                <p class="text-xs text-slate-400">Discover Shopify, WooCommerce, BigCommerce, Stripe, Razorpay, Klaviyo and more.</p>
+                <a href="ecommerce.html" class="inline-flex items-center gap-1 text-xs text-purple-400 hover:text-purple-300 font-medium mt-3">
+                  Browse 8+ Solutions →
+                </a>
+              </div>
+              <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800">
+                <div class="text-sm font-bold text-white mb-1">Beginner Guides & Roadmaps</div>
+                <p class="text-xs text-slate-400">Master fundamental concepts: DNS, SSL/TLS, web architecture, and ecommerce setup without traps.</p>
+                <a href="web-hosting.html#roadmap" class="inline-flex items-center gap-1 text-xs text-purple-400 hover:text-purple-300 font-medium mt-3">
+                  View Roadmap Steps →
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: How Visitors Can Use the Website -->
+    <section id="how-to-use" class="py-16 md:py-24 bg-slate-950/40 border-t border-slate-800/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-purple-500/20 bg-purple-900/20 text-purple-300 text-xs font-mono mb-3">
+            A SIMPLE 3-STEP WORKFLOW
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+            How to Use UNKNOWN
+          </h2>
+          <p class="mt-3 text-slate-400 text-base sm:text-lg">
+            A structured, hassle-free way to research, evaluate, and choose digital tools for your business.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 flex flex-col">
+            <div class="w-12 h-12 rounded-xl bg-purple-900/40 border border-purple-500/30 flex items-center justify-center font-mono font-bold text-purple-300 text-lg mb-5">
+              01
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Select Your Domain</h3>
+            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+              Navigate to the dedicated category hub that corresponds to your immediate operational requirement: Web & Hosting, Business Software, or E-Commerce.
+            </p>
+            <div class="mt-auto text-xs text-purple-400 font-mono">
+              Categorized taxonomies & filter pills
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 flex flex-col">
+            <div class="w-12 h-12 rounded-xl bg-purple-900/40 border border-purple-500/30 flex items-center justify-center font-mono font-bold text-purple-300 text-lg mb-5">
+              02
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Compare Technical Specs</h3>
+            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+              Examine the comparison benchmarks, verified plan-dependent requirements, and plain-English architectural breakdowns to understand trade-offs.
+            </p>
+            <div class="mt-auto text-xs text-purple-400 font-mono">
+              Zero star inflation & factual parameters
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 flex flex-col">
+            <div class="w-12 h-12 rounded-xl bg-purple-900/40 border border-purple-500/30 flex items-center justify-center font-mono font-bold text-purple-300 text-lg mb-5">
+              03
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Visit Official Destinations</h3>
+            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+              Click through to verified vendor websites and pricing pages to check current regional offerings, terms, and initiate your setups safely.
+            </p>
+            <div class="mt-auto text-xs text-purple-400 font-mono">
+              Direct provider destinations
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Editorial Standards & Affiliate Disclosure Protocol -->
+    <section class="py-16 bg-slate-900/40 border-t border-purple-500/15">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="rounded-2xl p-7 sm:p-9 bg-slate-950 border border-purple-500/30 shadow-2xl">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 rounded-lg bg-purple-600/30 border border-purple-500/40 flex items-center justify-center text-purple-300">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <h2 class="text-xl font-bold text-white">Editorial Scope & Affiliate Transparency Protocol</h2>
+          </div>
+
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            UNKNOWN helps users discover and compare digital tools. Product information in this directory is compiled strictly from published vendor specifications, public documentation, and objective architectural characteristics. We do not claim to have personally bench-tested or independently audited every provider. Some outbound links may be affiliate links. UNKNOWN may earn a commission if you purchase through them, at no extra cost to you. Recommendations prioritize practical utility, architecture suitability, and value rather than commission incentives.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-slate-800 text-xs font-mono">
+            <div class="p-3 bg-slate-900/80 rounded-xl border border-slate-800">
+              <div class="text-purple-400 font-semibold mb-1">HONEST EDITORIAL SCOPE</div>
+              <div class="text-slate-400">No sponsored star adjustments or pay-to-play rankings.</div>
+            </div>
+            <div class="p-3 bg-slate-900/80 rounded-xl border border-slate-800">
+              <div class="text-purple-400 font-semibold mb-1">ZERO PRICE MARKUPS</div>
+              <div class="text-slate-400">Outbound links never increase your subscription cost.</div>
+            </div>
+            <div class="p-3 bg-slate-900/80 rounded-xl border border-slate-800">
+              <div class="text-purple-400 font-semibold mb-1">DOCUMENTATION FOCUS</div>
+              <div class="text-slate-400">Evaluated from vendor documentation, APIs, and public specs.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Unified Footer Across All Pages -->
+  <footer class="bg-slate-950 border-t border-purple-500/20 text-slate-400 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+        
+        <!-- Brand Info -->
+        <div class="lg:col-span-2">
+          <a href="index.html" class="flex items-center gap-2 font-mono font-bold text-lg text-white mb-3" aria-label="UNKNOWN Homepage">
+            <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-purple-700 to-indigo-600 flex items-center justify-center text-white text-sm">U</div>
+            <span>UNKNOWN</span>
+          </a>
+          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-sm mb-4">
+            Discover the Tools. Build Your Future. Elite computational catalog and precision architecture directory for builders, agencies, and online ventures.
+          </p>
+          <div class="text-xs font-mono text-purple-400/80 flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            <span>Systems Operational & Secure (2026)</span>
+          </div>
+        </div>
+
+        <!-- Navigation Directory -->
+        <div>
+          <h4 class="text-xs font-mono uppercase tracking-wider text-slate-200 font-semibold mb-4">Directory Hubs</h4>
+          <ul class="space-y-2.5 text-xs sm:text-sm">
+            <li><a href="index.html" class="text-purple-400 font-medium hover:text-purple-300">Home</a></li>
+            <li><a href="web-hosting.html" class="hover:text-white transition-colors">Web & Hosting</a></li>
+            <li><a href="business-software.html" class="hover:text-white transition-colors">Business Software</a></li>
+            <li><a href="ecommerce.html" class="hover:text-white transition-colors">E-Commerce</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources & Guides -->
+        <div>
+          <h4 class="text-xs font-mono uppercase tracking-wider text-slate-200 font-semibold mb-4">Educational Resources</h4>
+          <ul class="space-y-2.5 text-xs sm:text-sm">
+            <li><a href="web-hosting.html#roadmap" class="hover:text-white transition-colors">Website Beginner Roadmap</a></li>
+            <li><a href="ecommerce.html#roadmap" class="hover:text-white transition-colors">Store Launch Roadmap</a></li>
+            <li><a href="business-software.html#comparison" class="hover:text-white transition-colors">Automation Matrix (Make vs Zapier)</a></li>
+            <li><span class="text-slate-500 text-xs">Community Guides <span class="text-[10px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-400">Pending Review</span></span></li>
+          </ul>
+        </div>
+
+        <!-- Legal & Trust Compliance -->
+        <div>
+          <h4 class="text-xs font-mono uppercase tracking-wider text-slate-200 font-semibold mb-4">Legal & Trust</h4>
+          <ul class="space-y-2.5 text-xs sm:text-sm">
+            <li>
+              <span class="text-slate-400 block text-xs">
+                Privacy Policy <span class="text-[10px] text-amber-400/80 font-mono">(Draft — Pending Legal Review)</span>
+              </span>
+            </li>
+            <li>
+              <span class="text-slate-400 block text-xs">
+                Terms & Conditions <span class="text-[10px] text-amber-400/80 font-mono">(Draft — Pending Legal Review)</span>
+              </span>
+            </li>
+            <li>
+              <span class="text-slate-400 block text-xs">
+                Affiliate Disclosure <span class="text-[10px] text-emerald-400/80 font-mono">(Active Protocol)</span>
+              </span>
+            </li>
+            <li>
+              <span class="text-slate-500 text-xs block">
+                Editorial Contact: <span class="italic text-slate-400">Address pending domain config</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Affiliate Disclaimer Notice Bar -->
+      <div class="mt-12 pt-6 border-t border-slate-900 text-xs text-slate-500 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-center md:text-left">
+          Affiliate Disclosure: Some links on UNKNOWN may be affiliate links. UNKNOWN may earn a commission if you purchase through them, at no extra cost to you.
+        </p>
+        <p class="font-mono text-center md:text-right shrink-0">
+          © 2026 UNKNOWN. Precision Software Architecture.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vanilla JavaScript for Mobile Menu & Smooth Interaction -->
+  <script>
+    (function() {
+      const menuBtn = document.getElementById('mobileMenuButton');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const hamburgerIcon = document.getElementById('hamburgerIcon');
+      const closeIcon = document.getElementById('closeIcon');
+      const navLinks = document.querySelectorAll('.mobile-nav-link');
+
+      function toggleMenu() {
+        const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+        menuBtn.setAttribute('aria-expanded', !isExpanded);
+        mobileMenu.classList.toggle('hidden');
+        hamburgerIcon.classList.toggle('hidden');
+        closeIcon.classList.toggle('hidden');
+      }
+
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', toggleMenu);
+        navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            if (!mobileMenu.classList.contains('hidden')) {
+              toggleMenu();
+            }
+          });
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
